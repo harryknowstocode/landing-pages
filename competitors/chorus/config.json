@@ -1,0 +1,64 @@
+{
+  "slug": "chorus-alternative",
+  "competitor": {
+    "name": "Chorus",
+    "color": "#7c3aed",
+    "colorBg": "rgba(124,58,237,0.07)",
+    "wordmarkHtml": "<span style=\"font-style:italic;font-weight:800;opacity:0.55;letter-spacing:-0.5px;\">Chorus</span>"
+  },
+  "page": {
+    "title": "Chorus vs Attention — The Revenue Intelligence Alternative Built for How You Actually Sell",
+    "description": "Chorus vs Attention: see why revenue teams are moving from Chorus (ZoomInfo) to Attention for AI-native call intelligence, automated CRM entry, and real coaching — without the ZoomInfo bundle tax.",
+    "ogImage": "https://with.attention.com/og-image.png"
+  },
+  "hero": {
+    "eyebrow": "Chorus vs Attention",
+    "headlinePre": "The",
+    "headlineAnnotLabel": "better",
+    "headlinePost": "alternative",
+    "headlineSub": "your reps will <span class=\"highlight\">actually use.</span>",
+    "sub": "Your CRM updates itself. Your reps are coached in absentia. Any question about your process is answered in minutes."
+  },
+  "testimonials": [
+    {
+      "text": "[Customer quote about switching from Chorus]",
+      "name": "[Customer Name]",
+      "role": "[Title] · [Company]"
+    },
+    {
+      "text": "[Customer quote about Attention vs Chorus on CRM automation]",
+      "name": "[Customer Name]",
+      "role": "[Title] · [Company]"
+    },
+    {
+      "text": "[Customer quote about coaching or summaries]",
+      "name": "[Customer Name]",
+      "role": "[Title] · [Company]"
+    }
+  ],
+  "comparison": {
+    "enabled": false
+  },
+  "faq": [
+    {
+      "question": "What is the difference between Chorus and Attention?",
+      "answer": "Chorus (now part of ZoomInfo) is a conversation intelligence tool that was built pre-LLM and has seen limited AI innovation since its acquisition. Attention is AI-native — built on large language models from the ground up. That means semantic understanding of every call, not keyword matching, plus automated CRM entry, real-time coaching, and a flat subscription with no ZoomInfo bundle required."
+    },
+    {
+      "question": "Is Attention a good Chorus alternative?",
+      "answer": "Yes. Attention delivers everything Chorus does — call recording, transcription, summaries, and coaching — plus automated CRM field population, AI-powered forecasting with a 5% margin of error, and a public API. And unlike Chorus, it doesn't require a ZoomInfo subscription to get full value."
+    },
+    {
+      "question": "Do I need ZoomInfo to use Attention?",
+      "answer": "No. Attention is a standalone platform with 200+ native integrations including Salesforce, HubSpot, and Slack. You get the full product on one flat subscription — no bundled upsells, no forced add-ons."
+    },
+    {
+      "question": "How does Attention's pricing compare to Chorus?",
+      "answer": "Chorus pricing is often bundled with ZoomInfo, meaning teams pay for data they may not need to access conversation intelligence. Attention offers one flat subscription that includes call intelligence, CRM automation, coaching, forecasting, and free listener seats for managers who only need to review recordings."
+    },
+    {
+      "question": "Does Attention integrate with Salesforce and HubSpot?",
+      "answer": "Yes. Attention integrates with Salesforce, HubSpot, and 200+ other tools via native integrations, a public API, and an MCP server — giving revenue teams full flexibility to connect Attention to their existing stack without depending on ZoomInfo's ecosystem."
+    }
+  ]
+}

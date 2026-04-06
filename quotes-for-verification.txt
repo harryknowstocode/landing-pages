@@ -1,0 +1,620 @@
+QUOTE VERIFICATION FILE — ATTENTION LANDING PAGE
+For use with Attention Super Agent MCP verification prompt
+======================================================================
+
+SECTION 1: COMPARE BOX QUOTES (sourced by Attention Super Agent)
+----------------------------------------------------------------------
+Quote 1:
+  Text:    "I did the demo with the Gong guy and I asked him, can you do this? He kept being like, 'soon, soon, it's on the roadmap.' Not good enough."
+  Speaker: Jack Gashi
+  Title:   VP of Sales
+  Company: Avoca
+  Source:  Named
+  G2:      No
+
+Quote 2:
+  Text:    "One of the things that has worn on us with Gong is that the roadmap has just been very slow. We hear 'it's on the roadmap' from them — it's almost like a joke at this point."
+  Speaker: Tony Riesen
+  Title:   Business Systems Leader
+  Company: Dandy
+  Source:  Named
+  G2:      No
+
+Quote 3:
+  Text:    "They had promised all the things I was talking about, like being able to do defaults and apply them to things. None of that happened."
+  Speaker: David Ciano
+  Title:   Sales Team Lead
+  Company: GovWell
+  Source:  Named
+  G2:      No
+
+Quote 4:
+  Text:    "Gong has just stopped innovating. They say they have AI, but their LLM is not really... With Gong it's just roadblock after roadblock to be able to start extracting data."
+  Speaker: Will Marty
+  Title:   Sales Manager
+  Company: B2B SaaS
+  Source:  Named
+  G2:      No
+
+Quote 5:
+  Text:    "I know it's something that Gong says is coming in like maybe the new year... I honestly don't know if this is on the roadmap or what."
+  Speaker: Anonymous
+  Title:   Sales Enablement Director
+  Company: SaaS
+  Source:  Anonymous
+  G2:      No
+
+Quote 6:
+  Text:    "Orchestration was supposed to drop last year. I was at [their conference], meeting with the project leads — and then they left."
+  Speaker: Anonymous
+  Title:   Revenue Leader
+  Company: Sales Advisory
+  Source:  Anonymous
+  G2:      No
+
+Quote 7:
+  Text:    "I still don't think they custom-fill CRM fields out of the box. You have to go in and copy and paste. I think they could have shipped something a year ago."
+  Speaker: Anonymous
+  Title:   Revenue Leader
+  Company: Sales Advisory
+  Source:  Anonymous
+  G2:      No
+
+Quote 8:
+  Text:    "Our AE got let go the week after we signed. They assigned us another AE — he got let go. The sales manager got assigned to us and he didn't give a f*ck, because obviously it's not his own book of business. They are an absolute f*ing mess."
+  Speaker: David Ciano
+  Title:   Sales Team Lead
+  Company: GovWell
+  Source:  Named
+  G2:      No
+
+Quote 9:
+  Text:    "I didn't feel the human component of anybody who worked at that company. For a company that preaches about having the best sales process — I did not feel it."
+  Speaker: Shane Lieberman
+  Title:   Head of Business Development
+  Company: GovWell
+  Source:  Named
+  G2:      No
+
+Quote 10:
+  Text:    "I really appreciated the amount of love and support we got during implementation and ongoing customization. I was very disappointed over time with how that shifted at Gong in my seven, eight years using them."
+  Speaker: Anonymous
+  Title:   CRO
+  Company: Tech
+  Source:  Anonymous
+  G2:      No
+
+Quote 11:
+  Text:    "The fact that you guys are there to actually support us with the prompt building, the scorecard building, the automations — that's a huge thing. Gong doesn't currently give us that level of hands-on support."
+  Speaker: Anonymous
+  Title:   Sales Enablement Lead
+  Company: Real Estate
+  Source:  Anonymous
+  G2:      No
+
+Quote 12:
+  Text:    "Their customer service has been pretty abysmal. They actually tried to upsell us despite some outstanding customer service issues. We have an unresolved ticket from like three months ago. There is a zero percent chance we renew with them."
+  Speaker: David Ciano
+  Title:   Sales Team Lead
+  Company: GovWell
+  Source:  Named
+  G2:      No
+
+Quote 13:
+  Text:    "Gong doesn't currently give us that level of hands-on administrative support. It's like, 'we'll tell you how to build the problem, go for it, do it' — there is nobody there supporting us with that."
+  Speaker: Anonymous
+  Title:   Sales Enablement Lead
+  Company: Real Estate
+  Source:  Anonymous
+  G2:      No
+
+Quote 14:
+  Text:    "Our conversations are so nuanced that a very similar phrase could mean best practice versus worst practice. That's the piece we're missing with Gong — as much as we train the prompts, it's missing the delineation."
+  Speaker: Anonymous
+  Title:   Sales Enablement Lead
+  Company: Real Estate
+  Source:  Anonymous
+  G2:      No
+
+Quote 15:
+  Text:    "Gong had very kind of prepackaged deal scores — MEDDIC methodology — and our sale is very different. We have six-figure sales that happen in two weeks. The fields need to be specific to home services."
+  Speaker: Jack Gashi
+  Title:   VP of Sales
+  Company: Avoca
+  Source:  Named
+  G2:      No
+
+Quote 16:
+  Text:    "Gong's scorecards are very surface level — yes, the thing was mentioned, or no, it wasn't. You can't make it specific to us. That's really where it lacked in what we were needing to use it for."
+  Speaker: Anonymous
+  Title:   Sales Ops Leader
+  Company: Tech
+  Source:  Anonymous
+  G2:      No
+
+Quote 17:
+  Text:    "In Gong, you have to have filters on the scorecard itself for which types of calls to score. It's not smart enough to know that it's a discovery call, unless the word discovery is present in the invite."
+  Speaker: Anonymous
+  Title:   Revenue Intelligence Lead
+  Company: SaaS
+  Source:  Anonymous
+  G2:      No
+
+Quote 18:
+  Text:    "The challenges we've had with Gong scorecards — it's just a cumulative aggregate of what a score is, and a 7 for someone could mean a totally different 7 for someone else."
+  Speaker: Anonymous
+  Title:   Sales Enablement Manager
+  Company: HealthTech
+  Source:  Anonymous
+  G2:      No
+
+Quote 19:
+  Text:    "Gong you have to go in and manually score... AI-suggested scores that you still need to manually apply. That means somewhere between 3 and 10% of calls get scored."
+  Speaker: Anonymous
+  Title:   Sales Enablement Lead
+  Company: Employee Recognition SaaS
+  Source:  Anonymous
+  G2:      No
+
+Quote 20:
+  Text:    "We've got our Gong scorecards. Do we use them? No. Are they built out? Yes. Like, they're there. Gong does coaching — it's just not very accurate."
+  Speaker: Will Marty
+  Title:   Sales Manager
+  Company: B2B SaaS
+  Source:  Named
+  G2:      No
+
+Quote 21:
+  Text:    "We have scorecards in place. We don't have scorecards adopted. There's no impetus for managers to use them because there's not a requirement at the top level to say they should use them."
+  Speaker: Anonymous
+  Title:   Sales Enablement Lead
+  Company: FinTech
+  Source:  Anonymous
+  G2:      No
+
+Quote 22:
+  Text:    "We're basically not getting call summaries at this point. I went from a point where we had really good summaries to basically not using their summaries in Gong anymore. They're not reliable. They loaded at a time when I've already moved on — I've already had four more calls."
+  Speaker: David Ciano
+  Title:   Sales Team Lead
+  Company: GovWell
+  Source:  Named
+  G2:      No
+
+Quote 23:
+  Text:    "Gong slow processing is killing them... The call transcripts for a call on Fathom show up in your inbox within seconds, not like an hour later."
+  Speaker: Anonymous
+  Title:   Head of Revenue
+  Company: FinTech
+  Source:  Anonymous
+  G2:      No
+
+Quote 24:
+  Text:    "Calls take like eight to 24 hours to process."
+  Speaker: Anonymous
+  Title:   Revenue Leader
+  Company: Marketplace
+  Source:  Anonymous
+  G2:      No
+
+Quote 25:
+  Text:    "All of the Gong summaries were a million bullet points, half of them irrelevant. And no matter how I prompted it, I could not get the irrelevant details to not show up — which meant it was completely unreliable."
+  Speaker: David Ciano
+  Title:   Sales Team Lead
+  Company: GovWell
+  Source:  Named
+  G2:      No
+
+Quote 26:
+  Text:    "I didn't find its email follow-up summaries particularly useful... it just sort of said, 'this is the format.' That's not how I would choose to send it, and it didn't have that flexibility."
+  Speaker: Anonymous
+  Title:   Sales Leader
+  Company: B2B SaaS
+  Source:  Anonymous
+  G2:      No
+
+Quote 27:
+  Text:    "I couldn't trust that data versus Attention giving me that clear picture."
+  Speaker: Anonymous
+  Title:   Sales Enablement Lead
+  Company: Real Estate
+  Source:  Anonymous
+  G2:      No
+
+Quote 28:
+  Text:    "The Gong smart AI takes a while too. It won't spit out answers for us unless we train the system to do it, and that actually takes a lot of time upfront. I've spent hours trying to create smart trackers."
+  Speaker: Anonymous
+  Title:   Sales Enablement Manager
+  Company: FinTech
+  Source:  Anonymous
+  G2:      No
+
+Quote 29:
+  Text:    "Those smart trackers don't really do too much. They're neat in idea, but I'm not getting... it should be usable enough that a dummy like me can do it."
+  Speaker: Anonymous
+  Title:   RevOps Manager
+  Company: FinTech
+  Source:  Anonymous
+  G2:      No
+
+Quote 30:
+  Text:    "I have one rep who takes the transcript of everything from Gong, types it into ChatGPT and says 'can you make me a follow-up email?'"
+  Speaker: David Ciano
+  Title:   Sales Team Lead
+  Company: GovWell
+  Source:  Named
+  G2:      No
+
+Quote 32:
+  Text:    "We can do today using roundabout ways of ChatGPT or Gong, but having it automated and served to them versus them having to go in and manually produce that content — that's the difference."
+  Speaker: Anonymous
+  Title:   Revenue Leader
+  Company: FinTech SaaS
+  Source:  Anonymous
+  G2:      No
+
+Quote 33:
+  Text:    "Gong's API — I can feed that into an LLM and then pull all this myself... but I want it to just be done without me having to engineer around it."
+  Speaker: Anonymous
+  Title:   Revenue Engineer
+  Company: FinTech
+  Source:  Anonymous
+  G2:      No
+
+Quote 34:
+  Text:    "Like actually having it write into Salesforce for you would be huge."
+  Speaker: Anonymous
+  Title:   Revenue Leader
+  Company: Healthcare AI
+  Source:  Anonymous
+  G2:      No
+
+Quote 35:
+  Text:    "Gong is really expensive. I think we're spending like $150,000, $160,000 a year right now... We're almost close to the point of paying more for Gong than we do for our core CRM. It's crazy, crazy to think about, considering there are hundreds of people on Salesforce."
+  Speaker: Anonymous
+  Title:   Head of Sales Ops
+  Company: Large Enterprise SaaS
+  Source:  Anonymous
+  G2:      No
+
+Quote 36:
+  Text:    "We're paying for 17 licenses. We're only using like 10, and it's over a hundred dollars per month per person. We're not using any of the coaching, none of the integration with CRM — and so we know we're paying too much for what we're actually using it for."
+  Speaker: Anonymous
+  Title:   Head of Operations
+  Company: Tech SMB
+  Source:  Anonymous
+  G2:      No
+
+Quote 37:
+  Text:    "We pay them a lot of money... and we're not getting what we need out of it."
+  Speaker: Anonymous
+  Title:   VP of Customer Success
+  Company: SaaS
+  Source:  Anonymous
+  G2:      No
+
+Quote 38:
+  Text:    "I'm not looking for anything crazy, which is why I was so frustrated on why Gong is so f*cking expensive. Because I'm like, I just need the bare sh*t."
+  Speaker: Anonymous
+  Title:   Head of Sales Enablement
+  Company: SaaS SMB
+  Source:  Anonymous
+  G2:      No
+
+Quote 39:
+  Text:    "If you've got a forecast seat, you have to have a standard seat — even if you don't do any call recordings. So Johan, who only looks at data for five minutes, has a forecast and a standard seat... we are all a bit frustrated that we're having to pay a lot for something that's more for senior people."
+  Speaker: Anonymous
+  Title:   RevOps Lead
+  Company: FinTech
+  Source:  Anonymous
+  G2:      No
+
+Quote 40:
+  Text:    "They've priced themselves out of where most of the market wants to be."
+  Speaker: Anonymous
+  Title:   Revenue Leader
+  Company: Sales Advisory
+  Source:  Anonymous
+  G2:      No
+
+Quote 41:
+  Text:    "The way I was thinking about it was — really all we use Gong for today is like a glorified call recorder. The reps, that's all they know. They just know Gong's recording in the background. Some do the auto email post-call, some track their deals."
+  Speaker: Anonymous
+  Title:   RevOps Manager
+  Company: SaaS
+  Source:  Anonymous
+  G2:      No
+
+Quote 44:
+  Text:    "I actually had to custom build with n8n flows because Gong couldn't do it. Getting insights out of Gong are quite tricky — it's more keyword-based and RAG-based models."
+  Speaker: Anonymous
+  Title:   RevOps Manager
+  Company: SaaS
+  Source:  Anonymous
+  G2:      No
+
+Quote 45:
+  Text:    "I was really hesitant about moving off of Gong due to product maturity, stability, and comfort with workflows. But super agent just destroys it on the AI side. Its ability to aggregate insights across offices and roll them up to an org-level narrative is really impressive. I'm seeing the light. And your responsiveness and ability to quick-ship the updates we need is huge."
+  Speaker: Alex Caine
+  Title:   Revenue Leader
+  Company: Dandy
+  Source:  Named
+  G2:      No
+
+Quote 46:
+  Text:    "The MCP live — that's game-changing. That's huge."
+  Speaker: Natalie York
+  Title:   RevOps Admin
+  Company: Headway
+  Source:  Named
+  G2:      No
+
+Quote 47:
+  Text:    "I don't know if this is the right place to leave positive feedback but it's genuinely shocking how good it is — as both very granular 'get me info from a specific call' stuff and super high level 'tell me about X use case' stuff."
+  Speaker: Anonymous
+  Title:   Sales Rep
+  Company: Parabola
+  Source:  Anonymous
+  G2:      No
+
+Quote 48:
+  Text:    "Folks have shared with me how impressed they are with your team's support and responsiveness — and speed! — with feature requests. We're bullish on Attention — keep it up!"
+  Speaker: Keon Garvin
+  Title:   Business Systems Leader
+  Company: Dandy
+  Source:  Named
+  G2:      No
+
+Quote 49:
+  Text:    "The new feature development is actually productive."
+  Speaker: Jennifer R.
+  Title:   RevOps Manager
+  Company: Mid-Market SaaS
+  Source:  Named
+  G2:      No
+
+Quote 50:
+  Text:    "I would also just say — genuinely the customer service we've experienced with you guys has been really great. I think that you've been very attentive to us, and even on the contracting side I think it went really smoothly."
+  Speaker: Callie Minafo
+  Title:   RevOps Project Lead
+  Company: Headway
+  Source:  Named
+  G2:      No
+
+Quote 51:
+  Text:    "I Slacked Noah — hey we wanna get this active in our instance — and within like two days we were like, it's there. The speed is really impressive."
+  Speaker: Natalie York
+  Title:   RevOps Admin
+  Company: Headway
+  Source:  Named
+  G2:      No
+
+Quote 52:
+  Text:    "The team at Attention is highly responsive and helpful. I never have to wait long to engage with them. Responses are friendly, professional, and nearly always resolve our requests. Integrations work beautifully."
+  Speaker: Jennifer R.
+  Title:   RevOps Manager
+  Company: Mid-Market SaaS (G2)
+  Source:  Named
+  G2:      Yes
+
+Quote 53:
+  Text:    "Today we had our first weekly call without much to discuss and ended early. Operations have stabilized and we're in a good spot. A massive thank you for your dedicated support these last few months."
+  Speaker: Keon Garvin
+  Title:   Business Systems Leader
+  Company: Dandy
+  Source:  Named
+  G2:      No
+
+Quote 54:
+  Text:    "I was impressed with the hands-on support from Attention's team during our initial setup, which made the experience smooth and engaging."
+  Speaker: Spencer M.
+  Title:   Sales Leader
+  Company: Mid-Market SaaS (G2)
+  Source:  Named
+  G2:      Yes
+
+Quote 55:
+  Text:    "Attention also is making grading calls SO easy. Gong sucks."
+  Speaker: Jess Wayne
+  Title:   Sales Manager
+  Company: Headway
+  Source:  Named
+  G2:      No
+
+Quote 56:
+  Text:    "I had this one person who was really struggling, and the manager was like, 'I don't have time to listen to her calls.' So I said, give me the top three things she's doing well and the top three things where she could use improvement. It gave me a whole list — a star chart. It was really spot on."
+  Speaker: Anonymous
+  Title:   Sales Enablement Manager
+  Company: Localization Services
+  Source:  Anonymous
+  G2:      No
+
+Quote 57:
+  Text:    "Attention turns every call into coaching and deal momentum. It pulls real deal intelligence from calls, highlights the exact moments that move opportunities forward, and turns 1:1s into repeatable coaching with scorecards I can track over time."
+  Speaker: Lucas T.
+  Title:   Enterprise Sales Manager
+  Company: Mid-Market SaaS (G2)
+  Source:  Named
+  G2:      Yes
+
+Quote 58:
+  Text:    "I can customize every aspect of how it grades our conversations and select the data and metrics I want to pull. We can program it to coach our sales reps on each conversation — not just the ones our sales team leads review — and tailor the coaching to specifically what we're looking for, not just a template."
+  Speaker: Spencer M.
+  Title:   Sales Leader
+  Company: Mid-Market SaaS (G2)
+  Source:  Named
+  G2:      Yes
+
+Quote 59:
+  Text:    "We have been talking a ton about coaching and reflexive feedback. This fits really well with the methodology and process we've already been doing with the team. And now they get real-time feedback — it works really well."
+  Speaker: Anonymous
+  Title:   Sales Leader
+  Company: Staffing & Recruitment SaaS
+  Source:  Anonymous
+  G2:      No
+
+Quote 60:
+  Text:    "It's genuinely shocking how good it is — as both very granular 'get me info from a specific call' stuff and super high level 'tell me about X use case' stuff."
+  Speaker: Anonymous
+  Title:   Sales Rep
+  Company: Parabola
+  Source:  Anonymous
+  G2:      No
+
+Quote 62:
+  Text:    "We constantly get questions like — tell us everything we learned last week about X. Now we can just ask. All those calls are recorded, there's no reason to have to get that data by jumping on team calls anymore."
+  Speaker: Anonymous
+  Title:   Revenue Leader
+  Company: FinTech
+  Source:  Anonymous
+  G2:      No
+
+Quote 63:
+  Text:    "Instead of having to go to Salesforce and find the close lost and try to connect it together — Attention can do it in less than two minutes."
+  Speaker: Anonymous
+  Title:   Sales Enablement Lead
+  Company: Real Estate
+  Source:  Anonymous
+  G2:      No
+
+Quote 64:
+  Text:    "The AI CRM fill is relatively accurate depending on prompting. The pre-call prep — people are just blown away with some of the stuff there. Relative to Gong it is much, much better."
+  Speaker: Eric Black
+  Title:   RevOps Leader
+  Company: Headway
+  Source:  Named
+  G2:      No
+
+Quote 65:
+  Text:    "It extracts dozens of CRM fields from my calls and automatically syncs them to Salesforce, saving me hours of manual note-taking every week."
+  Speaker: Joseph B.
+  Title:   Account Executive
+  Company: Large Enterprise (G2)
+  Source:  Named
+  G2:      Yes
+
+Quote 66:
+  Text:    "It honestly feels like it's uncovering 'fallen through the cracks' opportunities that I wouldn't have found just manually working Salesforce — accounts that have mentioned software pain but never progressed. Just really prioritizing ICP real conversation signals instead of just activity."
+  Speaker: Kent Tamayo
+  Title:   Sales Leader
+  Company: Rematter
+  Source:  Named
+  G2:      No
+
+Quote 67:
+  Text:    "Pain points, decision criteria, competitive intel, and next steps get logged without me typing notes."
+  Speaker: Lucas T.
+  Title:   Enterprise Sales Manager
+  Company: Mid-Market SaaS (G2)
+  Source:  Named
+  G2:      Yes
+
+Quote 68:
+  Text:    "Salesforce hygiene is substantially improved. The necessary notes are there — the concept makes all the sense in the world."
+  Speaker: Anonymous
+  Title:   Revenue Leader
+  Company: Employee Recognition SaaS
+  Source:  Anonymous
+  G2:      No
+
+Quote 69:
+  Text:    "I have to say we got a few new tools and the only one everyone likes is Attention."
+  Speaker: Jess Wayne
+  Title:   Sales Manager
+  Company: Headway
+  Source:  Named
+  G2:      No
+
+Quote 70:
+  Text:    "Their contract terms are excellent. They are confident in their product so they don't lock you in, and they size the contract to meet your business needs on a monthly basis. Overall I am a huge advocate and 100% would buy again."
+  Speaker: Jennifer R.
+  Title:   RevOps Manager
+  Company: Mid-Market SaaS (G2)
+  Source:  Named
+  G2:      Yes
+
+Quote 71:
+  Text:    "It was almost like we were paying for very expensive conversation intelligence tooling that wasn't really leveraged or maintained properly. So we moved to a much lower maintenance, low-touch solution."
+  Speaker: Anonymous
+  Title:   Revenue Leader
+  Company: Large Enterprise Consumer
+  Source:  Anonymous
+  G2:      No
+
+Quote 72:
+  Text:    "Attention is probably the most useful add-on to our core tech stack I've purchased. Outside of our critical systems, it provides daily value and insights for our sales and leadership."
+  Speaker: Jennifer R.
+  Title:   RevOps Manager
+  Company: Mid-Market SaaS (G2)
+  Source:  Named
+  G2:      Yes
+
+Quote 73:
+  Text:    "It's been great so far. We migrated basically all of our Rattle workflows into Attention — and the platform does exactly what I need it to do."
+  Speaker: Anonymous
+  Title:   Revenue Ops
+  Company: PropTech AI
+  Source:  Anonymous
+  G2:      No
+
+Quote 74:
+  Text:    "The integration and transition from Gong to Attention was incredible. We were very concerned about losing data, losing traction, losing team alignment — and I was very impressed with how you guys were able to act fast."
+  Speaker: Callie Minafo
+  Title:   RevOps Project Lead
+  Company: Headway
+  Source:  Named
+  G2:      No
+
+Quote 75:
+  Text:    "The integration with tools like our CRM, HubSpot, and Slack is also great, as it helps us receive summaries and flags important deals, making our team more proactive."
+  Speaker: Spencer M.
+  Title:   Sales Leader
+  Company: Mid-Market SaaS (G2)
+  Source:  Named
+  G2:      Yes
+
+Quote 77:
+  Text:    "The ability for the integration with Snowflake has already made our life easier."
+  Speaker: Callie Minafo
+  Title:   RevOps Project Lead
+  Company: Headway
+  Source:  Named
+  G2:      No
+
+
+SECTION 2: TESTIMONIAL CAROUSEL QUOTES
+----------------------------------------------------------------------
+Quote 1:
+  Text:    We're basically not getting call summaries at this point... I went from a point where we had really good summaries, to I basically don't use their summaries in Gong anymore. They're not reliable. And their customer service has been pretty abysmal... There is a zero percent chance we renew with them.
+  Speaker: David Ciano
+  Role:    Sales Team Lead · GovWell
+  Source:  Named
+
+Quote 2:
+  Text:    One of the things that has worn on us with Gong is that the roadmap has just been very slow. We hear 'it's on the roadmap' from them — it's almost like a joke at this point.
+  Speaker: Tony Riesen
+  Role:    Business Systems Leader · Dandy
+  Source:  Named
+
+Quote 3:
+  Text:    I did the demo with the Gong guy and I asked him, can you do this? And he kept being like, 'soon, soon, it's on the roadmap'... Not good enough.
+  Speaker: Jack Gashi
+  Role:    VP of Sales · Avoca
+  Source:  Named
+
+Quote 4:
+  Text:    You are so far ahead of Gong.
+  Speaker: Jeremy von Halle
+  Role:    VP RevOps · Abridge
+  Source:  Named
+
+Quote 5:
+  Text:    The integration and transition from Gong to Attention was incredible. We were very concerned about losing data, losing traction, losing team alignment — and I was very impressed with how you guys were able to act fast and get everything there.
+  Speaker: Callie Minafo
+  Role:    RevOps Project Lead · Headway
+  Source:  Named
+
+Quote 6:
+  Text:    The pre-call prep — people are just blown away with some of the stuff there... relative to Gong it is much, much better.
+  Speaker: Eric Black
+  Role:    RevOps Leader · Headway
+  Source:  Named
