@@ -1,6 +1,9 @@
 {
   "redirects": [{ "source": "/", "destination": "/gong-alternative", "permanent": true }],
-  "rewrites": [{ "source": "/gong-alternative", "destination": "/index.html" }],
+  "rewrites": [
+    { "source": "/gong-alternative", "destination": "/competitors/gong/index.html" },
+    { "source": "/chorus-alternative", "destination": "/competitors/chorus/index.html" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
