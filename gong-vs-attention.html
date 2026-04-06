@@ -4,6 +4,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gong vs Attention — The Revenue Intelligence Alternative Your Reps Will Actually Use</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Gong vs Attention: see why revenue teams switch from Gong to Attention for AI-native call intelligence, automated CRM entry, and accurate forecasting. No add-on pricing. Free listener seats." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://with.attention.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://with.attention.com/" />
+  <meta property="og:title" content="Gong vs Attention — The Revenue Intelligence Alternative Your Reps Will Actually Use" />
+  <meta property="og:description" content="Gong vs Attention: AI-native call intelligence with automated CRM entry, 5% forecast margin of error, and one flat subscription. See the full comparison." />
+  <meta property="og:image" content="https://with.attention.com/og-image.png" />
+  <meta property="og:site_name" content="Attention" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gong vs Attention — The Revenue Intelligence Alternative Your Reps Will Actually Use" />
+  <meta name="twitter:description" content="Gong vs Attention: AI-native call intelligence with automated CRM entry, 5% forecast margin of error, and one flat subscription." />
+  <meta name="twitter:image" content="https://with.attention.com/og-image.png" />
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Attention",
+    "url": "https://www.attention.com",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Attention is an AI-native revenue intelligence platform that automates CRM data entry, delivers accurate sales forecasting, and provides real-time coaching — at a fraction of Gong's cost.",
+    "offers": {
+      "@type": "Offer",
+      "description": "One subscription, no modular add-ons, free listener seats."
+    },
+    "featureList": [
+      "Automated CRM data entry (saves 20–30 minutes per call)",
+      "AI-native semantic call analysis",
+      "Sales forecasting with 5% margin of error",
+      "Real-time rep coaching",
+      "200+ integrations including Salesforce, HubSpot, and Slack",
+      "Public API and MCP server",
+      "Free listener seats"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/attentionai",
+      "https://twitter.com/attention_ai"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage (AEO — picked up by AI search engines) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between Gong and Attention?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gong uses keyword- and rule-based analysis built on its 2015 architecture. Attention uses large language models (LLMs) for semantic understanding of every call — meaning it grasps context and intent, not just keywords. Attention also automates CRM data entry (saving reps 20–30 minutes per call), offers free listener seats, and charges one flat subscription with no modular add-ons."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Attention a good Gong alternative?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Attention is purpose-built as an AI-native alternative to Gong. It delivers more accurate forecasting (5% margin of error vs. 15%), automated CRM entry, real-time coaching, and a public API — all on one flat subscription. Teams migrating from Gong report faster ramp times, less manual CRM work, and better forecast accuracy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Attention's pricing compare to Gong?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gong uses modular pricing where features like forecasting, engagement, and data extraction are separate paid add-ons. Attention offers one subscription that includes everything — call intelligence, CRM automation, forecasting, coaching, and free listener seats for managers and executives who only need to consume recordings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Attention integrate with Salesforce and HubSpot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Attention integrates with Salesforce, HubSpot, and 200+ other tools via native integrations, a public API, and an MCP server — giving revenue teams full flexibility to connect Attention to their existing stack."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How accurate is Attention's sales forecasting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Attention customers report reducing their forecast margin of error from 15% to 5% using Attention's AI-powered scorecard and pipeline analysis tools."
+        }
+      }
+    ]
+  }
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Caveat:wght@600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -19,8 +119,8 @@
       --text:        #ffffff;
       --text-muted:  #888898;
       --text-subtle: #4a4a5a;
-      --gong:        #e55a35;
-      --gong-bg:     rgba(229,90,53,0.07);
+      --gong:        #dc2626;
+      --gong-bg:     rgba(220,38,38,0.07);
       --attn-bg:     rgba(143,120,255,0.09);
       --grad:        linear-gradient(90deg, #688bff, #ff71fd, #ffc278);
       --grad-brand:  linear-gradient(135deg, #8f78ff, #4d32d3);
@@ -421,11 +521,35 @@
 
     .compare-box {
       display: flex;
+      flex-direction: column;
       border-radius: var(--radius-lg);
       overflow: hidden;
       border: 1px solid var(--border);
       background: var(--bg);
       position: relative;
+    }
+    .compare-box-inner {
+      display: flex;
+      flex: 1;
+    }
+    .compare-source-footer {
+      width: 100%;
+      padding: 9px 22px;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.28);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+      background: rgba(255,255,255,0.015);
+      box-sizing: border-box;
+    }
+    .footer-badge-grad {
+      background: linear-gradient(90deg, #8f78ff, #c084fc, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
 
@@ -451,8 +575,8 @@
       border-bottom: 1px solid rgba(255,255,255,0.07);
     }
     .pain-header {
-      background: linear-gradient(135deg, rgba(229,90,53,0.08) 0%, rgba(229,90,53,0.03) 100%);
-      border-bottom: 1px solid rgba(229,90,53,0.18);
+      background: linear-gradient(135deg, rgba(220,38,38,0.08) 0%, rgba(220,38,38,0.03) 100%);
+      border-bottom: 1px solid rgba(220,38,38,0.18);
     }
     .attn-header {
       background: linear-gradient(135deg, rgba(34,197,94,0.08) 0%, rgba(34,197,94,0.03) 100%);
@@ -471,9 +595,9 @@
       margin-bottom: 10px;
     }
     .pain-header .ai-badge {
-      background: rgba(229,90,53,0.15);
-      color: rgba(229,90,53,0.9);
-      border: 1px solid rgba(229,90,53,0.22);
+      background: rgba(220,38,38,0.15);
+      color: rgba(220,38,38,0.9);
+      border: 1px solid rgba(220,38,38,0.22);
     }
     .attn-header .ai-badge {
       background: rgba(34,197,94,0.12);
@@ -487,21 +611,72 @@
       display: block;
     }
     .ai-summary-text {
-      font-size: 13px;
+      font-size: 12.5px;
       line-height: 1.6;
-      color: rgba(255,255,255,0.78);
+      color: rgba(255,255,255,0.65);
       font-weight: 400;
       margin: 0;
-      max-width: 94%;
+      width: 100%;
     }
     .ai-summary-verdict {
-      margin-top: 8px;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.01em;
+      margin-top: 28px;
+      margin-bottom: 14px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.35;
+      padding: 8px 12px;
+      border-radius: 0 6px 6px 6px;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      position: relative;
+      width: 100%;
     }
-    .pain-header .ai-summary-verdict { color: rgba(229,90,53,0.75); }
-    .attn-header .ai-summary-verdict { color: rgba(34,197,94,0.75); }
+    .ai-summary-verdict::before {
+      position: absolute;
+      top: -20px;
+      left: -1px;
+      height: 20px;
+      padding: 0 10px;
+      font-size: 8.5px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      border-radius: 4px 4px 0 0;
+      border: 1px solid;
+      border-bottom: none;
+      white-space: nowrap;
+    }
+    .pain-header .ai-summary-verdict {
+      color: #fff;
+      background: rgba(220,38,38,0.22);
+      border: 1px solid rgba(220,38,38,0.35);
+      border-radius: 0 6px 6px 6px;
+    }
+    .pain-header .ai-summary-verdict::before {
+      content: 'Customer Sentiment';
+      background: rgba(220,38,38,0.22);
+      border-color: rgba(220,38,38,0.35);
+      color: rgba(255,150,150,0.9);
+    }
+    .attn-header .ai-summary-verdict {
+      color: #fff;
+      background: rgba(34,197,94,0.18);
+      border: 1px solid rgba(34,197,94,0.3);
+      border-radius: 6px 0 6px 6px;
+    }
+    .attn-header .ai-summary-verdict::before {
+      content: 'Verdict';
+      background: rgba(34,197,94,0.18);
+      border-color: rgba(34,197,94,0.3);
+      color: rgba(120,230,160,0.9);
+      left: auto;
+      right: -1px;
+      border-radius: 4px 4px 0 0;
+    }
 
     /* Split header above compare box */
     .compare-split-header {
@@ -533,7 +708,7 @@
       width: 25%;
       display: flex;
       flex-direction: column;
-      border-right: 2px solid rgba(229,90,53,0.35);
+      border-right: 2px solid rgba(220,38,38,0.35);
       flex-shrink: 0;
       padding-top: 20px;
     }
@@ -555,16 +730,16 @@
     }
     .pain-nav-item:hover { color: var(--text); }
     .pain-nav-item.active {
-      color: var(--text);
+      color: #fff;
       font-weight: 600;
+      background: rgba(220,38,38,0.18);
     }
     .pain-nav-item.active::before {
       content: '';
       position: absolute;
-      left: 0; top: 50%;
-      transform: translateY(-50%);
-      width: 2px; height: 55%;
-      background: rgba(229,90,53,0.8);
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      background: #dc2626;
       border-radius: 0 2px 2px 0;
     }
 
@@ -584,13 +759,13 @@
       box-sizing: border-box;
       direction: rtl;
       scrollbar-width: thin;
-      scrollbar-color: rgba(229,90,53,0.45) transparent;
+      scrollbar-color: rgba(220,38,38,0.45) transparent;
     }
     .pain-category > * { direction: ltr; }
     .pain-category.active { display: flex; }
     .pq {
       background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(229,90,53,0.09);
+      border: 1px solid rgba(220,38,38,0.09);
       border-radius: 7px;
       padding: 7px 11px 6px;
       flex-shrink: 0;
@@ -682,14 +857,17 @@
       position: relative;
     }
     .attn-nav-item:hover { color: var(--text); }
-    .attn-nav-item.active { color: var(--text); font-weight: 600; }
+    .attn-nav-item.active {
+      color: #fff;
+      font-weight: 600;
+      background: rgba(34,197,94,0.18);
+    }
     .attn-nav-item.active::after {
       content: '';
       position: absolute;
-      right: 0; top: 50%;
-      transform: translateY(-50%);
-      width: 2px; height: 55%;
-      background: rgba(34,197,94,0.8);
+      right: 0; top: 0; bottom: 0;
+      width: 3px;
+      background: rgba(34,197,94,0.9);
       border-radius: 2px 0 0 2px;
     }
 
@@ -793,23 +971,44 @@
       #hero .container { padding-top: 40px; padding-bottom: 60px; }
       .hero-feature-bar { gap: 6px; }
       .hero-feat { min-width: calc(33% - 6px); }
-      .quote-card { flex: 0 0 300px; }
+      .quote-card { flex: 0 0 calc(100vw - 40px); max-width: calc(100vw - 40px); }
       #mid-cta { padding: 72px 24px; }
       #closing-cta { padding: 80px 24px; }
       footer { flex-direction: column; align-items: flex-start; }
       .legend-note { margin-left: 0; }
+
+      /* Compare box: stack Gong on top, Attention below */
+      .compare-box { flex-direction: column; gap: 0; background: var(--bg); border: 1px solid var(--border); overflow: hidden; }
+      .compare-box-inner { flex-direction: column; gap: 20px; background: transparent; }
+      .compare-gong { width: 100%; border-right: none; border-radius: 14px; border: 1px solid var(--border); overflow: hidden; background: var(--bg); }
+      .compare-attn { width: 100%; border-radius: 14px; border: 1px solid var(--border); overflow: hidden; background: var(--bg); }
+      .compare-vs { display: flex; justify-content: center; align-items: center; background: transparent; border: none; width: 100%; height: auto; padding: 0; }
+      .compare-vs-badge { background: transparent; border: none; box-shadow: none; font-size: 28px; font-weight: 900; letter-spacing: -1px; background: linear-gradient(135deg, #8f78ff 0%, #c084fc 50%, #f472b6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+      .pain-body, .attn-body { height: 340px; }
+      .pain-nav, .attn-nav { width: 38%; }
     }
   </style>
 </head>
 <body>
 
   <!-- ─── HEADER ─── -->
+  <svg id="svg-filters" style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true">
+  <defs>
+    <filter id="engine-remove-white" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <!-- Make white transparent, keep orange icon + cream text fully opaque -->
+      <feColorMatrix type="matrix" values="1 0 0 0 0
+                                            0 1 0 0 0
+                                            0 0 1 0 0
+                                           -6 -6 -6 18 -0.5"/>
+    </filter>
+  </defs>
+</svg>
   <header>
     <div class="logo">
       <img src="attention-icon-color.png" class="logo-icon" style="border-radius:8px;object-fit:cover;" alt="Attention">
       Attention
     </div>
-    <a href="#closing-cta" class="header-cta">Book a Demo</a>
+    <a href="https://attention.com/book" class="header-cta">Book a Demo</a>
   </header>
 
   <!-- ─── HERO ─── -->
@@ -828,7 +1027,7 @@
         Your CRM updates itself. Your reps are coached in absentia. Any question about your process is answered in minutes.
       </p>
       <div class="hero-actions">
-        <a href="#closing-cta" class="btn-primary">
+        <a href="https://attention.com/book" class="btn-primary">
           Book a Demo
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
@@ -841,7 +1040,7 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
           </div>
           <div class="hero-feat-title">Innovation</div>
-          <div class="hero-feat-sub">No more "it's coming soon"</div>
+          <div class="hero-feat-sub">A product team that ships</div>
         </div>
 
         <div class="hero-feat" onclick="jumpToCategory(1)">
@@ -849,7 +1048,7 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
           </div>
           <div class="hero-feat-title">Dedicated FDE's</div>
-          <div class="hero-feat-sub">Not abandoned post-sale</div>
+          <div class="hero-feat-sub">Experts in your corner, day one</div>
         </div>
 
         <div class="hero-feat" onclick="jumpToCategory(2)">
@@ -857,7 +1056,7 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="2" x2="6" y1="14" y2="14"/><line x1="10" x2="14" y1="8" y2="8"/><line x1="18" x2="22" y1="16" y2="16"/></svg>
           </div>
           <div class="hero-feat-title">Coaching Built for You</div>
-          <div class="hero-feat-sub">Not Gong's rigid templates</div>
+          <div class="hero-feat-sub">Your rubrics, your playbook</div>
         </div>
 
         <div class="hero-feat" onclick="jumpToCategory(3)">
@@ -865,7 +1064,7 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
           </div>
           <div class="hero-feat-title">Fast Analysis</div>
-          <div class="hero-feat-sub">Not hours after the call</div>
+          <div class="hero-feat-sub">Done before the follow-up email</div>
         </div>
 
         <div class="hero-feat" onclick="jumpToCategory(4)">
@@ -873,7 +1072,7 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
           </div>
           <div class="hero-feat-title">Writes to Any CRM Field</div>
-          <div class="hero-feat-sub">No copy-pasting transcripts</div>
+          <div class="hero-feat-sub">Saves reps 20-30 min per call</div>
         </div>
 
         <div class="hero-feat" onclick="jumpToCategory(5)">
@@ -881,7 +1080,7 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" x2="7.01" y1="7" y2="7"/></svg>
           </div>
           <div class="hero-feat-title">One Fair Price</div>
-          <div class="hero-feat-sub">No "Oh, you have to buy this too."</div>
+          <div class="hero-feat-sub">One subscription, full access</div>
         </div>
 
         <div class="hero-feat" onclick="jumpToCategory(6)">
@@ -889,7 +1088,7 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
           </div>
           <div class="hero-feat-title">Everything Connected</div>
-          <div class="hero-feat-sub">No workarounds or duct tape</div>
+          <div class="hero-feat-sub">200+ integrations, open API</div>
         </div>
 
       </div>
@@ -908,6 +1107,7 @@
   <section id="testimonials-1">
     <div class="container">
       <p class="section-label fade-in">What teams are saying</p>
+      <p style="font-size:11px;color:rgba(255,255,255,0.35);margin-bottom:16px;margin-top:-12px;">Quotes reflect individual customer experiences. Results may vary based on use case, configuration, and team adoption. Named individuals have provided consent to be quoted.</p>
       <h2 class="section-title fade-in fade-in-delay-1">Everyone's making the switch.<br/>Here's why.</h2>
 
       <div class="carousel-track-container" id="carousel1Container">
@@ -989,10 +1189,12 @@
   <section id="comparison">
     <div class="container">
       <p class="section-label fade-in">PAINS &amp; GAINS FROM REAL USERS</p>
+      <p style="font-size:11px;color:rgba(255,255,255,0.32);margin-top:0;margin-bottom:20px;">Quotes sourced by Attention's Super Agent in under 10 minutes from 400+ recorded sales conversations. Reviews marked (G2) are from the G2 software review platform.</p>
 
       <h2 class="section-title fade-in fade-in-delay-1">Where Gong fails,<br><span class="grad-text">Attention</span> succeeds.</h2>
 
       <div class="compare-box fade-in fade-in-delay-2">
+        <div class="compare-box-inner">
 
         <!-- Gong side: nav + quotes -->
         <div class="compare-gong">
@@ -1000,50 +1202,43 @@
           <div class="pain-header">
             <div class="header-wordmark"><svg viewBox="0 0 171.3 60" style="height:26px;width:auto;" fill="white"><path d="M54.1,25.7H37.8c-0.9,0-1.6,1-1.3,1.8l3.9,10.1c0.2,0.4-0.2,0.9-0.7,0.9l-5-0.3c-0.2,0-0.4,0.1-0.6,0.3L30.3,44c-0.2,0.3-0.6,0.4-1,0.2l-5.8-3.9c-0.2-0.2-0.5-0.2-0.8,0l-8,5.4c-0.5,0.4-1.2-0.1-1-0.7L16,37c0.1-0.3-0.1-0.7-0.4-0.8l-4.2-1.7c-0.4-0.2-0.6-0.7-0.3-1l3.7-4.6c0.2-0.2,0.2-0.6,0-0.8l-3.1-4.5c-0.3-0.4,0-1,0.5-1l4.9-0.4c0.4,0,0.6-0.3,0.6-0.7l-0.4-6.8c0-0.5,0.5-0.8,0.9-0.7l6,2.5c0.3,0.1,0.6,0,0.8-0.2l4.2-4.6c0.3-0.4,0.9-0.3,1.1,0.2l2.5,6.4c0.3,0.8,1.3,1.1,2,0.6l9.8-7.3c1.1-0.8,0.4-2.6-1-2.4L37.3,10c-0.3,0-0.6-0.1-0.7-0.4l-3.4-8.7c-0.4-0.9-1.5-1.1-2.2-0.4l-7.4,8c-0.2,0.2-0.5,0.3-0.8,0.2l-9.7-4.1c-0.9-0.4-1.8,0.2-1.9,1.2l-0.4,10c0,0.4-0.3,0.6-0.6,0.6l-8.9,0.6c-1,0.1-1.6,1.2-1,2.1l5.9,8.7c0.2,0.2,0.2,0.6,0,0.8l-6,6.9C-0.3,36,0,37.1,0.8,37.4l6.9,3c0.3,0.1,0.5,0.5,0.4,0.8L3.7,58.3c-0.3,1.2,1.1,2.1,2.1,1.4l16.5-11.8c0.2-0.2,0.5-0.2,0.8,0l7.5,5.3c0.6,0.4,1.5,0.3,1.9-0.4l4.7-7.2c0.1-0.2,0.4-0.3,0.6-0.3l11.2,1.4c0.9,0.1,1.8-0.6,1.5-1.5l-4.7-12.1c-0.1-0.3,0-0.7,0.4-0.9l8.5-4C55.9,27.6,55.5,25.7,54.1,25.7z"/><path d="M170.8,25.7h-12.6c-0.2,0-0.5,0.2-0.5,0.5v5.6c0,0.2,0.2,0.5,0.5,0.5h5.4c0.3,0,0.5,0.2,0.5,0.5c0,2.9-0.6,8.1-5.9,8.1c-4.3,0-6-5.2-6-11.2c0-7.2,1.8-11.6,5.7-11.6c2.9,0,3.8,2.4,4.1,3.3c0.1,0.2,0.2,0.3,0.4,0.3h6.6c0.3,0,0.5-0.2,0.5-0.5c-0.3-3.6-3.3-9.9-11.4-9.9c-5.7,0-11,3.5-12.7,12v-11c0-0.1-0.1-0.2-0.2-0.2h-7c-0.1,0-0.2,0.1-0.2,0.2v19.6c0,0.2-0.3,0.3-0.4,0.1l-9.1-19.8c0-0.1-0.1-0.1-0.2-0.1H122c-0.1,0-0.2,0.1-0.2,0.2v11c-2.3-7-8.5-12-16.5-12c-9,0-15.7,6.2-17.2,14.5H75.5c-0.1,0-0.2,0.1-0.2,0.2V32c0,0.1,0.1,0.2,0.2,0.2h5.9c0.1,0,0.2,0.1,0.2,0.2c0,2.8-0.5,8.3-5.9,8.3c-4.3,0-6-5.2-6-11.2c0-7.2,1.8-11.6,5.7-11.6c3.1,0,3.9,2.8,4.1,3.5c0,0.1,0.1,0.2,0.2,0.2h7c0.1,0,0.2-0.1,0.2-0.2c-0.1-3.5-3.2-10.1-11.5-10.1c-6.9,0-13.2,5.1-13.2,18.2c0,9,3.5,18,13.3,18c7.3,0,11.9-5.6,12.9-12.4c2.2,7.2,8.5,12.4,16.7,12.4c7.9,0,14.2-5,16.5-12v11.1c0,0.1,0.1,0.2,0.2,0.2h7c0.1,0,0.2-0.1,0.2-0.2V27.2c0-0.2,0.3-0.3,0.4-0.1l9.1,19.5c0,0.1,0.1,0.1,0.2,0.1h6.2c0.1,0,0.2-0.1,0.2-0.2v-11c1.4,6.6,5.2,12,12.8,12c8.3,0,13.1-7.3,13.1-15.3v-6C171.3,25.9,171,25.7,170.8,25.7z M105.2,40.2c-5.8,0-9.9-4.5-9.9-10.8s4.1-10.8,9.9-10.8c5.8,0,9.9,4.5,9.9,10.8S111.1,40.2,105.2,40.2z"/></svg></div>
             <div class="pain-summary active" data-cat="0">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
-              <p class="ai-summary-text">Gong's product roadmap is a recurring source of frustration. Promises of upcoming features — autofill, orchestration, advanced AI — go unfulfilled for 12–18 months while customers are told to wait.</p>
-              <p class="ai-summary-verdict">Verdict: Roadmap is used as a sales tool, not a delivery commitment.</p>
+              <p class="ai-summary-verdict">Many report feeling roadmap promises are used to close deals, not drive delivery.</p>
+              <p class="ai-summary-text">Customers report Gong's product roadmap as a recurring source of frustration. Promises of upcoming features — autofill, orchestration, advanced AI — are described as going unfulfilled for 12–18 months.</p>
             </div>
             <div class="pain-summary" data-cat="1">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
-              <p class="ai-summary-text">Post-sale support deteriorates sharply after contracts are signed. AE turnover leaves customers stranded, with implementation help gone and no consistent point of contact.</p>
-              <p class="ai-summary-verdict">Verdict: Gong's sales-side experience doesn't carry over to customer success.</p>
+              <p class="ai-summary-verdict">Post-sale support frequently described as inconsistent compared to the sales experience.</p>
+              <p class="ai-summary-text">Many customers report that post-sale support deteriorated after contracts were signed. AE turnover is frequently cited, with customers describing a lack of consistent contacts and ongoing implementation help.</p>
             </div>
             <div class="pain-summary" data-cat="2">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
-              <p class="ai-summary-text">Gong's coaching tools fail to adapt to non-standard sales motions. Scorecards require excessive manual configuration and manager adoption is near zero — teams have them built, they're just not used.</p>
-              <p class="ai-summary-verdict">Verdict: Coaching infrastructure exists on paper. It doesn't run in practice.</p>
+              <p class="ai-summary-verdict">Scorecard tools are built out at many organizations but rarely adopted in day-to-day use.</p>
+              <p class="ai-summary-text">Customers with non-standard sales motions report difficulty adapting Gong's coaching tools to their workflows. Scorecard adoption is described as low, with many teams having them configured but not actively using them.</p>
             </div>
             <div class="pain-summary" data-cat="3">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
-              <p class="ai-summary-text">Call processing delays of 8–24 hours render summaries irrelevant by the time they arrive. AI-generated bullet points are verbose and unreliable — customers have reverted to manual note-taking.</p>
-              <p class="ai-summary-verdict">Verdict: Speed is table stakes. Gong consistently fails to meet it.</p>
+              <p class="ai-summary-verdict">Processing delays are a recurring complaint, with many users describing summaries as arriving too late to be actionable.</p>
+              <p class="ai-summary-text">Multiple customers report call processing delays ranging from 8–24 hours, describing summaries as arriving too late to be useful. Some have reverted to manual note-taking as a result.</p>
             </div>
             <div class="pain-summary" data-cat="4">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
-              <p class="ai-summary-text">Gong's CRM auto-population is limited to predefined fields and requires manual copy-paste for custom objects. Customers with unique methodologies or non-Salesforce CRMs report the feature as largely unusable.</p>
-              <p class="ai-summary-verdict">Verdict: Autofill only works if your CRM looks like Gong's demo environment.</p>
+              <p class="ai-summary-verdict">CRM auto-population reported as limited for teams with custom fields or non-standard setups.</p>
+              <p class="ai-summary-text">Customers with custom CRM fields or non-Salesforce setups report that Gong's auto-population features don't meet their needs. Manual copy-paste is still required in many of these configurations.</p>
             </div>
             <div class="pain-summary" data-cat="5">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
-              <p class="ai-summary-text">Customers cite pricing as a pain point — not just the base cost, but the layered upsell model that surfaces new charges while support tickets go unresolved.</p>
-              <p class="ai-summary-verdict">Verdict: Customers feel they're paying more and getting less year over year.</p>
+              <p class="ai-summary-verdict">Pricing and upsell structure cited as a frustration point, particularly relative to perceived value received.</p>
+              <p class="ai-summary-text">Customers frequently cite pricing as a pain point — referencing not just base cost, but a modular upsell structure that some describe as surfacing new charges before existing issues are resolved.</p>
             </div>
             <div class="pain-summary" data-cat="6">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
-              <p class="ai-summary-text">Teams using Gong alongside CRM, outreach, and enablement tools report friction at every integration point. Workflows require manual stitching across platforms — the all-in-one pitch doesn't match daily reality.</p>
-              <p class="ai-summary-verdict">Verdict: Gong is a silo that charges you to connect it to everything else.</p>
+              <p class="ai-summary-verdict">Integration friction and workflow gaps reported by teams relying on multiple tools alongside Gong.</p>
+              <p class="ai-summary-text">Teams using Gong alongside other tools report integration friction. Several describe needing manual workarounds to connect workflows across platforms.</p>
             </div>
           </div>
           <div class="pain-body">
           <div class="pain-nav">
-            <div class="pain-nav-item active" data-cat="0">Broken Promises</div>
-            <div class="pain-nav-item" data-cat="1">Postsale Abandon</div>
-            <div class="pain-nav-item" data-cat="2">Rigid Coaching</div>
-            <div class="pain-nav-item" data-cat="3">Poor Summaries</div>
-            <div class="pain-nav-item" data-cat="4">Lacking Autofill</div>
+            <div class="pain-nav-item active" data-cat="0">Innovation</div>
+            <div class="pain-nav-item" data-cat="1">Support</div>
+            <div class="pain-nav-item" data-cat="2">Coaching</div>
+            <div class="pain-nav-item" data-cat="3">Summaries</div>
+            <div class="pain-nav-item" data-cat="4">Autofill</div>
             <div class="pain-nav-item" data-cat="5">Pricing</div>
-            <div class="pain-nav-item" data-cat="6">Fragmentation</div>
+            <div class="pain-nav-item" data-cat="6">Platform</div>
           </div>
 
           <div class="pain-quotes">
@@ -1053,7 +1248,7 @@
               <div class="pq"><p class="pq-text">"I did the demo with the Gong guy and I asked him, can you do this? He kept being like, 'soon, soon, it's on the roadmap.' Not good enough."</p><p class="pq-attr">Jack Gashi · VP of Sales · Avoca</p></div>
               <div class="pq"><p class="pq-text">"One of the things that has worn on us with Gong is that the roadmap has just been very slow. We hear 'it's on the roadmap' from them — it's almost like a joke at this point."</p><p class="pq-attr">Tony Riesen · Business Systems Leader · Dandy</p></div>
               <div class="pq"><p class="pq-text">"They had promised all the things I was talking about, like being able to do defaults and apply them to things. None of that happened."</p><p class="pq-attr">David Ciano · Sales Team Lead · GovWell</p></div>
-              <div class="pq"><p class="pq-text">"Gong has just stopped innovating. They say they have AI, but their LLM is not really... With Gong it's just roadblock after roadblock to be able to start extracting data."</p><p class="pq-attr">Will Marty · Sales Manager · B2B SaaS</p></div>
+              <div class="pq"><p class="pq-text">"Gong has just stopped innovating. They say they have AI, but their LLM is not really... With Gong it's just roadblock after roadblock to be able to start extracting data."</p><p class="pq-attr">Anonymous · Sales Manager · B2B SaaS</p></div>
               <div class="pq"><p class="pq-text">"I know it's something that Gong says is coming in like maybe the new year... I honestly don't know if this is on the roadmap or what."</p><p class="pq-attr">Anonymous · Sales Enablement Director · SaaS</p></div>
               <div class="pq"><p class="pq-text">"Orchestration was supposed to drop last year. I was at [their conference], meeting with the project leads — and then they left."</p><p class="pq-attr">Anonymous · Revenue Leader · Sales Advisory</p></div>
               <div class="pq"><p class="pq-text">"I still don't think they custom-fill CRM fields out of the box. You have to go in and copy and paste. I think they could have shipped something a year ago."</p><p class="pq-attr">Anonymous · Revenue Leader · Sales Advisory</p></div>
@@ -1061,8 +1256,8 @@
 
             <!-- 1: Post-Sale Abandonment -->
             <div class="pain-category" data-cat="1">
-              <div class="pq"><p class="pq-text">"Our AE got let go the week after we signed. They assigned us another AE — he got let go. The sales manager got assigned to us and he didn't give a f*ck, because obviously it's not his own book of business. They are an absolute f*ing mess."</p><p class="pq-attr">David Ciano · Sales Team Lead · GovWell</p></div>
-              <div class="pq"><p class="pq-text">"I didn't feel the human component of anybody who worked at that company. For a company that preaches about having the best sales process — I did not feel it."</p><p class="pq-attr">Shane Lieberman · Head of Business Development · GovWell</p></div>
+              <div class="pq"><p class="pq-text">"Our AE got let go the week after we signed. They assigned us another AE — he got let go. The sales manager got assigned to us and he didn't care, because obviously it's not his own book of business. It has been a really frustrating experience."</p><p class="pq-attr">David Ciano · Sales Team Lead · GovWell</p></div>
+              <div class="pq"><p class="pq-text">"I didn't feel the human component of anybody who worked at that company. For a company that preaches about having the best sales process — I did not feel it."</p><p class="pq-attr">David Ciano · Sales Team Lead · GovWell</p></div>
               <div class="pq"><p class="pq-text">"I really appreciated the amount of love and support we got during implementation and ongoing customization. I was very disappointed over time with how that shifted at Gong in my seven, eight years using them."</p><p class="pq-attr">Anonymous · CRO · Tech</p></div>
               <div class="pq"><p class="pq-text">"The fact that you guys are there to actually support us with the prompt building, the scorecard building, the automations — that's a huge thing. Gong doesn't currently give us that level of hands-on support."</p><p class="pq-attr">Anonymous · Sales Enablement Lead · Real Estate</p></div>
               <div class="pq"><p class="pq-text">"Their customer service has been pretty abysmal. They actually tried to upsell us despite some outstanding customer service issues. We have an unresolved ticket from like three months ago. There is a zero percent chance we renew with them."</p><p class="pq-attr">David Ciano · Sales Team Lead · GovWell</p></div>
@@ -1077,7 +1272,7 @@
               <div class="pq"><p class="pq-text">"In Gong, you have to have filters on the scorecard itself for which types of calls to score. It's not smart enough to know that it's a discovery call, unless the word discovery is present in the invite."</p><p class="pq-attr">Anonymous · Revenue Intelligence Lead · SaaS</p></div>
               <div class="pq"><p class="pq-text">"The challenges we've had with Gong scorecards — it's just a cumulative aggregate of what a score is, and a 7 for someone could mean a totally different 7 for someone else."</p><p class="pq-attr">Anonymous · Sales Enablement Manager · HealthTech</p></div>
               <div class="pq"><p class="pq-text">"Gong you have to go in and manually score... AI-suggested scores that you still need to manually apply. That means somewhere between 3 and 10% of calls get scored."</p><p class="pq-attr">Anonymous · Sales Enablement Lead · Employee Recognition SaaS</p></div>
-              <div class="pq"><p class="pq-text">"We've got our Gong scorecards. Do we use them? No. Are they built out? Yes. Like, they're there. Gong does coaching — it's just not very accurate."</p><p class="pq-attr">Will Marty · Sales Manager · B2B SaaS</p></div>
+              <div class="pq"><p class="pq-text">"We've got our Gong scorecards. Do we use them? No. Are they built out? Yes. Like, they're there. Gong does coaching — it's just not very accurate."</p><p class="pq-attr">Anonymous · Sales Manager · B2B SaaS</p></div>
               <div class="pq"><p class="pq-text">"We have scorecards in place. We don't have scorecards adopted. There's no impetus for managers to use them because there's not a requirement at the top level to say they should use them."</p><p class="pq-attr">Anonymous · Sales Enablement Lead · FinTech</p></div>
             </div>
 
@@ -1107,7 +1302,7 @@
               <div class="pq"><p class="pq-text">"Gong is really expensive. I think we're spending like $150,000, $160,000 a year right now... We're almost close to the point of paying more for Gong than we do for our core CRM. It's crazy, crazy to think about, considering there are hundreds of people on Salesforce."</p><p class="pq-attr">Anonymous · Head of Sales Ops · Large Enterprise SaaS</p></div>
               <div class="pq"><p class="pq-text">"We're paying for 17 licenses. We're only using like 10, and it's over a hundred dollars per month per person. We're not using any of the coaching, none of the integration with CRM — and so we know we're paying too much for what we're actually using it for."</p><p class="pq-attr">Anonymous · Head of Operations · Tech SMB</p></div>
               <div class="pq"><p class="pq-text">"We pay them a lot of money... and we're not getting what we need out of it."</p><p class="pq-attr">Anonymous · VP of Customer Success · SaaS</p></div>
-              <div class="pq"><p class="pq-text">"I'm not looking for anything crazy, which is why I was so frustrated on why Gong is so f*cking expensive. Because I'm like, I just need the bare sh*t."</p><p class="pq-attr">Anonymous · Head of Sales Enablement · SaaS SMB</p></div>
+              <div class="pq"><p class="pq-text">"I'm not looking for anything crazy, which is why I was so frustrated on why Gong is so so expensive. Because I'm like, I just need the bare sh*t."</p><p class="pq-attr">Anonymous · Head of Sales Enablement · SaaS SMB</p></div>
               <div class="pq"><p class="pq-text">"If you've got a forecast seat, you have to have a standard seat — even if you don't do any call recordings. So Johan, who only looks at data for five minutes, has a forecast and a standard seat... we are all a bit frustrated that we're having to pay a lot for something that's more for senior people."</p><p class="pq-attr">Anonymous · RevOps Lead · FinTech</p></div>
               <div class="pq"><p class="pq-text">"They've priced themselves out of where most of the market wants to be."</p><p class="pq-attr">Anonymous · Revenue Leader · Sales Advisory</p></div>
             </div>
@@ -1131,41 +1326,37 @@
         <div class="compare-attn">
                     <!-- AI summary header - Attention side -->
           <div class="attn-header">
-            <div class="header-wordmark"><img src="attention-logotype-color.png" style="height:26px;width:auto;" alt="Attention"></div>
+            <div class="header-wordmark" style="gap:8px;font-size:16px;font-weight:700;letter-spacing:-0.3px;">
+              <img src="attention-icon-color.png" style="width:24px;height:24px;border-radius:6px;object-fit:cover;flex-shrink:0;" alt="Attention">
+              Attention
+            </div>
             <div class="attn-summary active" data-cat="0">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
+              <p class="ai-summary-verdict">Ships fast, responds faster. Customers feel heard.</p>
               <p class="ai-summary-text">Attention's pace of innovation is consistently cited as a top differentiator. Features customers request — from live MCP integration to custom CRM workflows — ship within weeks, not quarters.</p>
-              <p class="ai-summary-verdict">Verdict: Ships fast, responds faster. Customers feel heard.</p>
             </div>
             <div class="attn-summary" data-cat="1">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
+              <p class="ai-summary-verdict">Support is a competitive advantage, not an afterthought.</p>
               <p class="ai-summary-text">Dedicated Field Deployment Engineers provide hands-on support during and after implementation. Customers describe prompt building, scorecard design, and automation workflows — all built together, not handed off.</p>
-              <p class="ai-summary-verdict">Verdict: Support is a competitive advantage, not an afterthought.</p>
             </div>
             <div class="attn-summary" data-cat="2">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
+              <p class="ai-summary-verdict">Coaching that runs on every call, not just the ones managers remember.</p>
               <p class="ai-summary-text">Attention's AI coaching adapts to each team's specific methodology and call type. Scorecards apply automatically to 100% of calls without manager intervention — adoption rates customers say are unrecognizable vs. Gong.</p>
-              <p class="ai-summary-verdict">Verdict: Coaching that runs on every call, not just the ones managers remember.</p>
             </div>
             <div class="attn-summary" data-cat="3">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
+              <p class="ai-summary-verdict">Answers in minutes, not the next morning.</p>
               <p class="ai-summary-text">Summaries and transcripts are available within seconds of call completion. Customers describe asking natural-language questions across hundreds of calls as transformative for pipeline reviews and competitive intelligence.</p>
-              <p class="ai-summary-verdict">Verdict: Answers in minutes, not the next morning.</p>
             </div>
             <div class="attn-summary" data-cat="4">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
+              <p class="ai-summary-verdict">Works with your CRM, not just the demo one.</p>
               <p class="ai-summary-text">Attention auto-populates any CRM field — standard or custom — directly from call content. Customers across Salesforce, HubSpot, and proprietary CRMs report dramatically improved data hygiene with zero manual note-taking. Deals that would have slipped through are now surfaced automatically.</p>
-              <p class="ai-summary-verdict">Verdict: Works with your CRM, not just the demo one.</p>
             </div>
             <div class="attn-summary" data-cat="5">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
+              <p class="ai-summary-verdict">You pay for what you use. It gets better without getting more expensive.</p>
               <p class="ai-summary-text">Customers switching from Gong report immediate cost relief alongside meaningful feature gains. Contract terms are flexible and sized to business need — no add-on modules, no surprise upsells.</p>
-              <p class="ai-summary-verdict">Verdict: You pay for what you use. It gets better without getting more expensive.</p>
             </div>
             <div class="attn-summary" data-cat="6">
-              <div class="ai-badge">✦ Summary · Generated by Attention's Super Agent across 400+ calls</div>
+              <p class="ai-summary-verdict">One tool that connects to everything. No duct tape required.</p>
               <p class="ai-summary-text">Attention's integrations with Salesforce, HubSpot, Slack, and Snowflake are described as deep and reliable. Teams consolidate workflows that previously required 3–4 separate tools, with data flowing automatically.</p>
-              <p class="ai-summary-verdict">Verdict: One tool that connects to everything. No duct tape required.</p>
             </div>
           </div>
           <div class="attn-body">
@@ -1212,7 +1403,7 @@
               <div class="pq"><p class="pq-text">"It extracts dozens of CRM fields from my calls and automatically syncs them to Salesforce, saving me hours of manual note-taking every week."</p><p class="pq-attr">Joseph B. · Account Executive · Large Enterprise (G2)</p></div>
               <div class="pq"><p class="pq-text">"It honestly feels like it's uncovering 'fallen through the cracks' opportunities that I wouldn't have found just manually working Salesforce — accounts that have mentioned software pain but never progressed. Just really prioritizing ICP real conversation signals instead of just activity."</p><p class="pq-attr">Kent Tamayo · Sales Leader · Rematter</p></div>
               <div class="pq"><p class="pq-text">"Pain points, decision criteria, competitive intel, and next steps get logged without me typing notes."</p><p class="pq-attr">Lucas T. · Enterprise Sales Manager · Mid-Market SaaS (G2)</p></div>
-              <div class="pq"><p class="pq-text">"Salesforce hygiene is substantially improved. The necessary notes are there — the concept makes all the sense in the world."</p><p class="pq-attr">Anonymous · Revenue Leader · Employee Recognition SaaS</p></div>
+              
             </div>
 
             <!-- cat 5: Right-Sized Pricing -->
@@ -1237,17 +1428,19 @@
 
           <div class="attn-nav">
             <div class="attn-nav-item active" data-cat="0">Innovation</div>
-            <div class="attn-nav-item" data-cat="1">Dedicated FDE's</div>
-            <div class="attn-nav-item" data-cat="2">Smart Coaching</div>
-            <div class="attn-nav-item" data-cat="3">Fast Analysis</div>
-            <div class="attn-nav-item" data-cat="4">Any CRM Field</div>
-            <div class="attn-nav-item" data-cat="5">One Suite</div>
-            <div class="attn-nav-item" data-cat="6">Integrated, Open</div>
+            <div class="attn-nav-item" data-cat="1">Support</div>
+            <div class="attn-nav-item" data-cat="2">Coaching</div>
+            <div class="attn-nav-item" data-cat="3">Summaries</div>
+            <div class="attn-nav-item" data-cat="4">Autofill</div>
+            <div class="attn-nav-item" data-cat="5">Pricing</div>
+            <div class="attn-nav-item" data-cat="6">Platform</div>
           </div>
 
           </div><!-- /.attn-body -->
         </div>
 
+        </div><!-- /.compare-box-inner -->
+        <div class="compare-source-footer"><span class="footer-badge-grad">✦ Sourced by Attention's Super Agent in under 10 minutes · 400+ customer calls · G2 reviews noted separately</span></div>
       </div><!-- /.compare-box -->
 
       <!-- REMOVE below once compare-box is complete — keeping old SVG hidden for JS compat -->
@@ -1337,8 +1530,8 @@
     <div class="mid-cta-border"></div>
     <div class="mid-cta-border-b"></div>
     <h2 class="mid-cta-headline">See why teams are switching.</h2>
-    <p class="mid-cta-sub">30 minutes to prove why you should drop Gong and live life with Attention.</p>
-    <a href="#closing-cta" class="btn-primary" style="font-size:18px;padding:18px 40px;">
+    <p class="mid-cta-sub">15 minutes to prove why you should drop Gong and <span class="footer-badge-grad">live life with Attention.</span></p>
+    <a href="https://attention.com/book" class="btn-primary" style="font-size:18px;padding:18px 40px;">
       Book a Demo
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
@@ -1385,9 +1578,9 @@
   <section id="closing-cta">
     <div class="closing-glow"></div>
     <div class="closing-headline">Ready to make<br/><span class="grad-text">the switch?</span></div>
-    <p class="closing-sub">Your CRM updates itself. Your reps are coached in absentia. Any question about your process is answered in minutes.</p>
+    <p class="closing-sub">Your CRM updates itself. Your reps are coached in absentia. Any question about your process is answered in minutes.<sup style="font-size:10px;opacity:0.5;">1</sup></p>
     <div class="closing-actions">
-      <a href="#" class="btn-primary" style="font-size:18px;padding:20px 44px;">
+      <a href="https://attention.com/book" class="btn-primary" style="font-size:18px;padding:20px 44px;">
         Book a Demo
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -1402,11 +1595,12 @@
       <img src="attention-icon-color.png" class="logo-icon" style="border-radius:8px;object-fit:cover;" alt="Attention">
       Attention
     </div>
-    <div>© 2025 Attention. All rights reserved.</div>
+    <div>© 2026 Attention. All rights reserved.</div>
+    <div style="width:100%;text-align:center;margin-top:12px;font-size:11px;color:rgba(255,255,255,0.3);">¹ Customer-reported outcomes. Individual results may vary.</div>
     <div style="display:flex;gap:24px;">
-      <a href="#" style="color:var(--text-subtle);">Privacy</a>
-      <a href="#" style="color:var(--text-subtle);">Terms</a>
-      <a href="#" style="color:var(--text-subtle);">Contact</a>
+      <a href="https://www.attention.com/privacy" style="color:var(--text-subtle);">Privacy</a>
+      <a href="https://www.attention.com/terms" style="color:var(--text-subtle);">Terms</a>
+      <a href="https://www.attention.com/contact" style="color:var(--text-subtle);">Contact</a>
     </div>
   </footer>
 
@@ -1414,21 +1608,20 @@
     // ─── Logo marquee ───
     (function() {
       const logos = [
-        // GovWell
-        `<img src="file:///Users/harryabram/Downloads/GovWell/GovWell_idc4qqDPTO_0.png" alt="GovWell" style="height:28px;width:auto;">`,
-        // Headway
-        `<svg viewBox="0 0 505.51 96.08" style="height:30px;width:auto;" xmlns="http://www.w3.org/2000/svg"><path d="M137.93 111.3a51.35 51.35 0 10-95.8 25.7H131a51 51 0 006.93-25.7z" fill="#12c97a" transform="translate(-35.24 -59.96)"/><path fill="rgba(255,255,255,0.85)" transform="translate(-35.24 -59.96)" d="M184.33 79.93h11.33V103h24.94V79.93h11.32v57H220.6v-23.18h-24.94V137h-11.33zM277.59 120.68h-28.44c.89 5.62 6 7.41 10.43 7.41a13.4 13.4 0 0011.24-5.46l6.77 6.68a22.69 22.69 0 01-18.09 8.56c-10.92 0-21.68-6.93-21.68-21.35 0-14.26 10.51-21.68 21-21.68 10 0 19.08 6.85 19.08 20.62a45.49 45.49 0 01-.31 5.22zm-19.15-16.47a8.91 8.91 0 00-9.29 8.07h18.25c-.49-5.22-4.07-8.07-8.96-8.07zM365 101.44V79.93h11v57h-11v-5.05a15.9 15.9 0 01-13 6c-10.43 0-20.78-7.25-20.78-21.6s10.1-21.43 20.29-21.43c6.03-.01 10.84 2.35 13.49 6.59zm-.09 14.92c0-9-5.94-12.23-11.4-12.23-6.36 0-11.17 4.32-11.17 12.14 0 7.58 4.65 12.31 11.33 12.31 6.07 0 11.2-3.99 11.2-12.22zM428.6 121l8.06-25.1H449L433.73 137h-10.51l-9-24-8.88 24h-10.48l-15.08-41.1H392l8.06 25 8.81-25h10.75zM540.76 135.43c0 13.44-10.6 20.61-21.52 20.61-9.29 0-17.85-5.13-20.54-14.91l9.95-3.59c1.38 6.28 6 9.05 11 9.05 5.78 0 10.18-3.42 10.18-10.35v-6a13.8 13.8 0 01-11.56 6.27c-8.56 0-16.71-5.53-16.71-16.7v-24h11.08v22.49c0 5.22 2.69 8.81 8 8.81 5.62 0 9-4.32 9-11.17V95.9h11.09zM314.94 95.9v5c-2.53-4.15-6.93-6-12.23-6-10.51 0-21.27 7.42-21.27 21.76 0 13.69 9.94 21.27 20.21 21.27a17.05 17.05 0 0013.29-5.93v5h11V95.9zm-11.74 32.43c-5.79 0-10.76-4.56-10.76-12 0-7.58 5.13-12.15 11-12.15s11.17 4.65 11.17 12c0 7.51-5.46 12.15-11.41 12.15zM481.87 95.9v5c-2.53-4.15-6.94-6-12.23-6-10.51 0-21.27 7.42-21.27 21.76 0 13.69 9.94 21.27 20.21 21.27a17.05 17.05 0 0013.29-5.93v5h11V95.9zm-11.74 32.43c-5.79 0-10.76-4.56-10.76-12 0-7.58 5.13-12.15 11-12.15s11.17 4.65 11.17 12c0 7.51-5.46 12.15-11.41 12.15z"/></svg>`,
-        // Enigmatic (currentColor)
-        `<svg viewBox="0 0 124 43" style="height:26px;width:auto;color:rgba(255,255,255,0.85);" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H18.7849V5.85966H5.9967V13.0734H18.7849V18.9331H5.9967V26.2946H18.7849V32.1543H0V0Z"/><path d="M20.6393 10.1928H26.4914V12.6303C27.816 10.8576 29.9594 9.62658 32.4882 9.62658C37.5456 9.62658 40.7487 13.0242 40.7487 18.7361V32.0804H34.752V19.4255C34.752 16.4218 33.4274 14.6738 30.7542 14.6738C28.0809 14.6738 26.636 16.2987 26.636 19.9918V32.105H20.6393V10.1928ZM69.7448 0.664751C71.8641 0.664751 73.3332 2.1666 73.3332 4.33319C73.3332 6.49979 71.8641 8.00163 69.7448 8.00163C67.6255 8.00163 66.1564 6.49979 66.1564 4.33319C66.1564 2.1666 67.6255 0.664751 69.7448 0.664751ZM66.8307 10.1928H72.8274V32.105H66.8307V10.1928ZM74.6577 10.1928H80.5099V12.6303C81.8345 10.8576 83.9779 9.62658 86.5067 9.62658C91.5641 9.62658 94.7672 13.0242 94.7672 18.7361V32.0804H88.7704V19.4255C88.7704 16.4218 87.4459 14.6738 84.7727 14.6738C82.0994 14.6738 80.6544 16.2987 80.6544 19.9918V32.105H74.6577V10.1928ZM96.0917 21.2228C96.0917 14.8215 101.029 9.6512 107.266 9.6512C113.504 9.6512 118.441 14.8215 118.441 21.2228V23.1186H101.655C102.329 25.7037 104.184 27.4764 107.242 27.4764C110.301 27.4764 111.096 26.5162 111.77 24.7435H118.152C116.418 29.643 112.83 32.6467 107.242 32.6467C101.655 32.6467 96.0677 27.4764 96.0677 21.0751V21.2228H96.0917ZM59.0278 10.1928V12.4825C57.6069 10.833 55.3912 9.6512 52.5735 9.6512C47.6846 9.6512 42.0492 13.3196 42.0492 21.1736C42.0492 29.0275 47.9014 32.6959 52.4772 32.6959C57.053 32.6959 57.5828 31.4895 59.0278 29.7661V32.0804C59.0278 34.961 57.077 37.2261 54.4761 37.2261C51.8751 37.2261 50.3097 36.2166 49.539 34.444H43.1329C44.3852 39.3188 48.3349 42.9134 54.4761 42.9134C60.6173 42.9134 64.9522 38.5802 64.9522 31.9327V10.2421H59.0278V10.1928Z"/><path d="M119.156 10.5187H118.362V9.97656H120.569V10.5187H119.775V12.965H119.156V10.5187Z"/><path d="M120.807 9.97656H121.699L122.203 11.5988C122.254 11.7554 122.304 11.9333 122.352 12.1325C122.375 12.2207 122.396 12.3089 122.416 12.3972H122.425C122.473 12.178 122.54 11.9261 122.625 11.6415L123.129 9.97656H124V12.965H123.398V12.0642C123.398 11.6031 123.408 11.1292 123.428 10.6425H123.454L122.732 12.965H122.079L121.353 10.6383L121.379 10.6297C121.399 11.1221 121.409 11.6003 121.409 12.0642V12.965H120.807V9.97656Z"/></svg>`,
-        // Hearth
-        `<svg viewBox="0 0 215 70" style="height:28px;width:auto;" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M84.3,41.2H94V30.1h5.7v27.9H94V46h-9.7v12.1h-5.7V30.1h5.7V41.2z M119.8,30.1v4.8h-11.7v6.3h10.5V46h-10.5v7.3h11.7v4.8h-17.4V30.1H119.8z M121.6,58.1l9.7-27.9h5.4l9.7,27.9h-6l-1.7-5.3h-9.3l-1.7,5.3H121.6z M130.9,48h6.3l-3.2-9.8L130.9,48z M163.7,58.1l-5-11h-4.5v11h-5.7V30.1h10c6.4,0,10.4,2.9,10.4,8.5c0,3.8-1.7,6.2-4.8,7.5l5.8,11.9H163.7z M158,42.3c3.4,0,5.3-0.7,5.3-3.6s-1.9-3.7-5.3-3.7h-3.8v7.4H158z M191.1,30.1v4.8h-7.7v23.1h-5.7V34.9h-7.7v-4.8H191.1z M199.3,41.2h9.7V30.1h5.7v27.9H209V46h-9.7v12.1h-5.7V30.1h5.7V41.2z"/><path fill="white" d="M44.9,18l22.4,12.1V58L44.9,70V42.8L22.6,30.1L44.9,18z M22.6,0v27.9L0,40.3V12.1L22.6,0z"/><path fill="white" d="M22.6,30.1V58L0,70V42.8L22.6,30.1z"/></svg>`,
-        // Hallow
-        `<svg viewBox="0 0 113 26" style="height:24px;width:auto;" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M15.8064 0.565216V10.4565H6.03518V0.565216H0V25.4348H6.03518V15.5435H15.8064V25.4348H21.8416V0.565216H15.8064Z"/><path fill="white" d="M24.7057 20.1712C24.7057 23.3152 26.933 26 31.2438 26C33.9381 26 35.9857 24.7989 37.3868 22.75C37.7819 24.7283 38.9674 26 41.2306 26C42.5598 26 43.3501 25.7527 44.2482 25.3641V21.4076C43.6734 21.6196 42.5239 21.337 42.5239 19.6413V15.1196C42.5239 8.76087 38.7878 6.78261 34.1177 6.78261C29.2321 6.78261 26.1067 9.22011 25.2805 12.4348L30.7409 13.5652C31.136 12.2582 31.9982 11.163 33.974 11.163C36.0576 11.163 36.7761 12.4348 36.7761 14.4837C30.5972 14.0951 24.7057 15.0489 24.7057 20.1712ZM30.4535 19.9592C30.4535 17.769 33.7944 17.2745 36.7761 17.663C36.5246 19.6413 34.908 21.6549 32.9322 21.8315C31.6749 21.9375 30.4535 21.5136 30.4535 19.9592Z"/><path fill="white" d="M46.5535 0V25.4348H52.3013V0H46.5535Z"/><path fill="white" d="M56.0606 0V25.4348H61.8084V0H56.0606Z"/><path fill="white" d="M73.9088 6.78261C67.7659 6.78261 64.1376 11.0924 64.1376 16.3913C64.1376 21.6902 67.8736 26 73.9088 26C79.6926 26 83.6801 21.6902 83.6801 16.3913C83.6801 11.0924 79.6566 6.78261 73.9088 6.78261ZM73.9088 20.913C71.5379 20.913 69.8854 18.8641 69.8854 16.3913C69.8854 13.9185 71.5379 11.8696 73.9088 11.8696C76.2798 11.8696 77.9323 13.9185 77.9323 16.3913C77.9323 18.8641 76.2798 20.913 73.9088 20.913Z"/><path fill="white" d="M106.965 7.34783L104.091 17.875L100.858 7.34783H95.8285L92.5953 17.875L89.7214 7.34783H83.6862L89.7214 25.4348H94.8944L98.3431 14.2011L101.792 25.4348H106.965L113 7.34783H106.965Z"/></svg>`,
-        // StockIQ
-        `<svg viewBox="0 0 231.3 56.46" style="height:28px;width:auto;" xmlns="http://www.w3.org/2000/svg"><g fill="#f93549"><path d="m29.59,43.03h13.43v-13.44l-13.45-.02.02,13.45Z"/><path d="m43.05,56.46h13.46v-13.43h-13.46v13.43Z"/><path d="m14.65,43.03h11.37v-17.01h17.01v-11.37H14.65v28.39Z"/><path d="m.02,43.03h11.09V11.12h31.92V.02L0,0l.02,43.03Z"/></g><g fill="rgba(255,255,255,0.85)"><path d="m80.74,7c-1.59-1.2-3.41-1.59-5.43-1.59-1.59,0-3.15.5-3.15,1.72,0,1.59,1.56,1.82,3.84,2.05,4.61.5,9.41,2.35,9.41,7.69s-4.97,7.52-10.17,7.55c-4.17.03-7.16-.7-10.37-4.08l3.61-4.14c2.28,2.22,4.84,2.62,6.79,2.62,2.16,0,3.65-.77,3.65-2.05,0-1.16-1.32-1.89-3.88-2.12-5.07-.47-9.44-1.76-9.44-7.52,0-4.9,4.8-7.02,9.71-7.02,3.48,0,6.19.79,8.68,2.75l-3.25,4.15Z"/><path d="m93.19,5.97h-6.76V.57h20.07v5.4h-6.79v17.79h-6.52V5.97Z"/><path d="m120.6,24.31c-7.58,0-12.89-4.4-12.89-12.15S113.02,0,120.6,0s12.89,4.44,12.89,12.16-5.27,12.15-12.89,12.15Zm0-18.71c-3.74,0-6.33,2.72-6.33,6.56s2.62,6.56,6.33,6.56,6.33-2.72,6.33-6.56-2.48-6.56-6.33-6.56Z"/><path d="m157.62,20.74c-2.61,2.59-5.79,3.61-9.3,3.61-9.11,0-12.65-5.73-12.69-12.02-.03-5.97,3.97-12.29,12.69-12.29,3.35,0,6.36,1.16,8.98,3.71l-4.04,3.97c-1.66-1.59-3.38-2.02-4.94-2.02-4.47,0-6.23,3.64-6.2,6.66.03,3.01,1.62,6.43,6.2,6.43,1.56,0,3.81-.67,5.46-2.36l3.84,4.31Z"/><path d="m180.8.96l-9.4,10.97c3.25,3.58,6.99,7.75,10.2,11.43v.4h-8.11l-6.63-7.72v7.72h-6.56V.57h6.56v7.62c1.99-2.45,4.14-5.17,6.09-7.62h7.85v.39Z"/><path d="m191.61,23.75V.96h6.53v22.79h-6.53Z"/><rect x="224.5" y="23.76" width="6.79" height="6.8"/><path d="m201.7.95v22.8h22.81V.95h-22.81Zm16.32,16.31h-9.83V7.44h9.83v9.82Z"/></g></svg>`,
-        // Occupier
-        `<svg viewBox="0 0 130 30" style="height:26px;width:auto;" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.06201 12.0966V2.0161L21.1628 10.9939V12.0966H8.06201ZM8.06201 12.6007V14.1127H21.1628V12.6007H8.06201ZM8.06201 16.1288V14.6168H21.1628V16.1288H8.06201ZM8.06201 16.6329V18.1449H21.1628V16.6329H8.06201ZM8.06201 20.161V18.649H21.1628V20.161H8.06201ZM8.06201 20.6651V22.1771H21.1628V20.6651H8.06201ZM8.06201 24.1932V22.6812H21.1628V24.1932H8.06201ZM8.06201 24.6973V26.2093H21.1628V24.6973H8.06201Z" fill="#B1ECDA"/><path d="M40.9753 25.4431C44.9861 25.4431 47.8481 22.4996 47.8481 18.4876C47.8481 14.4756 44.9861 11.5321 40.9753 11.5321C36.9442 11.5321 34.1024 14.4756 34.1024 18.4876C34.1024 22.4996 36.9442 25.4431 40.9753 25.4431ZM40.9753 23.3464C38.2543 23.3464 36.521 21.2497 36.521 18.4876C36.521 15.7054 38.2543 13.6288 40.9753 13.6288C43.676 13.6288 45.4295 15.7054 45.4295 18.4876C45.4295 21.2497 43.676 23.3464 40.9753 23.3464ZM56.1651 25.4431C58.8659 25.4431 60.5387 24.0117 61.5667 22.3988L59.5511 21.3908C58.9062 22.4996 57.5961 23.3464 56.1651 23.3464C53.5046 23.3464 51.5294 21.29 51.5294 18.4876C51.5294 15.6449 53.5046 13.6288 56.1651 13.6288C57.5961 13.6288 58.9062 14.4554 59.5511 15.5844L61.5465 14.5361C60.5589 12.9232 58.8659 11.5321 56.1651 11.5321C52.1946 11.5321 49.1108 14.3344 49.1108 18.4876C49.1108 22.6206 52.1946 25.4431 56.1651 25.4431ZM69.5005 25.4431C72.2013 25.4431 73.8741 24.0117 74.902 22.3988L72.8865 21.3908C72.2416 22.4996 70.9315 23.3464 69.5005 23.3464C66.84 23.3464 64.8648 21.29 64.8648 18.4876C64.8648 15.6449 66.84 13.6288 69.5005 13.6288C70.9315 13.6288 72.2416 14.4554 72.8865 15.5844L74.8819 14.5361C73.8943 12.9232 72.2013 11.5321 69.5005 11.5321C65.5299 11.5321 62.4462 14.3344 62.4462 18.4876C62.4462 22.6206 65.5299 25.4431 69.5005 25.4431ZM82.1909 25.4431C86.101 25.4431 88.0157 23.2053 88.0157 19.8787V11.7538H85.6173V19.8182C85.6173 21.9553 84.4281 23.3464 82.1909 23.3464C79.9537 23.3464 78.7645 21.9553 78.7645 19.8182V11.7538H76.3661V19.8787C76.3661 23.2053 78.301 25.4431 82.1909 25.4431ZM92.8272 25.2012V20.161H96.3947C99.1962 20.161 100.768 18.2457 100.768 15.9675C100.768 13.6691 99.2164 11.7538 96.3947 11.7538H90.4691V25.2012H92.8272ZM96.0722 18.0844H92.8272V13.8304H96.0722C97.4024 13.8304 98.3497 14.6772 98.3497 15.9675C98.3497 17.2376 97.4024 18.0844 96.0722 18.0844ZM104.707 25.2012V11.7538H102.348V25.2012H104.707ZM116.371 25.2012V23.1246H109.519V19.3747H116.23V17.2981H109.519V13.8304H116.371V11.7538H107.16V25.2012H116.371ZM128.81 25.2012L125.504 19.919C127.137 19.6569 128.709 18.3465 128.709 15.9675C128.709 13.4675 126.956 11.7538 124.295 11.7538H118.39V25.2012H120.748V20.1811H123.106L126.069 25.2012H128.81ZM123.993 18.1045H120.748V13.8304H123.993C125.323 13.8304 126.291 14.657 126.291 15.9473C126.291 17.2578 125.323 18.1045 123.993 18.1045Z" fill="#B1ECDA"/></svg>`,
-      ];
+        // GovWell — fixed SVG (was broken local PNG)
+        `<svg viewBox="0 0 181 38" style="height:24px;width:auto;" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M26.8631 17.4696C26.8874 17.1906 26.9008 16.9093 26.9008 16.6242C26.9008 11.291 22.4915 6.96685 17.0517 6.96685C11.6119 6.96685 7.20352 11.2903 7.20352 16.6242C7.20352 16.9093 7.21684 17.1906 7.24114 17.4696H26.8624H26.8631Z"/><path d="M22.6345 0.000359171C20.752 -0.013968 19.2593 0.417354 18.3534 0.754419V6.13313C19.2585 5.79606 20.7512 5.36474 22.6345 5.37907C24.4248 5.39264 25.849 5.80285 26.7357 6.13313V0.754419C25.849 0.424141 24.4248 0.0139322 22.6345 0.000359171Z"/><rect x="15.8455" y="8.24033" width="8.24032" height="2.61679" transform="rotate(-90 15.8455 8.24033)"/><rect x="4.53448" y="18.9613" width="25.2386" height="2.55132"/><rect x="3.05176e-05" y="23.0044" width="34.3078" height="2.55132"/><rect x="1.55075" y="33.9569" width="6.9094" height="4.95727" transform="rotate(-90 1.55075 33.9569)"/><rect x="10.3004" y="33.9569" width="6.9094" height="4.95727" transform="rotate(-90 10.3004 33.9569)"/><rect x="19.05" y="33.9569" width="6.9094" height="4.95727" transform="rotate(-90 19.05 33.9569)"/><rect x="27.7997" y="33.9569" width="6.9094" height="4.95727" transform="rotate(-90 27.7997 33.9569)"/><rect x="3.05176e-05" y="35.4487" width="34.3078" height="2.55132"/><path d="M55.1961 32.8698C47.3301 32.8698 42.9601 27.7602 42.9601 20.6338V20.3648C42.9601 13.1375 48.1032 8.09523 55.1961 8.09523C60.5409 8.09523 65.3143 10.5492 65.8858 16.4991H60.4737C60.0031 13.6754 58.1542 12.398 55.2633 12.398C51.095 12.398 48.6411 15.5242 48.6411 20.4321V20.701C48.6411 25.3399 50.6244 28.6678 55.3305 28.6678C59.3644 28.6678 61.0115 26.3484 61.1124 23.5919H55.7003V19.6253H66.4908V22.1801C66.4908 28.6006 62.3898 32.8698 55.1961 32.8698ZM78.5343 29.1721C81.2572 29.1721 82.8371 27.1552 82.8371 23.8272V23.5919C82.8371 20.2304 81.2572 18.2135 78.5343 18.2135C75.8451 18.2135 74.2316 20.1632 74.2316 23.5247V23.7936C74.2316 27.1552 75.7779 29.1721 78.5343 29.1721ZM78.5007 32.8698C73.2567 32.8698 69.2565 29.3738 69.2565 23.8945V23.6255C69.2565 18.1126 73.2567 14.5158 78.5343 14.5158C83.8119 14.5158 87.7786 18.0454 87.7786 23.5247V23.7936C87.7786 29.3402 83.7783 32.8698 78.5007 32.8698ZM95.4657 32.5L89.0452 14.9192H94.2556L98.4575 27.4913L102.626 14.9192H107.332L100.945 32.5H95.4657ZM114.366 32.5L108.517 8.465H114.03L117.795 25.071L121.896 8.465H126.535L130.804 25.1718L134.704 8.465H139.746L133.897 32.5H128.35L124.014 15.894L119.61 32.5H114.366ZM149.857 32.8698C144.546 32.8698 140.68 29.5418 140.68 23.9281V23.6592C140.68 18.1126 144.613 14.5158 149.723 14.5158C154.261 14.5158 158.294 17.1714 158.294 23.4575V24.8021H145.621C145.756 27.7266 147.336 29.4074 149.991 29.4074C152.244 29.4074 153.353 28.4325 153.656 26.9535H158.261C157.689 30.752 154.664 32.8698 149.857 32.8698ZM145.689 21.8103H153.555C153.387 19.1547 152.042 17.8773 149.723 17.8773C147.538 17.8773 146.058 19.3228 145.689 21.8103ZM162.292 32.5V6.95231H167.132V32.5H162.292ZM172.386 32.5V6.95231H177.226V32.5H172.386Z"/></svg>`,
+        // Engine — PNG with SVG filter to strip white background
+        `<img src="engine-logo.png" alt="Engine" style="height:28px;width:auto;filter:url(#engine-remove-white);">`,
+        // Headway — optical height 26px (circle icon + bold wordmark)
+        `<svg viewBox="0 0 505.51 96.08" style="height:26px;width:auto;" xmlns="http://www.w3.org/2000/svg"><path d="M137.93 111.3a51.35 51.35 0 10-95.8 25.7H131a51 51 0 006.93-25.7z" fill="#12c97a" transform="translate(-35.24 -59.96)"/><path fill="rgba(255,255,255,0.85)" transform="translate(-35.24 -59.96)" d="M184.33 79.93h11.33V103h24.94V79.93h11.32v57H220.6v-23.18h-24.94V137h-11.33zM277.59 120.68h-28.44c.89 5.62 6 7.41 10.43 7.41a13.4 13.4 0 0011.24-5.46l6.77 6.68a22.69 22.69 0 01-18.09 8.56c-10.92 0-21.68-6.93-21.68-21.35 0-14.26 10.51-21.68 21-21.68 10 0 19.08 6.85 19.08 20.62a45.49 45.49 0 01-.31 5.22zm-19.15-16.47a8.91 8.91 0 00-9.29 8.07h18.25c-.49-5.22-4.07-8.07-8.96-8.07zM365 101.44V79.93h11v57h-11v-5.05a15.9 15.9 0 01-13 6c-10.43 0-20.78-7.25-20.78-21.6s10.1-21.43 20.29-21.43c6.03-.01 10.84 2.35 13.49 6.59zm-.09 14.92c0-9-5.94-12.23-11.4-12.23-6.36 0-11.17 4.32-11.17 12.14 0 7.58 4.65 12.31 11.33 12.31 6.07 0 11.2-3.99 11.2-12.22zM428.6 121l8.06-25.1H449L433.73 137h-10.51l-9-24-8.88 24h-10.48l-15.08-41.1H392l8.06 25 8.81-25h10.75zM540.76 135.43c0 13.44-10.6 20.61-21.52 20.61-9.29 0-17.85-5.13-20.54-14.91l9.95-3.59c1.38 6.28 6 9.05 11 9.05 5.78 0 10.18-3.42 10.18-10.35v-6a13.8 13.8 0 01-11.56 6.27c-8.56 0-16.71-5.53-16.71-16.7v-24h11.08v22.49c0 5.22 2.69 8.81 8 8.81 5.62 0 9-4.32 9-11.17V95.9h11.09zM314.94 95.9v5c-2.53-4.15-6.93-6-12.23-6-10.51 0-21.27 7.42-21.27 21.76 0 13.69 9.94 21.27 20.21 21.27a17.05 17.05 0 0013.29-5.93v5h11V95.9zm-11.74 32.43c-5.79 0-10.76-4.56-10.76-12 0-7.58 5.13-12.15 11-12.15s11.17 4.65 11.17 12c0 7.51-5.46 12.15-11.41 12.15zM481.87 95.9v5c-2.53-4.15-6.94-6-12.23-6-10.51 0-21.27 7.42-21.27 21.76 0 13.69 9.94 21.27 20.21 21.27a17.05 17.05 0 0013.29-5.93v5h11V95.9zm-11.74 32.43c-5.79 0-10.76-4.56-10.76-12 0-7.58 5.13-12.15 11-12.15s11.17 4.65 11.17 12c0 7.51-5.46 12.15-11.41 12.15z"/></svg>`,
+        // Hearth — icon + wordmark, 24px
+        `<svg viewBox="0 0 215 70" style="height:24px;width:auto;" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M84.3,41.2H94V30.1h5.7v27.9H94V46h-9.7v12.1h-5.7V30.1h5.7V41.2z M119.8,30.1v4.8h-11.7v6.3h10.5V46h-10.5v7.3h11.7v4.8h-17.4V30.1H119.8z M121.6,58.1l9.7-27.9h5.4l9.7,27.9h-6l-1.7-5.3h-9.3l-1.7,5.3H121.6z M130.9,48h6.3l-3.2-9.8L130.9,48z M163.7,58.1l-5-11h-4.5v11h-5.7V30.1h10c6.4,0,10.4,2.9,10.4,8.5c0,3.8-1.7,6.2-4.8,7.5l5.8,11.9H163.7z M158,42.3c3.4,0,5.3-0.7,5.3-3.6s-1.9-3.7-5.3-3.7h-3.8v7.4H158z M191.1,30.1v4.8h-7.7v23.1h-5.7V34.9h-7.7v-4.8H191.1z M199.3,41.2h9.7V30.1h5.7v27.9H209V46h-9.7v12.1h-5.7V30.1h5.7V41.2z"/><path fill="white" d="M44.9,18l22.4,12.1V58L44.9,70V42.8L22.6,30.1L44.9,18z M22.6,0v27.9L0,40.3V12.1L22.6,0z"/><path fill="white" d="M22.6,30.1V58L0,70V42.8L22.6,30.1z"/></svg>`,
+        // Hallow — wordmark only, 20px for lighter optical weight
+        `<svg viewBox="0 0 113 26" style="height:20px;width:auto;" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M15.8064 0.565216V10.4565H6.03518V0.565216H0V25.4348H6.03518V15.5435H15.8064V25.4348H21.8416V0.565216H15.8064Z"/><path fill="white" d="M24.7057 20.1712C24.7057 23.3152 26.933 26 31.2438 26C33.9381 26 35.9857 24.7989 37.3868 22.75C37.7819 24.7283 38.9674 26 41.2306 26C42.5598 26 43.3501 25.7527 44.2482 25.3641V21.4076C43.6734 21.6196 42.5239 21.337 42.5239 19.6413V15.1196C42.5239 8.76087 38.7878 6.78261 34.1177 6.78261C29.2321 6.78261 26.1067 9.22011 25.2805 12.4348L30.7409 13.5652C31.136 12.2582 31.9982 11.163 33.974 11.163C36.0576 11.163 36.7761 12.4348 36.7761 14.4837C30.5972 14.0951 24.7057 15.0489 24.7057 20.1712ZM30.4535 19.9592C30.4535 17.769 33.7944 17.2745 36.7761 17.663C36.5246 19.6413 34.908 21.6549 32.9322 21.8315C31.6749 21.9375 30.4535 21.5136 30.4535 19.9592Z"/><path fill="white" d="M46.5535 0V25.4348H52.3013V0H46.5535Z"/><path fill="white" d="M56.0606 0V25.4348H61.8084V0H56.0606Z"/><path fill="white" d="M73.9088 6.78261C67.7659 6.78261 64.1376 11.0924 64.1376 16.3913C64.1376 21.6902 67.8736 26 73.9088 26C79.6926 26 83.6801 21.6902 83.6801 16.3913C83.6801 11.0924 79.6566 6.78261 73.9088 6.78261ZM73.9088 20.913C71.5379 20.913 69.8854 18.8641 69.8854 16.3913C69.8854 13.9185 71.5379 11.8696 73.9088 11.8696C76.2798 11.8696 77.9323 13.9185 77.9323 16.3913C77.9323 18.8641 76.2798 20.913 73.9088 20.913Z"/><path fill="white" d="M106.965 7.34783L104.091 17.875L100.858 7.34783H95.8285L92.5953 17.875L89.7214 7.34783H83.6862L89.7214 25.4348H94.8944L98.3431 14.2011L101.792 25.4348H106.965L113 7.34783H106.965Z"/></svg>`,
+        // StockIQ — icon + wordmark, 26px
+        `<svg viewBox="0 0 231.3 56.46" style="height:26px;width:auto;" xmlns="http://www.w3.org/2000/svg"><g fill="#f93549"><path d="m29.59,43.03h13.43v-13.44l-13.45-.02.02,13.45Z"/><path d="m43.05,56.46h13.46v-13.43h-13.46v13.43Z"/><path d="m14.65,43.03h11.37v-17.01h17.01v-11.37H14.65v28.39Z"/><path d="m.02,43.03h11.09V11.12h31.92V.02L0,0l.02,43.03Z"/></g><g fill="rgba(255,255,255,0.85)"><path d="m80.74,7c-1.59-1.2-3.41-1.59-5.43-1.59-1.59,0-3.15.5-3.15,1.72,0,1.59,1.56,1.82,3.84,2.05,4.61.5,9.41,2.35,9.41,7.69s-4.97,7.52-10.17,7.55c-4.17.03-7.16-.7-10.37-4.08l3.61-4.14c2.28,2.22,4.84,2.62,6.79,2.62,2.16,0,3.65-.77,3.65-2.05,0-1.16-1.32-1.89-3.88-2.12-5.07-.47-9.44-1.76-9.44-7.52,0-4.9,4.8-7.02,9.71-7.02,3.48,0,6.19.79,8.68,2.75l-3.25,4.15Z"/><path d="m93.19,5.97h-6.76V.57h20.07v5.4h-6.79v17.79h-6.52V5.97Z"/><path d="m120.6,24.31c-7.58,0-12.89-4.4-12.89-12.15S113.02,0,120.6,0s12.89,4.44,12.89,12.16-5.27,12.15-12.89,12.15Zm0-18.71c-3.74,0-6.33,2.72-6.33,6.56s2.62,6.56,6.33,6.56,6.33-2.72,6.33-6.56-2.48-6.56-6.33-6.56Z"/><path d="m157.62,20.74c-2.61,2.59-5.79,3.61-9.3,3.61-9.11,0-12.65-5.73-12.69-12.02-.03-5.97,3.97-12.29,12.69-12.29,3.35,0,6.36,1.16,8.98,3.71l-4.04,3.97c-1.66-1.59-3.38-2.02-4.94-2.02-4.47,0-6.23,3.64-6.2,6.66.03,3.01,1.62,6.43,6.2,6.43,1.56,0,3.81-.67,5.46-2.36l3.84,4.31Z"/><path d="m180.8.96l-9.4,10.97c3.25,3.58,6.99,7.75,10.2,11.43v.4h-8.11l-6.63-7.72v7.72h-6.56V.57h6.56v7.62c1.99-2.45,4.14-5.17,6.09-7.62h7.85v.39Z"/><path d="m191.61,23.75V.96h6.53v22.79h-6.53Z"/><rect x="224.5" y="23.76" width="6.79" height="6.8"/><path d="m201.7.95v22.8h22.81V.95h-22.81Zm16.32,16.31h-9.83V7.44h9.83v9.82Z"/></g></svg>`,
+        // Occupier — small icon + wordmark, 22px for lighter visual weight
+        `<svg viewBox="0 0 130 30" style="height:22px;width:auto;" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.06201 12.0966V2.0161L21.1628 10.9939V12.0966H8.06201ZM8.06201 12.6007V14.1127H21.1628V12.6007H8.06201ZM8.06201 16.1288V14.6168H21.1628V16.1288H8.06201ZM8.06201 16.6329V18.1449H21.1628V16.6329H8.06201ZM8.06201 20.161V18.649H21.1628V20.161H8.06201ZM8.06201 20.6651V22.1771H21.1628V20.6651H8.06201ZM8.06201 24.1932V22.6812H21.1628V24.1932H8.06201ZM8.06201 24.6973V26.2093H21.1628V24.6973H8.06201Z" fill="#B1ECDA"/><path d="M40.9753 25.4431C44.9861 25.4431 47.8481 22.4996 47.8481 18.4876C47.8481 14.4756 44.9861 11.5321 40.9753 11.5321C36.9442 11.5321 34.1024 14.4756 34.1024 18.4876C34.1024 22.4996 36.9442 25.4431 40.9753 25.4431ZM40.9753 23.3464C38.2543 23.3464 36.521 21.2497 36.521 18.4876C36.521 15.7054 38.2543 13.6288 40.9753 13.6288C43.676 13.6288 45.4295 15.7054 45.4295 18.4876C45.4295 21.2497 43.676 23.3464 40.9753 23.3464ZM56.1651 25.4431C58.8659 25.4431 60.5387 24.0117 61.5667 22.3988L59.5511 21.3908C58.9062 22.4996 57.5961 23.3464 56.1651 23.3464C53.5046 23.3464 51.5294 21.29 51.5294 18.4876C51.5294 15.6449 53.5046 13.6288 56.1651 13.6288C57.5961 13.6288 58.9062 14.4554 59.5511 15.5844L61.5465 14.5361C60.5589 12.9232 58.8659 11.5321 56.1651 11.5321C52.1946 11.5321 49.1108 14.3344 49.1108 18.4876C49.1108 22.6206 52.1946 25.4431 56.1651 25.4431ZM69.5005 25.4431C72.2013 25.4431 73.8741 24.0117 74.902 22.3988L72.8865 21.3908C72.2416 22.4996 70.9315 23.3464 69.5005 23.3464C66.84 23.3464 64.8648 21.29 64.8648 18.4876C64.8648 15.6449 66.84 13.6288 69.5005 13.6288C70.9315 13.6288 72.2416 14.4554 72.8865 15.5844L74.8819 14.5361C73.8943 12.9232 72.2013 11.5321 69.5005 11.5321C65.5299 11.5321 62.4462 14.3344 62.4462 18.4876C62.4462 22.6206 65.5299 25.4431 69.5005 25.4431ZM82.1909 25.4431C86.101 25.4431 88.0157 23.2053 88.0157 19.8787V11.7538H85.6173V19.8182C85.6173 21.9553 84.4281 23.3464 82.1909 23.3464C79.9537 23.3464 78.7645 21.9553 78.7645 19.8182V11.7538H76.3661V19.8787C76.3661 23.2053 78.301 25.4431 82.1909 25.4431ZM92.8272 25.2012V20.161H96.3947C99.1962 20.161 100.768 18.2457 100.768 15.9675C100.768 13.6691 99.2164 11.7538 96.3947 11.7538H90.4691V25.2012H92.8272ZM96.0722 18.0844H92.8272V13.8304H96.0722C97.4024 13.8304 98.3497 14.6772 98.3497 15.9675C98.3497 17.2376 97.4024 18.0844 96.0722 18.0844ZM104.707 25.2012V11.7538H102.348V25.2012H104.707ZM116.371 25.2012V23.1246H109.519V19.3747H116.23V17.2981H109.519V13.8304H116.371V11.7538H107.16V25.2012H116.371ZM128.81 25.2012L125.504 19.919C127.137 19.6569 128.709 18.3465 128.709 15.9675C128.709 13.4675 126.956 11.7538 124.295 11.7538H118.39V25.2012H120.748V20.1811H123.106L126.069 25.2012H128.81ZM123.993 18.1045H120.748V13.8304H123.993C125.323 13.8304 126.291 14.657 126.291 15.9473C126.291 17.2578 125.323 18.1045 123.993 18.1045Z" fill="#B1ECDA"/></svg>`,];
       const track = document.getElementById('marqueeTrack');
       if (track) {
         // Build 2× set for seamless loop
@@ -1503,29 +1696,46 @@
     start();
 
     // ─── Shared category switcher (syncs both sides) ───
-    function switchGong(cat) {
-      document.querySelectorAll('.pain-nav-item').forEach(i =>
-        i.classList.toggle('active', i.dataset.cat == cat));
-      document.querySelectorAll('.pain-category, .pain-summary').forEach(c =>
-        c.classList.toggle('active', c.dataset.cat == cat));
+    function syncHeaderHeights() {
+      const ph = document.querySelector('.pain-header');
+      const ah = document.querySelector('.attn-header');
+      if (!ph || !ah) return;
+      ph.style.height = '';
+      ah.style.height = '';
+      const max = Math.max(ph.scrollHeight, ah.scrollHeight);
+      ph.style.height = max + 'px';
+      ah.style.height = max + 'px';
+
+      // Sync verdict box heights
+      const pv = document.querySelector('.pain-summary.active .ai-summary-verdict');
+      const av = document.querySelector('.attn-summary.active .ai-summary-verdict');
+      if (pv && av) {
+        pv.style.height = '';
+        av.style.height = '';
+        const vmax = Math.max(pv.scrollHeight, av.scrollHeight);
+        pv.style.height = vmax + 'px';
+        av.style.height = vmax + 'px';
+      }
     }
 
-    function switchAttn(cat) {
-      document.querySelectorAll('.attn-nav-item').forEach(i =>
+    function switchCategory(cat) {
+      document.querySelectorAll('.pain-nav-item, .attn-nav-item').forEach(i =>
         i.classList.toggle('active', i.dataset.cat == cat));
-      document.querySelectorAll('.attn-category, .attn-summary').forEach(c =>
+      document.querySelectorAll('.pain-category, .pain-summary, .attn-category, .attn-summary').forEach(c =>
         c.classList.toggle('active', c.dataset.cat == cat));
+      syncHeaderHeights();
     }
 
     function jumpToCategory(cat) {
       document.getElementById('comparison').scrollIntoView({ behavior: 'smooth', block: 'start' });
-      setTimeout(() => { switchGong(cat); switchAttn(cat); }, 500);
+      setTimeout(() => switchCategory(cat), 500);
     }
 
-    document.querySelectorAll('.pain-nav-item').forEach(item =>
-      item.addEventListener('click', () => switchGong(item.dataset.cat)));
-    document.querySelectorAll('.attn-nav-item').forEach(item =>
-      item.addEventListener('click', () => switchAttn(item.dataset.cat)));
+    // Sync on initial load
+    window.addEventListener('load', syncHeaderHeights);
+
+    document.querySelectorAll('.pain-nav-item, .attn-nav-item').forEach(item =>
+      item.addEventListener('click', () => switchCategory(item.dataset.cat)));
 
     // ─── Smooth anchors ───
     document.querySelectorAll('a[href^="#"]').forEach(a => {
