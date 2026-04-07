@@ -163,6 +163,21 @@ ${buildPainQuotes(cat.attentionQuotes)}
   </section>`;
 }
 
+// ── Switching stories ────────────────────────────────────────────────────────
+function buildSwitchingStories(stories, competitorName) {
+  if (!stories || stories.length === 0) return '';
+  const delays = ['fade-in-delay-1', 'fade-in-delay-2', 'fade-in-delay-3'];
+  return stories.map((s, i) => `
+        <div class="quote-card-alt fade-in ${delays[i] || ''}">
+          <div class="switch-badge">↩ Switched from ${competitorName}</div>
+          <p class="quote-text-alt">"${s.text}"</p>
+          <div class="quote-author">
+            <div class="quote-avatar" style="width:40px;height:40px;"><img src="/attention-icon-color.png" style="width:100%;height:100%;border-radius:inherit;object-fit:cover;" alt=""></div>
+            <div><div class="quote-name">${s.name}</div><div class="quote-role">${s.role}</div></div>
+          </div>
+        </div>`).join('\n');
+}
+
 // ── FAQ JSON-LD ──────────────────────────────────────────────────────────────
 function buildFaqJsonLd(faq, competitor, slug) {
   const items = faq.map(f => ({
@@ -199,6 +214,7 @@ function buildSoftwareAppJsonLd(competitor) {
 // ── Apply substitutions ──────────────────────────────────────────────────────
 const { cards: testimonialsHtml, dots: testimonialsDots } = buildTestimonials(config.testimonials);
 const comparisonHtml = buildComparisonSection(config);
+const switchingStoriesHtml = buildSwitchingStories(config.switchingStories, config.competitor.name);
 const faqJsonLd = buildFaqJsonLd(config.faq, config.competitor, config.slug);
 const softwareAppJsonLd = buildSoftwareAppJsonLd(config.competitor);
 
@@ -221,6 +237,7 @@ const replacements = {
   '%%HERO_SUB%%': config.hero.sub,
   '%%TESTIMONIALS_HTML%%': testimonialsHtml,
   '%%TESTIMONIALS_DOTS%%': testimonialsDots,
+  '%%SWITCHING_STORIES_HTML%%': switchingStoriesHtml,
   '%%COMPARISON_SECTION%%': comparisonHtml,
   '%%FAQ_JSON_LD%%': faqJsonLd,
   '%%SOFTWARE_APP_JSON_LD%%': softwareAppJsonLd,

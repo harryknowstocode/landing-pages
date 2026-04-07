@@ -36,6 +36,23 @@
       "role": "[Title] · [Company]"
     }
   ],
+  "switchingStories": [
+    {
+      "text": "[Customer quote about switching from Chorus to Attention]",
+      "name": "[Customer Name]",
+      "role": "[Title] · [Company]"
+    },
+    {
+      "text": "[Customer quote about what improved after switching from Chorus]",
+      "name": "[Customer Name]",
+      "role": "[Title] · [Company]"
+    },
+    {
+      "text": "[Customer quote about Attention vs Chorus]",
+      "name": "[Customer Name]",
+      "role": "[Title] · [Company]"
+    }
+  ],
   "comparison": {
     "enabled": false
   },

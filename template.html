@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W46F6MCV');</script>
+  <!-- End Google Tag Manager -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>%%PAGE_TITLE%%</title>
 
@@ -920,6 +928,10 @@
   </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W46F6MCV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
   <!-- ─── HEADER ─── -->
   <svg id="svg-filters" style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true">
@@ -1075,35 +1087,10 @@
   <section id="testimonials-2">
     <div class="container">
       <p class="section-label fade-in">Switching stories</p>
-      <h2 class="section-title fade-in fade-in-delay-1">They had Gong too.<br/>Here's what changed.</h2>
+      <h2 class="section-title fade-in fade-in-delay-1">They had %%COMPETITOR_NAME%% too.<br/>Here's what changed.</h2>
 
       <div class="quotes-grid">
-        <div class="quote-card-alt fade-in fade-in-delay-1">
-          <div class="switch-badge">↩ Switched from Gong</div>
-          <p class="quote-text-alt">"The integration and transition from Gong to Attention was incredible. We were very concerned about losing data, losing traction, losing team alignment — and I was very impressed with how you guys were able to act fast and get everything there."</p>
-          <div class="quote-author">
-            <div class="quote-avatar" style="width:40px;height:40px;"><img src="/attention-icon-color.png" style="width:100%;height:100%;border-radius:inherit;object-fit:cover;" alt=""></div>
-            <div><div class="quote-name">Callie Minafo</div><div class="quote-role">RevOps Project Lead · Headway</div></div>
-          </div>
-        </div>
-
-        <div class="quote-card-alt fade-in fade-in-delay-2">
-          <div class="switch-badge">↩ Switched from Gong</div>
-          <p class="quote-text-alt">"The pre-call prep — people are just blown away with some of the stuff there... relative to Gong it is much, much better."</p>
-          <div class="quote-author">
-            <div class="quote-avatar" style="width:40px;height:40px;"><img src="/attention-icon-color.png" style="width:100%;height:100%;border-radius:inherit;object-fit:cover;" alt=""></div>
-            <div><div class="quote-name">Eric Black</div><div class="quote-role">RevOps Leader · Headway</div></div>
-          </div>
-        </div>
-
-        <div class="quote-card-alt fade-in fade-in-delay-3">
-          <div class="switch-badge">↩ Switched from Gong</div>
-          <p class="quote-text-alt">"Blew Gong off the map, which we expected. So kudos to you there... This has been like a massive upgrade from Gong in like a million different ways."</p>
-          <div class="quote-author">
-            <div class="quote-avatar" style="width:40px;height:40px;"><img src="/attention-icon-color.png" style="width:100%;height:100%;border-radius:inherit;object-fit:cover;" alt=""></div>
-            <div><div class="quote-name">Shane Lieberman</div><div class="quote-role">Head of Business Development · GovWell</div></div>
-          </div>
-        </div>
+        %%SWITCHING_STORIES_HTML%%
       </div>
     </div>
   </section>
@@ -1504,6 +1491,183 @@
       }
     }, { threshold: 0.1 });
     if (chartSection) chartIO.observe(chartSection);
+
+    // ═══════════════════════════════════════════════
+    // DATALAYER EVENTS
+    // ═══════════════════════════════════════════════
+    window.dataLayer = window.dataLayer || [];
+
+    function dlPush(event, props) {
+      window.dataLayer.push(Object.assign({ event: event }, props));
+    }
+
+    // ── CTA clicks (Book a Demo buttons) ──
+    document.querySelectorAll('a.header-cta, a.btn-primary').forEach(function(el) {
+      el.addEventListener('click', function() {
+        var section = 'unknown';
+        if (el.closest('header'))          section = 'header';
+        else if (el.closest('#hero'))      section = 'hero';
+        else if (el.closest('#mid-cta'))   section = 'mid_cta';
+        else if (el.closest('#closing-cta')) section = 'closing_cta';
+        dlPush('cta_click', {
+          event_category: 'cta',
+          event_action: 'click',
+          event_label: el.textContent.trim().replace(/\s+/g, ' '),
+          section: section,
+          destination_url: el.href
+        });
+      });
+    });
+
+    // ── Secondary / ghost link clicks ──
+    document.querySelectorAll('a.hero-secondary, a.btn-ghost').forEach(function(el) {
+      el.addEventListener('click', function() {
+        var section = el.closest('#hero') ? 'hero' : el.closest('#closing-cta') ? 'closing_cta' : 'unknown';
+        dlPush('link_click', {
+          event_category: 'navigation',
+          event_action: 'click',
+          event_label: el.textContent.trim(),
+          section: section,
+          destination_url: el.getAttribute('href')
+        });
+      });
+    });
+
+    // ── Hero feature card clicks ──
+    document.querySelectorAll('.hero-feat').forEach(function(el, idx) {
+      el.addEventListener('click', function() {
+        var title = el.querySelector('.hero-feat-title');
+        dlPush('feature_card_click', {
+          event_category: 'hero',
+          event_action: 'click',
+          event_label: title ? title.textContent.trim() : 'Feature ' + idx,
+          feature_index: idx
+        });
+      });
+    });
+
+    // ── Carousel: prev / next ──
+    document.getElementById('prev1').addEventListener('click', function() {
+      dlPush('carousel_navigate', {
+        event_category: 'testimonials',
+        event_action: 'click',
+        direction: 'previous'
+      });
+    });
+    document.getElementById('next1').addEventListener('click', function() {
+      dlPush('carousel_navigate', {
+        event_category: 'testimonials',
+        event_action: 'click',
+        direction: 'next'
+      });
+    });
+
+    // ── Carousel: dot clicks ──
+    dotsEl.querySelectorAll('.dot').forEach(function(d) {
+      d.addEventListener('click', function() {
+        dlPush('carousel_navigate', {
+          event_category: 'testimonials',
+          event_action: 'dot_click',
+          direction: 'dot',
+          slide_index: parseInt(d.dataset.idx, 10)
+        });
+      });
+    });
+
+    // ── Carousel: swipe ──
+    (function() {
+      var swipeStart = 0;
+      wrap.addEventListener('touchstart', function(e) { swipeStart = e.touches[0].clientX; }, { passive: true });
+      wrap.addEventListener('touchend', function(e) {
+        var diff = swipeStart - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 50) {
+          dlPush('carousel_navigate', {
+            event_category: 'testimonials',
+            event_action: 'swipe',
+            direction: diff > 0 ? 'swipe_left' : 'swipe_right'
+          });
+        }
+      });
+      wrap.addEventListener('mouseup', function(e) {
+        var diff = startX - e.clientX;
+        if (Math.abs(diff) > 50) {
+          dlPush('carousel_navigate', {
+            event_category: 'testimonials',
+            event_action: 'swipe',
+            direction: diff > 0 ? 'swipe_left' : 'swipe_right'
+          });
+        }
+      });
+    })();
+
+    // ── Comparison category tab clicks ──
+    document.querySelectorAll('.pain-nav-item').forEach(function(item) {
+      item.addEventListener('click', function() {
+        dlPush('comparison_tab_click', {
+          event_category: 'comparison',
+          event_action: 'tab_click',
+          event_label: item.textContent.trim(),
+          side: 'competitor',
+          tab_index: parseInt(item.dataset.cat, 10)
+        });
+      });
+    });
+    document.querySelectorAll('.attn-nav-item').forEach(function(item) {
+      item.addEventListener('click', function() {
+        dlPush('comparison_tab_click', {
+          event_category: 'comparison',
+          event_action: 'tab_click',
+          event_label: item.textContent.trim(),
+          side: 'attention',
+          tab_index: parseInt(item.dataset.cat, 10)
+        });
+      });
+    });
+
+    // ── Footer link clicks ──
+    document.querySelectorAll('footer a').forEach(function(el) {
+      el.addEventListener('click', function() {
+        dlPush('link_click', {
+          event_category: 'footer',
+          event_action: 'click',
+          event_label: el.textContent.trim(),
+          destination_url: el.href
+        });
+      });
+    });
+
+    // ── Logo click ──
+    var logoEl = document.querySelector('header .logo');
+    if (logoEl) {
+      logoEl.addEventListener('click', function() {
+        dlPush('link_click', {
+          event_category: 'header',
+          event_action: 'click',
+          event_label: 'logo',
+          destination_url: this.href
+        });
+      });
+    }
+
+    // ── Section visibility (scroll tracking) ──
+    var sectionIds = ['hero', 'logos', 'testimonials-1', 'comparison', 'mid-cta', 'testimonials-2', 'closing-cta'];
+    var sectionsSeen = {};
+    var sectionObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !sectionsSeen[entry.target.id]) {
+          sectionsSeen[entry.target.id] = true;
+          dlPush('section_view', {
+            event_category: 'scroll',
+            event_action: 'section_visible',
+            event_label: entry.target.id
+          });
+        }
+      });
+    }, { threshold: 0.25 });
+    sectionIds.forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) sectionObserver.observe(el);
+    });
   </script>
 </body>
 </html>

@@ -226,6 +226,23 @@
       }
     ]
   },
+  "switchingStories": [
+    {
+      "text": "The integration and transition from Gong to Attention was incredible. We were very concerned about losing data, losing traction, losing team alignment — and I was very impressed with how you guys were able to act fast and get everything there.",
+      "name": "Callie Minafo",
+      "role": "RevOps Project Lead · Headway"
+    },
+    {
+      "text": "The pre-call prep — people are just blown away with some of the stuff there... relative to Gong it is much, much better.",
+      "name": "Eric Black",
+      "role": "RevOps Leader · Headway"
+    },
+    {
+      "text": "Blew Gong off the map, which we expected. So kudos to you there... This has been like a massive upgrade from Gong in like a million different ways.",
+      "name": "Shane Lieberman",
+      "role": "Head of Business Development · GovWell"
+    }
+  ],
   "faq": [
     {
       "question": "What is the difference between Gong and Attention?",
