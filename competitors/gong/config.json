@@ -27,8 +27,8 @@
     },
     {
       "text": "One of the things that has worn on us with Gong is that the roadmap has just been very slow. We hear 'it's on the roadmap' from them — it's almost like a joke at this point.",
-      "name": "Tony Riesen",
-      "role": "Business Systems Leader · Dandy"
+      "name": "Anonymous",
+      "role": "Business Systems Leader · Health Tech"
     },
     {
       "text": "I did the demo with the Gong guy and I asked him, can you do this? And he kept being like, 'soon, soon, it's on the roadmap'... Not good enough.",
@@ -37,18 +37,18 @@
     },
     {
       "text": "You are so far ahead of Gong.",
-      "name": "Jeremy von Halle",
-      "role": "VP RevOps · Abridge"
+      "name": "Anonymous",
+      "role": "VP RevOps · HealthTech AI"
     },
     {
       "text": "The integration and transition from Gong to Attention was incredible. We were very concerned about losing data, losing traction, losing team alignment — and I was very impressed with how you guys were able to act fast and get everything there.",
-      "name": "Callie Minafo",
-      "role": "RevOps Project Lead · Headway"
+      "name": "Anonymous",
+      "role": "RevOps Project Lead · HealthTech"
     },
     {
       "text": "The pre-call prep — people are just blown away with some of the stuff there... relative to Gong it is much, much better.",
-      "name": "Eric Black",
-      "role": "RevOps Leader · Headway"
+      "name": "Anonymous",
+      "role": "RevOps Leader · HealthTech"
     }
   ],
   "comparison": {
@@ -69,7 +69,7 @@
         },
         "competitorQuotes": [
           { "text": "I did the demo with the Gong guy and I asked him, can you do this? He kept being like, 'soon, soon, it's on the roadmap.' Not good enough.", "attr": "Jack Gashi · VP of Sales · Avoca" },
-          { "text": "One of the things that has worn on us with Gong is that the roadmap has just been very slow. We hear 'it's on the roadmap' from them — it's almost like a joke at this point.", "attr": "Tony Riesen · Business Systems Leader · Dandy" },
+          { "text": "One of the things that has worn on us with Gong is that the roadmap has just been very slow. We hear 'it's on the roadmap' from them — it's almost like a joke at this point.", "attr": "Anonymous · Business Systems Leader · Health Tech" },
           { "text": "They had promised all the things I was talking about, like being able to do defaults and apply them to things. None of that happened.", "attr": "David Ciano · Sales Team Lead · GovWell" },
           { "text": "Gong has just stopped innovating. They say they have AI, but their LLM is not really... With Gong it's just roadblock after roadblock to be able to start extracting data.", "attr": "Anonymous · Sales Manager · B2B SaaS" },
           { "text": "I know it's something that Gong says is coming in like maybe the new year... I honestly don't know if this is on the roadmap or what.", "attr": "Anonymous · Sales Enablement Director · SaaS" },
@@ -77,10 +77,10 @@
           { "text": "I still don't think they custom-fill CRM fields out of the box. You have to go in and copy and paste. I think they could have shipped something a year ago.", "attr": "Anonymous · Revenue Leader · Sales Advisory" }
         ],
         "attentionQuotes": [
-          { "text": "I was really hesitant about moving off of Gong due to product maturity, stability, and comfort with workflows. But super agent just destroys it on the AI side. Its ability to aggregate insights across offices and roll them up to an org-level narrative is really impressive. I'm seeing the light. And your responsiveness and ability to quick-ship the updates we need is huge.", "attr": "Alex Caine · Revenue Leader · Dandy" },
-          { "text": "The MCP live — that's game-changing. That's huge.", "attr": "Natalie York · RevOps Admin · Headway" },
+          { "text": "I was really hesitant about moving off of Gong due to product maturity, stability, and comfort with workflows. But super agent just destroys it on the AI side. Its ability to aggregate insights across offices and roll them up to an org-level narrative is really impressive. I'm seeing the light. And your responsiveness and ability to quick-ship the updates we need is huge.", "attr": "Anonymous · Revenue Leader · Health Tech" },
+          { "text": "The MCP live — that's game-changing. That's huge.", "attr": "Anonymous · RevOps Admin · HealthTech" },
           { "text": "I don't know if this is the right place to leave positive feedback but it's genuinely shocking how good it is — as both very granular 'get me info from a specific call' stuff and super high level 'tell me about X use case' stuff.", "attr": "Anonymous · Sales Rep · Parabola" },
-          { "text": "Folks have shared with me how impressed they are with your team's support and responsiveness — and speed! — with feature requests. We're bullish on Attention — keep it up!", "attr": "Keon Garvin · Business Systems Leader · Dandy" },
+          { "text": "Folks have shared with me how impressed they are with your team's support and responsiveness — and speed! — with feature requests. We're bullish on Attention — keep it up!", "attr": "Anonymous · Business Systems Leader · Health Tech" },
           { "text": "The new feature development is actually productive.", "attr": "Jennifer R. · RevOps Manager · Mid-Market SaaS" }
         ]
       },
@@ -103,10 +103,10 @@
           { "text": "Gong doesn't currently give us that level of hands-on administrative support. It's like, 'we'll tell you how to build the problem, go for it, do it' — there is nobody there supporting us with that.", "attr": "Anonymous · Sales Enablement Lead · Real Estate" }
         ],
         "attentionQuotes": [
-          { "text": "I would also just say — genuinely the customer service we've experienced with you guys has been really great. I think that you've been very attentive to us, and even on the contracting side I think it went really smoothly.", "attr": "Callie Minafo · RevOps Project Lead · Headway" },
-          { "text": "I Slacked Noah — hey we wanna get this active in our instance — and within like two days we were like, it's there. The speed is really impressive.", "attr": "Natalie York · RevOps Admin · Headway" },
+          { "text": "I would also just say — genuinely the customer service we've experienced with you guys has been really great. I think that you've been very attentive to us, and even on the contracting side I think it went really smoothly.", "attr": "Anonymous · RevOps Project Lead · HealthTech" },
+          { "text": "I Slacked Noah — hey we wanna get this active in our instance — and within like two days we were like, it's there. The speed is really impressive.", "attr": "Anonymous · RevOps Admin · HealthTech" },
           { "text": "The team at Attention is highly responsive and helpful. I never have to wait long to engage with them. Responses are friendly, professional, and nearly always resolve our requests. Integrations work beautifully.", "attr": "Jennifer R. · RevOps Manager · Mid-Market SaaS (G2)" },
-          { "text": "Today we had our first weekly call without much to discuss and ended early. Operations have stabilized and we're in a good spot. A massive thank you for your dedicated support these last few months.", "attr": "Keon Garvin · Business Systems Leader · Dandy" },
+          { "text": "Today we had our first weekly call without much to discuss and ended early. Operations have stabilized and we're in a good spot. A massive thank you for your dedicated support these last few months.", "attr": "Anonymous · Business Systems Leader · Health Tech" },
           { "text": "I was impressed with the hands-on support from Attention's team during our initial setup, which made the experience smooth and engaging.", "attr": "Spencer M. · Sales Leader · Mid-Market SaaS (G2)" }
         ]
       },
@@ -129,7 +129,7 @@
           { "text": "Gong you have to go in and manually score... AI-suggested scores that you still need to manually apply. That means somewhere between 3 and 10% of calls get scored.", "attr": "Anonymous · Sales Enablement Lead · Employee Recognition SaaS" }
         ],
         "attentionQuotes": [
-          { "text": "Attention also is making grading calls SO easy. Gong sucks.", "attr": "Jess Wayne · Sales Manager · Headway" },
+          { "text": "Attention also is making grading calls SO easy. Gong sucks.", "attr": "Anonymous · Sales Manager · HealthTech" },
           { "text": "I had this one person who was really struggling, and the manager was like, 'I don't have time to listen to her calls.' So I said, give me the top three things she's doing well and the top three things where she could use improvement. It gave me a whole list — a star chart. It was really spot on.", "attr": "Anonymous · Sales Enablement Manager · Localization Services" },
           { "text": "Attention turns every call into coaching and deal momentum. It pulls real deal intelligence from calls, highlights the exact moments that move opportunities forward, and turns 1:1s into repeatable coaching with scorecards I can track over time.", "attr": "Lucas T. · Enterprise Sales Manager · Mid-Market SaaS (G2)" },
           { "text": "I can customize every aspect of how it grades our conversations and select the data and metrics I want to pull. We can program it to coach our sales reps on each conversation — not just the ones our sales team leads review.", "attr": "Spencer M. · Sales Leader · Mid-Market SaaS (G2)" }
@@ -153,7 +153,7 @@
         ],
         "attentionQuotes": [
           { "text": "It's genuinely shocking how good it is — as both very granular 'get me info from a specific call' stuff and super high level 'tell me about X use case' stuff.", "attr": "Anonymous · Sales Rep · Parabola" },
-          { "text": "The MCP live — that's game-changing. That's huge.", "attr": "Natalie York · RevOps Admin · Headway" },
+          { "text": "The MCP live — that's game-changing. That's huge.", "attr": "Anonymous · RevOps Admin · HealthTech" },
           { "text": "We constantly get questions like — tell us everything we learned last week about X. Now we can just ask. All those calls are recorded, there's no reason to have to get that data by jumping on team calls anymore.", "attr": "Anonymous · Revenue Leader · FinTech" },
           { "text": "Instead of having to go to Salesforce and find the close lost and try to connect it together — Attention can do it in less than two minutes.", "attr": "Anonymous · Sales Enablement Lead · Real Estate" }
         ]
@@ -175,7 +175,7 @@
           { "text": "Like actually having it write into Salesforce for you would be huge.", "attr": "Anonymous · Revenue Leader · Healthcare AI" }
         ],
         "attentionQuotes": [
-          { "text": "The AI CRM fill is relatively accurate depending on prompting. The pre-call prep — people are just blown away with some of the stuff there. Relative to Gong it is much, much better.", "attr": "Eric Black · RevOps Leader · Headway" },
+          { "text": "The AI CRM fill is relatively accurate depending on prompting. The pre-call prep — people are just blown away with some of the stuff there. Relative to Gong it is much, much better.", "attr": "Anonymous · RevOps Leader · HealthTech" },
           { "text": "It extracts dozens of CRM fields from my calls and automatically syncs them to Salesforce, saving me hours of manual note-taking every week.", "attr": "Joseph B. · Account Executive · Large Enterprise (G2)" },
           { "text": "Pain points, decision criteria, competitive intel, and next steps get logged without me typing notes.", "attr": "Lucas T. · Enterprise Sales Manager · Mid-Market SaaS (G2)" }
         ]
@@ -198,7 +198,7 @@
           { "text": "If you've got a forecast seat, you have to have a standard seat — even if you don't do any call recordings. So Johan, who only looks at data for five minutes, has a forecast and a standard seat... we are all a bit frustrated.", "attr": "Anonymous · RevOps Lead · FinTech" }
         ],
         "attentionQuotes": [
-          { "text": "I have to say we got a few new tools and the only one everyone likes is Attention.", "attr": "Jess Wayne · Sales Manager · Headway" },
+          { "text": "I have to say we got a few new tools and the only one everyone likes is Attention.", "attr": "Anonymous · Sales Manager · HealthTech" },
           { "text": "Their contract terms are excellent. They are confident in their product so they don't lock you in, and they size the contract to meet your business needs on a monthly basis. Overall I am a huge advocate and 100% would buy again.", "attr": "Jennifer R. · RevOps Manager · Mid-Market SaaS (G2)" },
           { "text": "Attention is probably the most useful add-on to our core tech stack I've purchased. Outside of our critical systems, it provides daily value and insights for our sales and leadership.", "attr": "Jennifer R. · RevOps Manager · Mid-Market SaaS (G2)" }
         ]
@@ -219,9 +219,9 @@
           { "text": "I actually had to custom build with n8n flows because Gong couldn't do it. Getting insights out of Gong are quite tricky — it's more keyword-based and RAG-based models.", "attr": "Anonymous · RevOps Manager · SaaS" }
         ],
         "attentionQuotes": [
-          { "text": "The integration and transition from Gong to Attention was incredible. We were very concerned about losing data, losing traction, losing team alignment — and I was very impressed with how you guys were able to act fast.", "attr": "Callie Minafo · RevOps Project Lead · Headway" },
+          { "text": "The integration and transition from Gong to Attention was incredible. We were very concerned about losing data, losing traction, losing team alignment — and I was very impressed with how you guys were able to act fast.", "attr": "Anonymous · RevOps Project Lead · HealthTech" },
           { "text": "The integration with tools like our CRM, HubSpot, and Slack is also great, as it helps us receive summaries and flags important deals, making our team more proactive.", "attr": "Spencer M. · Sales Leader · Mid-Market SaaS (G2)" },
-          { "text": "The ability for the integration with Snowflake has already made our life easier.", "attr": "Callie Minafo · RevOps Project Lead · Headway" }
+          { "text": "The ability for the integration with Snowflake has already made our life easier.", "attr": "Anonymous · RevOps Project Lead · HealthTech" }
         ]
       }
     ]
@@ -229,18 +229,18 @@
   "switchingStories": [
     {
       "text": "The integration and transition from Gong to Attention was incredible. We were very concerned about losing data, losing traction, losing team alignment — and I was very impressed with how you guys were able to act fast and get everything there.",
-      "name": "Callie Minafo",
-      "role": "RevOps Project Lead · Headway"
+      "name": "Anonymous",
+      "role": "RevOps Project Lead · HealthTech"
     },
     {
       "text": "The pre-call prep — people are just blown away with some of the stuff there... relative to Gong it is much, much better.",
-      "name": "Eric Black",
-      "role": "RevOps Leader · Headway"
+      "name": "Anonymous",
+      "role": "RevOps Leader · HealthTech"
     },
     {
       "text": "Blew Gong off the map, which we expected. So kudos to you there... This has been like a massive upgrade from Gong in like a million different ways.",
-      "name": "Shane Lieberman",
-      "role": "Head of Business Development · GovWell"
+      "name": "Anonymous",
+      "role": "Head of Business Development · GovTech"
     }
   ],
   "faq": [
