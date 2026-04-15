@@ -387,24 +387,26 @@
 
     /* ─── STATS BAR ─── */
     #stats {
-      padding: 80px 0;
+      padding: 40px 0;
     }
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      gap: 16px;
       text-align: center;
     }
     .stat-item {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 16px;
-      padding: 32px 20px;
+      padding: 28px 16px;
       transition: border-color 0.2s;
     }
     .stat-item:hover { border-color: rgba(143,120,255,0.25); }
     @media (max-width: 700px) {
-      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      #stats { padding: 32px 0; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .stat-item { padding: 20px 12px; }
     }
     .stat-number {
       font-size: clamp(32px, 4vw, 48px);
