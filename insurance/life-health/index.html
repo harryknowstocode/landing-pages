@@ -56,7 +56,7 @@
     "url": "https://www.attention.com",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
-    "description": "Attention is an AI-native call compliance and coaching platform for life and health insurance agencies. HIPAA compliant, SOC 2 certified, built for Medicare enrollment, health insurance sales, and life insurance operations.",
+    "description": "Attention scores 100% of agent calls for CMS compliance, automates 45-minute dispositions to under 2 minutes, and coaches every agent on every call. HIPAA compliant with BAA. SOC 2 certified. Processes 30,000+ calls/day for life and health insurance agencies.",
     "offers": {
       "@type": "Offer",
       "description": "One subscription. HIPAA compliant. SOC 2 certified."
@@ -415,6 +415,75 @@
       margin-top: 8px;
       font-weight: 500;
       line-height: 1.4;
+    }
+
+    /* ─── BEFORE / AFTER ─── */
+    #before-after { padding: 100px 0; }
+    .ba-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 48px;
+    }
+    .ba-card {
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      position: relative;
+    }
+    .ba-card.before {
+      background: rgba(220,38,38,0.06);
+      border: 1px solid rgba(220,38,38,0.15);
+    }
+    .ba-card.after {
+      background: rgba(34,197,94,0.06);
+      border: 1px solid rgba(34,197,94,0.15);
+    }
+    .ba-label {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 100px;
+    }
+    .ba-card.before .ba-label {
+      background: rgba(220,38,38,0.15);
+      color: rgba(255,130,130,0.9);
+    }
+    .ba-card.after .ba-label {
+      background: rgba(34,197,94,0.15);
+      color: rgba(120,230,160,0.9);
+    }
+    .ba-item {
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--text-muted);
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .ba-item:last-child { border-bottom: none; }
+    .ba-item strong { color: var(--text); font-weight: 600; }
+    .ba-pullquote {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 32px;
+      border: 1px solid rgba(143,120,255,0.15);
+      border-radius: var(--radius-lg);
+      background: rgba(143,120,255,0.04);
+    }
+    .ba-pullquote-text {
+      font-size: 20px;
+      font-weight: 600;
+      font-style: italic;
+      line-height: 1.55;
+      margin-bottom: 12px;
+    }
+    .ba-pullquote-attr {
+      font-size: 13px;
+      color: var(--text-muted);
     }
 
     /* ─── THREE COLUMN "WHAT CHANGES" ─── */
@@ -824,6 +893,7 @@
       header { padding: 0 20px; }
       .container { padding: 0 20px; }
       #hero .container { padding-top: 40px; padding-bottom: 60px; }
+      .ba-grid { grid-template-columns: 1fr; }
       .changes-grid { grid-template-columns: 1fr; }
       .steps-grid { grid-template-columns: 1fr; }
       .features-grid { grid-template-columns: 1fr; }
@@ -861,19 +931,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         Life &amp; Health Insurance
       </div>
       <h1 class="hero-headline">
-        100% of your Medicare calls.<br/>
+        100% of your calls.<br/>
         Scored for compliance.<br/>
         <span class="highlight">Automatically.</span>
       </h1>
       <p class="hero-sub">
-        Attention monitors every agent call for CMS-required disclosures, script adherence, and compliance risk - so you stop sampling 2% and hoping for the best.
+        CMS fined Medicare plans over $3 million in the first four months of 2025 alone. Your QA team samples 2-5% of calls. Attention scores all of them - every disclosure tracked, every call timestamped, every agent coached. Even during AEP.
       </p>
       <div class="hero-actions">
         <a href="https://attention.com/book?utm_source=landing_page&utm_medium=cta&utm_campaign=insurance_life_health&utm_content=hero" class="btn-primary">
           Book a Demo
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="#pain-points" class="hero-secondary">See the five pain points we solve</a>
+        <a href="#before-after" class="hero-secondary">See what changes for your agency</a>
       </div>
 
       <div class="trust-bar">
@@ -903,19 +973,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="stats-grid">
         <div class="stat-item fade-in">
           <div class="stat-number">45 → 2</div>
-          <div class="stat-label">Minutes per disposition.<br/>Manual to automated.</div>
+          <div class="stat-label">Minutes per disposition.<br/>Legacy Family Life, verified.</div>
         </div>
         <div class="stat-item fade-in fade-in-delay-1">
           <div class="stat-number">98%</div>
-          <div class="stat-label">Script adherence<br/>across agents</div>
+          <div class="stat-label">Script adherence<br/>across all agents at EIP</div>
         </div>
         <div class="stat-item fade-in fade-in-delay-2">
-          <div class="stat-number">100%</div>
-          <div class="stat-label">Call coverage for<br/>compliance monitoring</div>
+          <div class="stat-number">25:1</div>
+          <div class="stat-label">Rep-to-manager ratio.<br/>Up from 10:1.</div>
         </div>
         <div class="stat-item fade-in fade-in-delay-3">
           <div class="stat-number">30K+</div>
-          <div class="stat-label">Calls per day<br/>automation capacity</div>
+          <div class="stat-label">Calls per day.<br/>Built for AEP volume.</div>
         </div>
       </div>
     </div>
@@ -934,6 +1004,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- ─── BEFORE / AFTER ─── -->
+  <section id="before-after">
+    <div class="container">
+      <p class="section-label fade-in">The gap Attention fills</p>
+      <h2 class="section-title fade-in fade-in-delay-1">After the call ends,<br/><span class="grad-text">what actually happens?</span></h2>
+
+      <div class="ba-grid">
+        <div class="ba-card before fade-in">
+          <div class="ba-label">Without Attention</div>
+          <div class="ba-item">Agent takes the next call. No notes written.</div>
+          <div class="ba-item">CRM activity log says <strong>"spoke with client"</strong> with no detail.</div>
+          <div class="ba-item">45 minutes of disposition paperwork - policy details, product selections, payment info - piles up.</div>
+          <div class="ba-item">Follow-up email doesn't get sent for two days. If at all.</div>
+          <div class="ba-item">Nobody knows if the agent delivered the CMS-required disclosures.</div>
+          <div class="ba-item">Compliance team samples <strong>2-5% of calls</strong> and hopes for the best.</div>
+          <div class="ba-item">When the agent leaves, every undocumented client relationship goes with them.</div>
+        </div>
+
+        <div class="ba-card after fade-in fade-in-delay-1">
+          <div class="ba-label">With Attention</div>
+          <div class="ba-item">Call is <strong>automatically transcribed, summarized, and scored</strong> before the agent's next dial.</div>
+          <div class="ba-item">Policy details, products discussed, and payment info <strong>push to your CRM automatically</strong>.</div>
+          <div class="ba-item">Disposition drops from <strong>45 minutes to under 2 minutes</strong>.</div>
+          <div class="ba-item">Follow-up email drafted and ready. Cross-sell signals flagged.</div>
+          <div class="ba-item">Every CMS disclosure <strong>tracked with timestamps</strong>. Compliance violations flagged instantly.</div>
+          <div class="ba-item"><strong>100% of calls</strong> scored against your compliance and coaching scorecards.</div>
+          <div class="ba-item">Every conversation documented. Institutional knowledge stays with the agency, not the agent.</div>
+        </div>
+      </div>
+
+      <div class="ba-pullquote fade-in fade-in-delay-2">
+        <p class="ba-pullquote-text">"That has taken our sales disposition from average of like 45 minutes to like one or two minutes, which is huge."</p>
+        <p class="ba-pullquote-attr">Legacy Family Life - Insurance Operations</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ─── WHAT CHANGES FOR YOUR AGENCY ─── -->
   <section id="what-changes">
     <div class="container">
@@ -945,9 +1052,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="change-card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
           </div>
-          <div class="change-card-persona">For Agents</div>
-          <div class="change-card-title">Stop typing dispositions. Start enrolling.</div>
-          <div class="change-card-text">Every call auto-summarized. Dispositions auto-filled. Policy details, product selections, and payment info extracted and pushed to your CRM. No more 45-minute post-call paperwork.</div>
+          <div class="change-card-persona">For Agents &amp; Producers</div>
+          <div class="change-card-title">Stop typing dispositions. Start taking the next call.</div>
+          <div class="change-card-text">Every call auto-summarized. Dispositions auto-filled - policy details, product selections, payment info extracted and pushed to your CRM. During AEP, when agents work 12-hour days for 54 straight days, this is the difference between burning out and keeping pace.</div>
         </div>
 
         <div class="change-card fade-in fade-in-delay-2">
@@ -955,8 +1062,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="2" x2="6" y1="14" y2="14"/><line x1="10" x2="14" y1="8" y2="8"/><line x1="18" x2="22" y1="16" y2="16"/></svg>
           </div>
           <div class="change-card-persona">For Sales Managers</div>
-          <div class="change-card-title">Coach 25 agents like you coach 10.</div>
-          <div class="change-card-text">AI coaching runs 365 days a year, including AEP and OEP. Every agent scored on every call. Scorecards tuned to your script, your methodology, your compliance requirements. Even during peak enrollment.</div>
+          <div class="change-card-title">Coach 25 agents like you coach 10. Even during AEP.</div>
+          <div class="change-card-text">90% of new agents fail in their first year. The ones who survive get coaching. Attention scores every agent on every call, 365 days a year - tuned to your script, your compliance requirements. When enrollment season hits and manual coaching drops to zero, AI coaching doesn't.</div>
         </div>
 
         <div class="change-card fade-in fade-in-delay-3">
@@ -964,8 +1071,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
           </div>
           <div class="change-card-persona">For Agency Owners &amp; Compliance</div>
-          <div class="change-card-title">Protect your carrier contracts.</div>
-          <div class="change-card-text">100% call compliance monitoring. Every CMS disclosure tracked. Every call timestamped. Audit-ready documentation on every interaction. Fraud detection scoring flags suspicious applications before they cost you.</div>
+          <div class="change-card-title">Survive the audit. Protect the book.</div>
+          <div class="change-card-text">CMS uses secret shoppers. SOAs must be retained for 10 years. The average E&amp;O claim costs $40,000+, and one claim raises your premiums 25-50% for three to five years. Attention gives you timestamped, audit-ready documentation on every call. Fraud detection flags suspicious enrollments before they cost you a carrier contract.</div>
         </div>
       </div>
     </div>
@@ -976,7 +1083,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
       <p class="section-label fade-in">From our insurance customers</p>
       <p style="font-size:11px;color:rgba(255,255,255,0.35);margin-bottom:16px;margin-top:-12px;">Quotes reflect individual customer experiences. Results may vary based on use case, configuration, and team adoption.</p>
-      <h2 class="section-title fade-in fade-in-delay-1">Insurance agencies<br/>that run on Attention.</h2>
+      <h2 class="section-title fade-in fade-in-delay-1">From agencies processing<br/><span class="grad-text">30,000 calls a day.</span></h2>
 
       <div class="carousel-track-container" id="carouselContainer">
         <div class="carousel-track" id="carouselTrack">
@@ -1045,7 +1152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section id="pain-points">
     <div class="container">
       <p class="section-label fade-in">The five problems we solve</p>
-      <h2 class="section-title fade-in fade-in-delay-1">Sound familiar?<br/><span class="grad-text">We built for this.</span></h2>
+      <h2 class="section-title fade-in fade-in-delay-1">Your compliance team<br/><span class="grad-text">can't listen to every call. We can.</span></h2>
 
       <div class="accordion">
         <div class="accordion-item open fade-in">
@@ -1055,10 +1162,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="accordion-body" style="max-height:500px;">
             <div class="accordion-body-inner">
-              <p class="accordion-problem">Medicare sales are regulated by CMS. Agents must deliver specific disclosures on every call - scope of appointment, recording consent, plan comparison disclaimers. Compliance teams manually sample 2-5% of calls. The rest go unmonitored. CMS audits are real, and violations mean fines, suspension, or loss of carrier contracts.</p>
+              <p class="accordion-problem">CMS requires agents to record all sales and enrollment calls in their entirety. SOAs must be obtained 48 hours in advance and retained for 10 years. CMS uses secret shoppers to test compliance. In the first four months of 2025, CMS fined Medicare plans more money than in the previous four years combined - over $3 million. Violations mean civil monetary penalties, suspension of marketing, or termination of your ability to sell Medicare plans entirely. And your QA team is sampling 2-5% of calls.</p>
               <div class="accordion-solution">
                 <div class="accordion-solution-label">How Attention solves this</div>
-                <p style="font-size:14px;color:var(--text);line-height:1.65;">100% call coverage. Every call scored against compliance scorecards. "High compliance risk" labels flag violations instantly. Timestamped documentation for every disclosure - was it said, when was it said. Your QA team reviews exceptions, not random samples.</p>
+                <p style="font-size:14px;color:var(--text);line-height:1.65;">100% call coverage. Every call scored against compliance scorecards that track CMS-required disclosures, SOA language, and recording consent. "High compliance risk" labels flag violations instantly with timestamps - was the disclosure made, exactly when in the call. Your QA team reviews flagged exceptions, not random 2% samples.</p>
               </div>
             </div>
           </div>
@@ -1071,10 +1178,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="accordion-body">
             <div class="accordion-body-inner">
-              <p class="accordion-problem">During AEP and OEP, call volumes spike. Managers responsible for 10 agents suddenly have 25-30. Manual coaching drops to zero. New agents hired for enrollment season get almost no coaching at all. New producer failure rates are 70-80%.</p>
+              <p class="accordion-problem">AEP is 54 days. Agents work 7-day weeks. Managers responsible for 10 agents suddenly have 25-30 as seasonal hires ramp up. Manual coaching drops to zero - there's no time. New agents hired for enrollment get almost no guidance. 90% of new agents fail in their first year. It costs agencies $250,000 and three years to bring a producer to validation. Every washout is a six-figure loss.</p>
               <div class="accordion-solution">
                 <div class="accordion-solution-label">How Attention solves this</div>
-                <p style="font-size:14px;color:var(--text);line-height:1.65;">AI coaching runs 365 days a year, including peak enrollment. Every agent scored on every call. Managers see dashboards, not individual call reviews. Legacy Family Life's goal: double or triple their rep-to-manager ratio - from 10:1 to 25:1.</p>
+                <p style="font-size:14px;color:var(--text);line-height:1.65;">AI coaching runs on every call, 365 days a year - including AEP, OEP, and the seasonal hiring surge. Every agent scored. Managers see dashboards and exception reports, not individual call reviews. Legacy Family Life's target: double or triple their rep-to-manager ratio from 10:1 to 25:1.</p>
               </div>
             </div>
           </div>
@@ -1087,7 +1194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="accordion-body">
             <div class="accordion-body-inner">
-              <p class="accordion-problem">After every enrollment, agents enter policy details, product selections, pricing, payment info, and application data into the CRM. This process averages 45 minutes per call. During peak enrollment, agents choose between taking the next call and finishing their paperwork.</p>
+              <p class="accordion-problem">After every enrollment, agents enter policy details, product selections, pricing, payment info, and application data into the CRM. This process averages 45 minutes per call when done manually. During AEP, when an agent might handle 15-30+ calls a day, the math doesn't work. Agents choose between taking the next call and finishing their paperwork. The paperwork loses. Every time.</p>
               <div class="accordion-solution">
                 <div class="accordion-solution-label">How Attention solves this</div>
                 <p style="font-size:14px;color:var(--text);line-height:1.65;">Auto sales disposition. Attention listens to the call, extracts all relevant data - products, pricing, health conditions, payment details - fills out the application, submits it, and emails the agent anything that might have been missed. Legacy Family Life went from 45 minutes to 1-2 minutes.</p>
@@ -1103,7 +1210,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="accordion-body">
             <div class="accordion-body-inner">
-              <p class="accordion-problem">In life and health insurance, a book of business is extremely valuable. Agents who leave often try to take client contact information. In large agencies, this represents tens of millions in lifetime commissions. If agents can query CRM data through AI tools, they can extract client lists.</p>
+              <p class="accordion-problem">In life and health insurance, a book of business is worth tens of millions in lifetime commissions. Agents are financially motivated to extract client lists before they leave. As one agency owner told us: "The money on the table, if an agent is trying to get all our contact info, is large enough that they would be trying to get around it." If your AI tools give agents access to raw client data, you've built a self-serve extraction tool.</p>
               <div class="accordion-solution">
                 <div class="accordion-solution-label">How Attention solves this</div>
                 <p style="font-size:14px;color:var(--text);line-height:1.65;">PII protection with role-based permissions. Agents use AI coaching and call analysis without accessing raw client data. Granular controls prevent data extraction. As one customer put it: "The last thing I want them to do is pull a list of all our clients."</p>
@@ -1119,7 +1226,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="accordion-body">
             <div class="accordion-body-inner">
-              <p class="accordion-problem">Fraudulent applications - where agents misrepresent client health conditions, income, or eligibility - cost agencies carrier contracts and create legal liability. By the time fraud is caught during a claim, the damage is done.</p>
+              <p class="accordion-problem">Fraudulent applications - agents misrepresenting client health conditions, income, or eligibility - cost agencies carrier contracts and create legal liability. Misrepresentation accounts for 25% of all claims against life and health agents. By the time fraud surfaces during a claim review, the carrier relationship is already at risk. One bad enrollment can cascade.</p>
               <div class="accordion-solution">
                 <div class="accordion-solution-label">How Attention solves this</div>
                 <p style="font-size:14px;color:var(--text);line-height:1.65;">Fraud detection scoring. Attention reads the medical underwriting section of each call, compares what the client said to what the agent submitted, and generates a fraud likelihood percentage. Flagged calls go to management immediately - not months later during a claim.</p>
@@ -1135,7 +1242,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section id="features">
     <div class="container">
       <p class="section-label fade-in">Built for insurance</p>
-      <h2 class="section-title fade-in fade-in-delay-1">Not a tech tool adapted for insurance.<br/><span class="grad-text">Built for it from day one.</span></h2>
+      <h2 class="section-title fade-in fade-in-delay-1">Understands enrollments, not SaaS demos.<br/><span class="grad-text">Built for insurance from day one.</span></h2>
 
       <div class="features-grid">
         <div class="feature-card fade-in">
@@ -1197,18 +1304,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="steps-grid">
         <div class="step-card fade-in fade-in-delay-1">
-          <div class="step-title">Attention joins your calls automatically</div>
-          <div class="step-text">Works with Vonage, Zoom, Microsoft Teams, Google Meet, Aircall, and ONYX. No hardware. No downloads. Attention records, transcribes, and analyzes every call.</div>
+          <div class="step-title">Attention joins every call. Automatically.</div>
+          <div class="step-text">Connects to Vonage, Zoom, Teams, Meet, Aircall, ONYX - whatever your agents are dialing from. Every enrollment call, service call, and follow-up is recorded, transcribed, and analyzed. No hardware. No agent action required.</div>
         </div>
 
         <div class="step-card fade-in fade-in-delay-2">
-          <div class="step-title">Every call is scored and documented</div>
-          <div class="step-text">Compliance scorecards check for CMS disclosures. Coaching scorecards evaluate script adherence and call quality. Dispositions are extracted automatically. All timestamped.</div>
+          <div class="step-title">Every call scored, documented, dispositioned</div>
+          <div class="step-text">Compliance scorecards check for CMS disclosures and SOA language. Coaching scorecards evaluate script adherence and call quality. Policy details, product selections, and payment info are extracted for auto-disposition. All timestamped. All stored for 10+ years.</div>
         </div>
 
         <div class="step-card fade-in fade-in-delay-3">
-          <div class="step-title">Data flows to your CRM and team</div>
-          <div class="step-text">Call notes, compliance flags, coaching scores, and disposition data push directly to Salesforce, HubSpot, or your custom CRM. Alerts go to Slack or email. No manual entry required.</div>
+          <div class="step-title">Data flows where it needs to go</div>
+          <div class="step-text">Disposition data pushes to Salesforce, HubSpot, or your custom CRM. Compliance flags go to Slack or email. Coaching scores populate manager dashboards. No manual entry. No 45-minute post-call paperwork. Agents take the next call.</div>
         </div>
       </div>
     </div>
@@ -1219,8 +1326,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="mid-cta-glow"></div>
     <div class="mid-cta-border"></div>
     <div class="mid-cta-border-b"></div>
-    <h2 class="mid-cta-headline">Your next enrollment season<br/>starts now.</h2>
-    <p class="mid-cta-sub">15 minutes to see how Attention handles compliance monitoring, agent coaching, and automated dispositions for <span class="grad-text">life and health insurance.</span></p>
+    <h2 class="mid-cta-headline">54 days. 30,000 calls.<br/>Zero missed disclosures.</h2>
+    <p class="mid-cta-sub">15 minutes to see how agencies like EIP and Legacy Family Life run enrollment season with <span class="grad-text">Attention.</span></p>
     <a href="https://attention.com/book?utm_source=landing_page&utm_medium=cta&utm_campaign=insurance_life_health&utm_content=mid_cta" class="btn-primary" style="font-size:18px;padding:18px 40px;">
       Book a Demo
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -1288,19 +1395,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="accordion-body">
             <div class="accordion-body-inner">
-              <p class="accordion-problem" style="margin-bottom:0;">Every client conversation is recorded and documented with a timestamped AI summary of what was discussed, what advice was given, and what the client decided. This creates an automatic E&amp;O defense file for every interaction, with secure storage meeting state retention requirements of 5-10+ years.</p>
+              <p class="accordion-problem" style="margin-bottom:0;">The average E&amp;O claim costs $40,000+ and raises your premiums 25-50% for three to five years. The #1 defense is documented proof that the agent discussed the coverage and gave appropriate advice. Attention creates that documentation automatically - a timestamped summary of every call showing what was discussed, what advice was given, and what the client decided. Stored in compliance with state retention requirements of 5-10+ years.</p>
             </div>
           </div>
         </div>
 
         <div class="accordion-item fade-in fade-in-delay-3">
           <div class="accordion-header">
-            <span>Can Attention handle enrollment season call volume?</span>
+            <span>Can Attention handle AEP volume?</span>
             <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
           </div>
           <div class="accordion-body">
             <div class="accordion-body-inner">
-              <p class="accordion-problem" style="margin-bottom:0;">Yes. Attention processes 30,000+ calls per day for our largest insurance customer (Elite Insurance Partners). The platform is built for the volume spikes that come with AEP (Oct 15 - Dec 7), OEP, and other enrollment periods.</p>
+              <p class="accordion-problem" style="margin-bottom:0;">Yes. Elite Insurance Partners processes 30,000+ calls per day through Attention. The platform is built for the volume spikes that come with AEP (Oct 15 - Dec 7), OEP, and special enrollment periods. Compliance scoring, coaching, and auto-disposition run at the same speed whether you're processing 100 calls or 30,000.</p>
             </div>
           </div>
         </div>
@@ -1312,19 +1419,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="accordion-body">
             <div class="accordion-body-inner">
-              <p class="accordion-problem" style="margin-bottom:0;">Agents are live in minutes. Attention integrates with your existing dialer and video conferencing tools. Compliance scorecards and coaching workflows are configured during onboarding with hands-on support from Attention's deployment team.</p>
+              <p class="accordion-problem" style="margin-bottom:0;">Agents are live in minutes. Attention connects to your existing dialer (Vonage, Aircall, ONYX) and video tools (Zoom, Teams, Meet). Compliance scorecards and coaching workflows are configured during onboarding with hands-on support from our deployment team - we build the prompts and scorecards with you, not hand you a manual.</p>
             </div>
           </div>
         </div>
 
         <div class="accordion-item fade-in fade-in-delay-1">
           <div class="accordion-header">
-            <span>What about HIPAA for health insurance lines?</span>
+            <span>Does CMS require call recordings to be stored for 10 years?</span>
             <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
           </div>
           <div class="accordion-body">
             <div class="accordion-body-inner">
-              <p class="accordion-problem" style="margin-bottom:0;">Attention is HIPAA compliant with BAA agreements in place. We already serve Medicare and health insurance teams and meet all requirements for protected health information. PII protection with role-based permissions ensures sensitive data is accessible only to authorized personnel.</p>
+              <p class="accordion-problem" style="margin-bottom:0;">Yes. CMS requires retention of all Medicare sales call recordings for 10 years, and SOA forms must also be retained for 10 years regardless of whether a plan was sold. Attention stores call recordings, transcripts, compliance scores, and AI summaries in a HIPAA-compliant environment with BAA in place. All data is accessible for audits at any point during the retention period.</p>
             </div>
           </div>
         </div>
@@ -1335,8 +1442,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- ─── CLOSING CTA ─── -->
   <section id="closing-cta">
     <div class="closing-glow"></div>
-    <div class="closing-headline">Ready to see<br/><span class="grad-text">100% coverage?</span></div>
-    <p class="closing-sub">Every call documented. Every disclosure tracked. Every agent coached. Every disposition automated. HIPAA compliant from day one.<sup style="font-size:10px;opacity:0.5;">1</sup></p>
+    <div class="closing-headline">Stop sampling.<br/><span class="grad-text">Start scoring.</span></div>
+    <p class="closing-sub">100% of calls documented. Every CMS disclosure tracked. Every agent coached. Every disposition automated. HIPAA compliant. SOC 2 certified. Built for AEP volume.<sup style="font-size:10px;opacity:0.5;">1</sup></p>
     <div class="closing-actions">
       <a href="https://attention.com/book?utm_source=landing_page&utm_medium=cta&utm_campaign=insurance_life_health&utm_content=closing_cta" class="btn-primary" style="font-size:18px;padding:20px 44px;">
         Book a Demo
