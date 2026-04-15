@@ -848,6 +848,100 @@
     }
     .integration-pill:hover { border-color: rgba(143,120,255,0.25); }
 
+    /* ─── ZINNIA CTA ─── */
+    #zinnia-cta {
+      padding: 64px 24px;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .zinnia-card {
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 48px 40px;
+      background: linear-gradient(135deg, rgba(143,120,255,0.06) 0%, rgba(143,120,255,0.02) 100%);
+      border: 1px solid rgba(143,120,255,0.18);
+      border-radius: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .zinnia-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(143,120,255,0.1);
+      border: 1px solid rgba(143,120,255,0.2);
+      border-radius: 100px;
+      padding: 6px 14px;
+      margin-bottom: 20px;
+    }
+    .zinnia-title {
+      font-size: clamp(20px, 2.5vw, 26px);
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+    .zinnia-sub {
+      font-size: 14px;
+      color: var(--text-subtle);
+      line-height: 1.65;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .zinnia-form {
+      display: flex;
+      gap: 10px;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .zinnia-form input {
+      flex: 1;
+      padding: 14px 18px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font-size: 14px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .zinnia-form input::placeholder { color: rgba(255,255,255,0.3); }
+    .zinnia-form input:focus { border-color: var(--accent); }
+    .zinnia-form button {
+      padding: 14px 24px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+    .zinnia-form button:hover { opacity: 0.88; }
+    .zinnia-confirm {
+      display: none;
+      font-size: 14px;
+      color: var(--accent);
+      font-weight: 600;
+      margin-top: 16px;
+    }
+    @media (max-width: 600px) {
+      .zinnia-card { padding: 36px 24px; }
+      .zinnia-form { flex-direction: column; }
+      .zinnia-form button { width: 100%; }
+    }
+
     /* ─── MID CTA ─── */
     #mid-cta {
       padding: 100px 40px;
@@ -1384,6 +1478,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- ─── ZINNIA SMART OFFICE CTA ─── -->
+  <section id="zinnia-cta">
+    <div class="zinnia-card fade-in">
+      <div class="zinnia-badge">Coming Soon</div>
+      <h3 class="zinnia-title">Attention + Zinnia Smart Office</h3>
+      <p class="zinnia-sub">Auto-populate Smart Office contact records, policy data, and disposition notes directly from every call. No manual entry. No copy-paste. Drop your work email to get notified when the integration goes live.</p>
+      <form class="zinnia-form" id="zinniaForm" onsubmit="return false;">
+        <input type="email" placeholder="Work email" required id="zinniaEmail" autocomplete="email">
+        <button type="submit" id="zinniaSubmit">Notify Me</button>
+      </form>
+      <p class="zinnia-confirm" id="zinniaConfirm">You're on the list. We'll be in touch.</p>
+    </div>
+  </section>
+
   <!-- ─── FAQ ─── -->
   <section id="faq">
     <div class="container">
@@ -1511,6 +1619,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     const logoTrack = document.getElementById('logoTrack');
     if (logoTrack) {
       logoTrack.innerHTML += logoTrack.innerHTML;
+    }
+
+    // ─── Zinnia waitlist form ───
+    const zinniaForm = document.getElementById('zinniaForm');
+    if (zinniaForm) {
+      zinniaForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('zinniaEmail').value;
+        if (!email) return;
+        // Fire PostHog event if available
+        if (window.posthog) {
+          window.posthog.capture('zinnia_waitlist_signup', { email: email });
+        }
+        // Fire GTM dataLayer event
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'zinnia_waitlist', email: email });
+        // Show confirmation
+        zinniaForm.style.display = 'none';
+        document.getElementById('zinniaConfirm').style.display = 'block';
+      });
     }
 
     // ─── Scroll fade-in ───
