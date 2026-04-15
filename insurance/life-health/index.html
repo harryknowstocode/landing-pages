@@ -868,12 +868,12 @@
     }
     .integration-pill:hover { border-color: rgba(143,120,255,0.25); }
     .integration-pill img {
-      height: 18px;
+      height: 20px;
       width: auto;
+      max-width: 100px;
       object-fit: contain;
-      filter: brightness(0) invert(1);
-      opacity: 0.8;
     }
+    .integration-pill img.invert { filter: brightness(0) invert(1); opacity: 0.85; }
 
     /* ─── ZINNIA CTA ─── */
     #zinnia-cta {
@@ -1498,15 +1498,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 class="section-title fade-in fade-in-delay-1" style="margin-bottom:36px;">Connects to the tools<br/><span class="grad-text">you already use.</span></h2>
 
       <div class="integrations-grid fade-in fade-in-delay-2">
-        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/salesforce.svg" alt="Salesforce"> Salesforce</div>
-        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/hubspot.svg" alt="HubSpot"> HubSpot</div>
-        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/vonage.svg" alt="Vonage"> Vonage</div>
-        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/zoom.svg" alt="Zoom"> Zoom</div>
-        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/microsoft.svg" alt="Microsoft"> Microsoft Teams</div>
-        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/google.svg" alt="Google"> Google Meet</div>
-        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/aircall.svg" alt="Aircall"> Aircall</div>
-        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/slack.png" alt="Slack"> Slack</div>
-        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/google.svg" alt="Google"> Google Chat</div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/salesforce.svg" alt="Salesforce"></div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/hubspot.svg" alt="HubSpot"></div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/vonage.svg" alt="Vonage" class="invert"></div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/zoom.svg" alt="Zoom"></div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/teams.svg" alt="Microsoft Teams"></div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/google-meet.svg" alt="Google Meet"></div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/aircall.svg" alt="Aircall" class="invert"></div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/slack.png" alt="Slack" class="invert"></div>
         <div class="integration-pill">ONYX</div>
         <div class="integration-pill">Custom CRMs</div>
         <div class="integration-pill">200+ more</div>
