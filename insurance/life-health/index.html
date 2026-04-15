@@ -732,20 +732,24 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 64px;
-      padding: 0 44px;
-      background: transparent;
-      border: none;
-      white-space: nowrap;
-      opacity: 0.7;
-      transition: opacity 0.2s;
+      height: 56px;
+      padding: 10px 32px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      flex-shrink: 0;
+      transition: background 0.25s;
     }
-    .logo-pill:hover { opacity: 1; }
+    .logo-pill:hover { background: rgba(255,255,255,0.12); }
     .logo-pill img {
-      height: 48px;
+      height: 32px;
       width: auto;
       object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.75;
+      transition: opacity 0.25s;
     }
+    .logo-pill:hover img { opacity: 1; }
 
     /* ─── INTEGRATIONS ─── */
     .integrations-grid {
@@ -957,8 +961,8 @@
       footer { flex-direction: column; align-items: flex-start; }
       .trust-bar { gap: 8px; }
       .trust-badge { font-size: 11px; padding: 6px 12px; }
-      .logo-pill { height: 48px; padding: 0 28px; }
-      .logo-pill img { height: 36px; }
+      .logo-pill { height: 48px; padding: 8px 24px; }
+      .logo-pill img { height: 26px; }
       .marquee-track { gap: 14px; }
     }
   </style>
