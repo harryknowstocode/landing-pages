@@ -771,10 +771,11 @@
 
     /* ─── CUSTOMER LOGOS ─── */
     #customers {
-      padding: 60px 0;
+      padding: 52px 0;
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
       background: var(--surface);
+      overflow: hidden;
     }
     .customers-label {
       text-align: center;
@@ -785,22 +786,44 @@
       color: var(--text-subtle);
       margin-bottom: 28px;
     }
-    .customer-logos {
+    .marquee-wrap {
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+      mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    }
+    .marquee-track {
       display: flex;
-      justify-content: center;
+      gap: 20px;
+      animation: marquee 30s linear infinite;
+      width: max-content;
+    }
+    .marquee-track:hover { animation-play-state: paused; }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    .logo-pill {
+      display: flex;
       align-items: center;
-      gap: 48px;
-      flex-wrap: wrap;
+      justify-content: center;
+      height: 56px;
+      padding: 10px 32px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      flex-shrink: 0;
+      transition: background 0.25s;
     }
-    .customer-logo {
-      font-size: 16px;
-      font-weight: 700;
-      color: rgba(255,255,255,0.5);
-      letter-spacing: -0.3px;
-      white-space: nowrap;
-      transition: color 0.2s;
+    .logo-pill:hover { background: rgba(255,255,255,0.12); }
+    .logo-pill img {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.75;
+      transition: opacity 0.25s;
     }
-    .customer-logo:hover { color: rgba(255,255,255,0.8); }
+    .logo-pill:hover img { opacity: 1; }
 
     /* ─── INTEGRATIONS ─── */
     #integrations { padding: 80px 0; }
@@ -903,7 +926,9 @@
       footer { flex-direction: column; align-items: flex-start; }
       .trust-bar { gap: 8px; }
       .trust-badge { font-size: 11px; padding: 6px 12px; }
-      .customer-logos { gap: 24px; }
+      .logo-pill { height: 48px; padding: 8px 24px; }
+      .logo-pill img { height: 26px; }
+      .marquee-track { gap: 14px; }
     }
   </style>
 </head>
@@ -994,13 +1019,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- ─── CUSTOMER LOGOS ─── -->
   <section id="customers">
     <p class="customers-label">Trusted by life &amp; health insurance agencies</p>
-    <div class="customer-logos">
-      <span class="customer-logo">Elite Insurance Partners</span>
-      <span class="customer-logo">Legacy Family Life</span>
-      <span class="customer-logo">Highland Health Care</span>
-      <span class="customer-logo">Senior Summit</span>
-      <span class="customer-logo">SalesTank</span>
-      <span class="customer-logo">Point-C</span>
+    <div class="marquee-wrap">
+      <div class="marquee-track" id="logoTrack">
+        <div class="logo-pill"><img src="logos/eip.png" alt="Elite Insurance Partners" loading="lazy"></div>
+        <div class="logo-pill"><img src="logos/legacy-family-life.png" alt="Legacy Family Life" loading="lazy"></div>
+        <div class="logo-pill"><img src="logos/highland-healthcare.png" alt="Highland Health Care" loading="lazy"></div>
+        <div class="logo-pill"><img src="logos/senior-summit.png" alt="Senior Summit Insurance Group" loading="lazy"></div>
+        <div class="logo-pill"><img src="logos/salestank.png" alt="SalesTank" loading="lazy"></div>
+        <div class="logo-pill"><img src="logos/point-c.png" alt="Point-C Health" loading="lazy"></div>
+      </div>
     </div>
   </section>
 
@@ -1470,6 +1497,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
 
   <script>
+    // ─── Logo marquee (duplicate for seamless loop) ───
+    const logoTrack = document.getElementById('logoTrack');
+    if (logoTrack) {
+      logoTrack.innerHTML += logoTrack.innerHTML;
+    }
+
     // ─── Scroll fade-in ───
     const observer = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
