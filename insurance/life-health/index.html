@@ -856,7 +856,7 @@
     .integration-pill {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       padding: 10px 20px;
       background: var(--surface);
       border: 1px solid var(--border);
@@ -867,6 +867,13 @@
       transition: border-color 0.2s;
     }
     .integration-pill:hover { border-color: rgba(143,120,255,0.25); }
+    .integration-pill img {
+      height: 18px;
+      width: auto;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.8;
+    }
 
     /* ─── ZINNIA CTA ─── */
     #zinnia-cta {
@@ -1491,15 +1498,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 class="section-title fade-in fade-in-delay-1" style="margin-bottom:36px;">Connects to the tools<br/><span class="grad-text">you already use.</span></h2>
 
       <div class="integrations-grid fade-in fade-in-delay-2">
-        <div class="integration-pill">Salesforce</div>
-        <div class="integration-pill">HubSpot</div>
-        <div class="integration-pill">Vonage</div>
-        <div class="integration-pill">Zoom</div>
-        <div class="integration-pill">Microsoft Teams</div>
-        <div class="integration-pill">Google Meet</div>
-        <div class="integration-pill">Aircall</div>
-        <div class="integration-pill">Slack</div>
-        <div class="integration-pill">Google Chat</div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/salesforce.svg" alt="Salesforce"> Salesforce</div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/hubspot.svg" alt="HubSpot"> HubSpot</div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/vonage.svg" alt="Vonage"> Vonage</div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/zoom.svg" alt="Zoom"> Zoom</div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/microsoft.svg" alt="Microsoft"> Microsoft Teams</div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/google.svg" alt="Google"> Google Meet</div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/aircall.svg" alt="Aircall"> Aircall</div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/slack.png" alt="Slack"> Slack</div>
+        <div class="integration-pill"><img src="/insurance/life-health/logos/integrations/google.svg" alt="Google"> Google Chat</div>
         <div class="integration-pill">ONYX</div>
         <div class="integration-pill">Custom CRMs</div>
         <div class="integration-pill">200+ more</div>
@@ -1511,6 +1518,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section id="zinnia-cta">
     <div class="zinnia-card fade-in">
       <div class="zinnia-badge">Coming Soon</div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:20px;">
+        <img src="/attention-icon-color.png" alt="Attention" style="height:36px;border-radius:8px;">
+        <span style="font-size:24px;color:rgba(255,255,255,0.3);font-weight:300;">+</span>
+        <img src="/insurance/life-health/logos/integrations/zinnia.svg" alt="Zinnia Smart Office" style="height:28px;filter:brightness(0) invert(1);opacity:0.85;">
+      </div>
       <h3 class="zinnia-title">Attention + Zinnia Smart Office</h3>
       <p class="zinnia-sub">Auto-populate Smart Office contact records, policy data, and disposition notes directly from every call. No manual entry. No copy-paste. Drop your work email to get notified when the integration goes live.</p>
       <form class="zinnia-form" id="zinniaForm" onsubmit="return false;">
