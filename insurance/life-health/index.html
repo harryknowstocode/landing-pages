@@ -387,18 +387,25 @@
 
     /* ─── STATS BAR ─── */
     #stats {
-      padding: 60px 0;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      background: var(--surface);
+      padding: 80px 0;
     }
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 32px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
       text-align: center;
     }
-    .stat-item {}
+    .stat-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 20px;
+      transition: border-color 0.2s;
+    }
+    .stat-item:hover { border-color: rgba(143,120,255,0.25); }
+    @media (max-width: 700px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
     .stat-number {
       font-size: clamp(32px, 4vw, 48px);
       font-weight: 900;
