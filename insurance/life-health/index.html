@@ -367,24 +367,69 @@
     /* ─── TRUST BADGES ─── */
     .trust-bar {
       display: flex;
-      gap: 12px;
-      margin-top: 48px;
+      gap: 8px;
+      margin-bottom: 24px;
       flex-wrap: wrap;
     }
     .trust-badge {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       background: rgba(34,197,94,0.08);
       border: 1px solid rgba(34,197,94,0.2);
       color: rgba(34,197,94,0.9);
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 700;
-      padding: 8px 16px;
+      padding: 5px 12px;
       border-radius: 100px;
       letter-spacing: 0.5px;
     }
     .trust-badge svg { flex-shrink: 0; }
+
+    /* ─── HERO STATS ─── */
+    .hero-stats {
+      display: flex;
+      gap: 0;
+      margin-top: 48px;
+    }
+    .hero-stat {
+      padding: 0 28px;
+      position: relative;
+      text-align: center;
+    }
+    .hero-stat:first-child { padding-left: 0; }
+    .hero-stat:last-child { padding-right: 0; }
+    .hero-stat + .hero-stat::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 32px;
+      width: 1px;
+      background: var(--border);
+    }
+    .hero-stat-number {
+      font-size: clamp(24px, 3vw, 32px);
+      font-weight: 900;
+      letter-spacing: -1px;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.1;
+    }
+    .hero-stat-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+    @media (max-width: 700px) {
+      .hero-stats { flex-wrap: wrap; gap: 16px 0; }
+      .hero-stat { padding: 0 16px; }
+      .hero-stat:nth-child(3)::before { display: none; }
+    }
 
     /* ─── STATS BAR ─── */
     #stats {
@@ -968,8 +1013,8 @@
       #mid-cta { padding: 72px 24px; }
       #closing-cta { padding: 80px 24px; }
       footer { flex-direction: column; align-items: flex-start; }
-      .trust-bar { gap: 8px; }
-      .trust-badge { font-size: 11px; padding: 6px 12px; }
+      .trust-bar { gap: 6px; }
+      .trust-badge { font-size: 10px; padding: 4px 10px; }
       .logo-pill { height: 48px; padding: 8px 24px; }
       .logo-pill img { height: 26px; }
       .marquee-track { gap: 14px; }
@@ -999,6 +1044,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="hero-eyebrow-dot"></span>
         Life &amp; Health Insurance
       </div>
+      <div class="trust-bar">
+        <div class="trust-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          HIPAA Compliant
+        </div>
+        <div class="trust-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          SOC 2 Certified
+        </div>
+        <div class="trust-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          Works With Any Dialer
+        </div>
+        <div class="trust-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          BAA in Place
+        </div>
+      </div>
       <h1 class="hero-headline">
         Get your reps selling<br/>
         Better. Faster. Cheaper.<br/>
@@ -1015,22 +1078,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="#before-after" class="hero-secondary">See what you're missing</a>
       </div>
 
-      <div class="trust-bar">
-        <div class="trust-badge">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-          HIPAA Compliant
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-number">100%</div>
+          <div class="hero-stat-label">Calls coached</div>
         </div>
-        <div class="trust-badge">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-          SOC 2 Certified
+        <div class="hero-stat">
+          <div class="hero-stat-number">50%</div>
+          <div class="hero-stat-label">Faster ramp</div>
         </div>
-        <div class="trust-badge">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-          Works With Any Dialer
+        <div class="hero-stat">
+          <div class="hero-stat-number">25:1</div>
+          <div class="hero-stat-label">Agent-to-manager</div>
         </div>
-        <div class="trust-badge">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-          BAA in Place
+        <div class="hero-stat">
+          <div class="hero-stat-number">30K+</div>
+          <div class="hero-stat-label">Calls per day</div>
         </div>
       </div>
     </div>
@@ -1047,30 +1110,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="logo-pill"><img src="/insurance/life-health/logos/senior-summit.png" alt="Senior Summit Insurance Group" loading="lazy"></div>
         <div class="logo-pill"><img src="/insurance/life-health/logos/salestank.png" alt="SalesTank" loading="lazy"></div>
         <div class="logo-pill"><img src="/insurance/life-health/logos/point-c.png" alt="Point-C Health" loading="lazy"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── STATS BAR ─── -->
-  <section id="stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item fade-in">
-          <div class="stat-number">100%</div>
-          <div class="stat-label">Of calls coached.</div>
-        </div>
-        <div class="stat-item fade-in fade-in-delay-1">
-          <div class="stat-number">50%</div>
-          <div class="stat-label">Faster agent ramp.</div>
-        </div>
-        <div class="stat-item fade-in fade-in-delay-2">
-          <div class="stat-number">25:1</div>
-          <div class="stat-label">Agent-to-manager ratio.</div>
-        </div>
-        <div class="stat-item fade-in fade-in-delay-3">
-          <div class="stat-number">30K+</div>
-          <div class="stat-label">Calls per day.</div>
-        </div>
       </div>
     </div>
   </section>
