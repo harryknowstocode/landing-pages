@@ -388,26 +388,34 @@
 
     /* ─── STATS BAR ─── */
     #stats {
-      padding: 40px 0;
+      padding: 0 0 16px;
     }
     .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 0;
       text-align: center;
     }
     .stat-item {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 28px 16px;
-      transition: border-color 0.2s;
+      padding: 24px 32px;
+      position: relative;
     }
-    .stat-item:hover { border-color: rgba(143,120,255,0.25); }
+    .stat-item + .stat-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 40px;
+      width: 1px;
+      background: var(--border);
+    }
     @media (max-width: 700px) {
-      #stats { padding: 32px 0; }
-      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .stat-item { padding: 20px 12px; }
+      #stats { padding: 0 0 12px; }
+      .stats-grid { flex-wrap: wrap; }
+      .stat-item { padding: 16px 20px; flex: 0 0 50%; box-sizing: border-box; }
+      .stat-item + .stat-item::before { display: none; }
+      .stat-item:nth-child(n+3) { border-top: 1px solid var(--border); }
     }
     .stat-number {
       font-size: clamp(32px, 4vw, 48px);
@@ -1043,6 +1051,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- ─── STATS BAR ─── -->
+  <section id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Of calls coached.</div>
+        </div>
+        <div class="stat-item fade-in fade-in-delay-1">
+          <div class="stat-number">50%</div>
+          <div class="stat-label">Faster agent ramp.</div>
+        </div>
+        <div class="stat-item fade-in fade-in-delay-2">
+          <div class="stat-number">25:1</div>
+          <div class="stat-label">Agent-to-manager ratio.</div>
+        </div>
+        <div class="stat-item fade-in fade-in-delay-3">
+          <div class="stat-number">30K+</div>
+          <div class="stat-label">Calls per day.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ─── BEFORE / AFTER ─── -->
   <section id="before-after">
     <div class="container">
@@ -1152,31 +1184,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button class="carousel-btn" id="nextBtn">&#8594;</button>
       </div>
       <p style="text-align:center;font-size:11px;color:rgba(255,255,255,0.25);margin-top:16px;">Individual customer experiences. Results may vary.</p>
-    </div>
-  </section>
-
-  <!-- ─── STATS BAR ─── -->
-  <section id="stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item fade-in">
-          <div class="stat-number">100%</div>
-          <div class="stat-label">Of calls coached.</div>
-        </div>
-        <div class="stat-item fade-in fade-in-delay-1">
-          <div class="stat-number">50%</div>
-          <div class="stat-label">Faster agent ramp.</div>
-        </div>
-        <div class="stat-item fade-in fade-in-delay-2">
-          <div class="stat-number">25:1</div>
-          <div class="stat-label">Agent-to-manager ratio.</div>
-        </div>
-        <div class="stat-item fade-in fade-in-delay-3">
-          <div class="stat-number">30K+</div>
-          <div class="stat-label">Calls per day.</div>
-        </div>
-      </div>
-      <p style="text-align:center;font-size:12px;color:var(--text-subtle);margin-top:12px;">Based on real results from Attention customers in life &amp; health insurance. Individual outcomes may vary.</p>
     </div>
   </section>
 
