@@ -76,7 +76,7 @@ l1_y = 185
 draw.text((l1_x, l1_y), line1, fill=(255, 255, 255), font=font_headline)
 
 # Headline line 2: "Better and Faster."
-line2 = "Better and Faster."
+line2 = "Better, Faster."
 l2_bbox = draw.textbbox((0, 0), line2, font=font_headline)
 l2_w = l2_bbox[2] - l2_bbox[0]
 l2_x = (W - l2_w) // 2
