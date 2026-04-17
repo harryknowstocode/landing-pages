@@ -1,7 +1,8 @@
 {
   "redirects": [{ "source": "/", "destination": "/gong-alternative", "permanent": true }],
   "rewrites": [
-    { "source": "/gong-alternative", "destination": "/competitors/gong/index.html" }
+    { "source": "/gong-alternative", "destination": "/competitors/gong/index.html" },
+    { "source": "/insurance-life-and-health-agencies", "destination": "/insurance/life-health/index.html" }
   ],
   "headers": [
     {
