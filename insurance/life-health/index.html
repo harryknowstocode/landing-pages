@@ -1560,8 +1560,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     function start() { autoTimer = setInterval(() => navBy(1), 5000); }
     function reset() { clearInterval(autoTimer); start(); }
 
-    setPos(trackIdx, false);
-    start();
+    // Ensure cards are laid out before positioning
+    requestAnimationFrame(() => {
+      setPos(trackIdx, false);
+      start();
+    });
+    window.addEventListener('resize', () => setPos(trackIdx, false));
 
     // ─── Accordion ───
     document.querySelectorAll('.accordion-header').forEach(header => {
