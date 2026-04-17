@@ -1,5 +1,5 @@
 {
-  "redirects": [],
+  "redirects": [{ "source": "/", "destination": "https://www.attention.com", "permanent": false }],
   "rewrites": [
     { "source": "/gong-alternative", "destination": "/competitors/gong/index.html" },
     { "source": "/insurance-life-and-health-agencies", "destination": "/insurance/life-health/index.html" }
