@@ -553,10 +553,58 @@
       color: var(--text-muted);
     }
     @media (max-width: 600px) {
-      .ba-header, .ba-row { grid-template-columns: 1fr; }
-      .ba-header-cell:first-child { display: none; }
-      .ba-category { border-right: none; border-bottom: 1px solid var(--border); padding: 12px 20px; }
-      .ba-cell.before { border-right: none; }
+      .ba-table { border: none; border-radius: 0; overflow: visible; }
+      .ba-header { display: none; }
+      .ba-row {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        margin-bottom: 16px;
+        overflow: hidden;
+      }
+      .ba-row:last-child { border-bottom: 1px solid var(--border); margin-bottom: 0; }
+      .ba-row:hover { background: transparent; }
+      .ba-row.active { background: transparent; }
+      .ba-category {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: 14px 20px;
+        font-size: 14px;
+        font-weight: 700;
+        background: rgba(255,255,255,0.03);
+      }
+      .ba-cell {
+        padding: 14px 20px;
+        position: relative;
+        padding-top: 36px;
+      }
+      .ba-cell.before {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+      .ba-cell.before::before,
+      .ba-cell.after::before {
+        position: absolute;
+        top: 12px;
+        left: 20px;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        padding: 2px 8px;
+        border-radius: 4px;
+      }
+      .ba-cell.before::before {
+        content: 'Without Attention';
+        background: rgba(255,130,130,0.12);
+        color: rgba(255,130,130,0.9);
+      }
+      .ba-cell.after::before {
+        content: 'With Attention';
+        background: rgba(120,230,160,0.12);
+        color: rgba(120,230,160,0.9);
+      }
     }
 
     /* ─── THREE COLUMN "WHAT CHANGES" ─── */
@@ -1464,7 +1512,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         Book a Demo
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-      <a href="#pain-points" class="btn-ghost">See how it works</a>
+      <a href="#before-after" class="btn-ghost">See how it works</a>
     </div>
     <p style="margin-top:48px;font-size:clamp(22px,3vw,38px);font-weight:700;color:rgba(255,255,255,0.92);text-align:center;letter-spacing:-0.5px;">This is life with <span class="grad-text">Attention.</span></p>
   </section>
