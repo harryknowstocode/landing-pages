@@ -2171,13 +2171,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         event_action: 'email_submit',
         section: section
       });
-      // Log to Google Sheet, then redirect
-      var sheetUrl = 'https://script.google.com/macros/s/AKfycbwDrrhApV38zb8wxX6jwvcRonxr-jeVRJfLlsmhgOu7CuxlAre1hRvFq1fFux8y7Gm-5g/exec?email=' + encodeURIComponent(email) + '&section=' + encodeURIComponent(section) + '&page=' + encodeURIComponent(window.location.pathname);
+      // Log to Google Sheet via hidden iframe form, then redirect
       var redirectUrl = 'https://www.attention.com/product/book-a-demo?email=' + encodeURIComponent(email);
-      fetch(sheetUrl, { mode: 'no-cors', redirect: 'follow' }).finally(function() {
-        window.location.href = redirectUrl;
+      var iframeName = 'sheet_log_' + Date.now();
+      var iframe = document.createElement('iframe');
+      iframe.name = iframeName;
+      iframe.style.display = 'none';
+      document.body.appendChild(iframe);
+      var f = document.createElement('form');
+      f.method = 'GET';
+      f.action = 'https://script.google.com/macros/s/AKfycbwDrrhApV38zb8wxX6jwvcRonxr-jeVRJfLlsmhgOu7CuxlAre1hRvFq1fFux8y7Gm-5g/exec';
+      f.target = iframeName;
+      f.style.display = 'none';
+      ['email','section','page'].forEach(function(k, i) {
+        var inp = document.createElement('input');
+        inp.name = k;
+        inp.value = [email, section, window.location.pathname][i];
+        f.appendChild(inp);
       });
-      setTimeout(function() { window.location.href = redirectUrl; }, 2000);
+      document.body.appendChild(f);
+      f.submit();
+      setTimeout(function() { window.location.href = redirectUrl; }, 500);
     }
 
     // Clear error state on input
