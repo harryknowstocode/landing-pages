@@ -1806,17 +1806,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         event_action: 'email_submit',
         section: section
       });
-      // Log to Google Sheet via GET, then redirect
+      // Log to Google Sheet, then redirect
       var sheetUrl = 'https://script.google.com/macros/s/AKfycbwBD1atV6Babf3VR7pSvwLwx_gpExERXKaH2hZtkF2FZlkV5ivfdoGfYm9phHgvuOYTjg/exec?email=' + encodeURIComponent(email) + '&section=' + encodeURIComponent(section) + '&page=' + encodeURIComponent(window.location.pathname);
-      var img = new Image();
-      img.onload = img.onerror = function() {
-        window.location.href = 'https://www.attention.com/product/book-a-demo?email=' + encodeURIComponent(email);
-      };
-      img.src = sheetUrl;
-      // Fallback redirect if image takes too long
-      setTimeout(function() {
-        window.location.href = 'https://www.attention.com/product/book-a-demo?email=' + encodeURIComponent(email);
-      }, 1500);
+      var redirectUrl = 'https://www.attention.com/product/book-a-demo?email=' + encodeURIComponent(email);
+      fetch(sheetUrl, { mode: 'no-cors', redirect: 'follow' }).finally(function() {
+        window.location.href = redirectUrl;
+      });
+      setTimeout(function() { window.location.href = redirectUrl; }, 2000);
     }
 
     // Clear error state on input
