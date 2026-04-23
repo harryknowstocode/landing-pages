@@ -893,6 +893,233 @@
     }
     .btn-ghost:hover { color: var(--text); border-color: rgba(255,255,255,0.15); }
 
+    /* ─── EMAIL CAPTURE FORM ─── */
+    .email-capture {
+      display: flex;
+      align-items: stretch;
+      max-width: 480px;
+      width: 100%;
+    }
+    .email-capture input[type="email"] {
+      flex: 1;
+      min-width: 0;
+      padding: 16px 20px;
+      font-size: 16px;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-right: none;
+      border-radius: 10px 0 0 10px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .email-capture input[type="email"]::placeholder { color: var(--text-muted); }
+    .email-capture input[type="email"]:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+    .email-capture .btn-primary {
+      border-radius: 0 10px 10px 0;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    @keyframes headshake {
+      0%   { transform: translateX(0); }
+      12%  { transform: translateX(-6px); }
+      25%  { transform: translateX(5px); }
+      37%  { transform: translateX(-4px); }
+      50%  { transform: translateX(3px); }
+      62%  { transform: translateX(-2px); }
+      75%  { transform: translateX(1px); }
+      100% { transform: translateX(0); }
+    }
+    .headshake {
+      animation: headshake 0.5s ease-in-out;
+      border-color: #ff4466 !important;
+      box-shadow: 0 0 0 3px rgba(255,68,102,0.25) !important;
+    }
+    .email-capture input[type="email"].input-error::placeholder {
+      color: #ff4466;
+    }
+    .email-capture input[type="email"].input-error {
+      border-color: #ff4466;
+    }
+
+    /* ─── OFFER BANNER ─── */
+    #offer-banner {
+      padding: 80px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+    }
+    #offer-banner::before,
+    #offer-banner::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0;
+      height: 1px;
+      background: var(--grad);
+      opacity: 0.3;
+    }
+    #offer-banner::before { top: 0; }
+    #offer-banner::after { bottom: 0; }
+    .offer-banner-glow {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(143,120,255,0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .offer-pill {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+      background: rgba(143,120,255,0.12);
+      border: 1px solid rgba(143,120,255,0.25);
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .offer-pill span {
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .offer-headline {
+      font-size: clamp(28px, 4.5vw, 52px);
+      font-weight: 900;
+      letter-spacing: -2px;
+      line-height: 1.08;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .offer-sub {
+      font-size: 18px;
+      color: var(--text-muted);
+      margin: 0 auto 36px;
+      line-height: 1.6;
+      position: relative;
+    }
+    #offer-banner .email-capture { margin: 0 auto; }
+
+    @media (max-width: 768px) {
+      .email-capture {
+        flex-direction: column;
+      }
+      .email-capture input[type="email"] {
+        border-right: 1px solid var(--border);
+        border-radius: 10px 10px 0 0;
+        border-bottom: none;
+      }
+      .email-capture .btn-primary {
+        border-radius: 0 0 10px 10px;
+        justify-content: center;
+      }
+      #offer-banner { padding: 60px 24px; }
+    }
+
+    /* ─── CORNER POPUP ─── */
+    .corner-popup {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 90;
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      max-width: 300px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+      transform: translateY(120%);
+      opacity: 0;
+      transition: transform 0.45s cubic-bezier(0.25,0.46,0.45,0.94), opacity 0.45s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .corner-popup::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: var(--grad);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+    .corner-popup.visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .corner-popup.hidden {
+      transform: translateY(120%);
+      opacity: 0;
+    }
+    .corner-popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 50%;
+      color: var(--text-muted);
+      font-size: 16px;
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: 0;
+      line-height: 1;
+      transition: all 0.15s;
+    }
+    .corner-popup-close:hover { color: var(--text); background: rgba(255,255,255,0.12); }
+    .corner-popup-pill {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+      background: rgba(143,120,255,0.12);
+      border: 1px solid rgba(143,120,255,0.25);
+      margin-bottom: 10px;
+    }
+    .corner-popup-pill span {
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .corner-popup-title {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    .corner-popup-sub {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    .corner-popup-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    @media (max-width: 768px) {
+      .corner-popup { bottom: 16px; right: 16px; left: 16px; max-width: none; }
+    }
+
     /* ─── FOOTER ─── */
     footer {
       padding: 28px 40px;
@@ -973,10 +1200,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         %%HERO_SUB%%
       </p>
       <div class="hero-actions">
-        <a href="https://attention.com/book" class="btn-primary">
-          Book a Demo
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
+        <form class="email-capture" novalidate data-section="hero" onsubmit="handleEmailSubmit(event)">
+          <input type="email" placeholder="Enter your work email">
+          <button type="submit" class="btn-primary">Learn More →</button>
+        </form>
         <a href="#comparison" class="hero-secondary">→ See the full comparison</a>
       </div>
       <div class="hero-feature-bar">
@@ -1041,6 +1268,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- ─── OFFER BANNER ─── -->
+  <section id="offer-banner">
+    <div class="offer-banner-glow"></div>
+    <div class="offer-pill"><span>Limited offer</span></div>
+    <h2 class="offer-headline">Stuck in a contract?</h2>
+    <p class="offer-sub"><span class="grad-text">Book a demo in the next 30 days and use Attention free until your Gong contract ends.</span><sup style="font-size:10px;opacity:0.5;">2</sup></p>
+    <form class="email-capture" novalidate data-section="offer_banner" onsubmit="handleEmailSubmit(event)">
+      <input type="email" placeholder="Enter your work email">
+      <button type="submit" class="btn-primary">Claim Your Offer →</button>
+    </form>
+    <p style="margin-top:20px;font-size:11px;color:rgba(255,255,255,0.3);position:relative;">² Free service through the end of your current Gong contract with qualifying Attention subscription agreement. Subject to approval.</p>
+  </section>
+
   <!-- ─── LOGO BAR ─── -->
   <section id="logos">
     <p class="logos-label">Teams that made the switch</p>
@@ -1081,10 +1321,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="mid-cta-border-b"></div>
     <h2 class="mid-cta-headline">See why teams are switching.</h2>
     <p class="mid-cta-sub">15 minutes to prove why you should drop %%COMPETITOR_NAME%% and <span class="footer-badge-grad">live life with Attention.</span></p>
-    <a href="https://attention.com/book" class="btn-primary" style="font-size:18px;padding:18px 40px;">
-      Book a Demo
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-    </a>
+    <form class="email-capture" novalidate data-section="mid_cta" onsubmit="handleEmailSubmit(event)" style="margin:0 auto;">
+      <input type="email" placeholder="Enter your work email">
+      <button type="submit" class="btn-primary" style="font-size:18px;padding:18px 40px;">Learn More →</button>
+    </form>
   </section>
 
   <!-- ─── TESTIMONIALS 2 ─── -->
@@ -1104,12 +1344,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="closing-glow"></div>
     <div class="closing-headline">Ready to make<br/><span class="grad-text">the switch?</span></div>
     <p class="closing-sub">Your CRM updates itself. Your reps are coached in absentia. Any question about your process is answered in minutes.<sup style="font-size:10px;opacity:0.5;">1</sup></p>
-    <div class="closing-actions">
-      <a href="https://attention.com/book" class="btn-primary" style="font-size:18px;padding:20px 44px;">
-        Book a Demo
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="#comparison" class="btn-ghost">See how it works →</a>
+    <div class="closing-actions" style="justify-content:center;">
+      <form class="email-capture" novalidate data-section="closing_cta" onsubmit="handleEmailSubmit(event)" style="margin:0 auto;">
+        <input type="email" placeholder="Enter your work email">
+        <button type="submit" class="btn-primary" style="font-size:18px;padding:20px 44px;">Learn More →</button>
+      </form>
     </div>
     <p style="margin-top:48px;font-size:clamp(22px,3vw,38px);font-weight:700;color:rgba(255,255,255,0.92);text-align:center;letter-spacing:-0.5px;">This is life with <span class="grad-text">Attention.</span></p>
   </section>
@@ -1129,14 +1368,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </footer>
 
+  <!-- ─── CORNER POPUP ─── -->
+  <div class="corner-popup" id="cornerPopup" onclick="document.getElementById('offer-banner').scrollIntoView({behavior:'smooth'})">
+    <button class="corner-popup-close" onclick="event.stopPropagation();closeCornerPopup();" aria-label="Close">×</button>
+    <div class="corner-popup-pill"><span>Limited offer</span></div>
+    <div class="corner-popup-title">Stuck in a contract?</div>
+    <p class="corner-popup-sub">Book a demo and use Attention free until your current deal runs out.</p>
+    <span class="corner-popup-link">Learn more ↓</span>
+  </div>
+
   <script>
+    // ─── Corner popup ───
+    (function() {
+      var popup = document.getElementById('cornerPopup');
+      popup.classList.add('visible');
+
+      window.closeCornerPopup = function() {
+        popup.classList.remove('visible');
+        popup.classList.add('hidden');
+      };
+    })();
+
     // ─── Logo marquee ───
     (function() {
       const logos = [
         // GovWell — fixed SVG (was broken local PNG)
         `<svg viewBox="0 0 181 38" style="height:24px;width:auto;" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M26.8631 17.4696C26.8874 17.1906 26.9008 16.9093 26.9008 16.6242C26.9008 11.291 22.4915 6.96685 17.0517 6.96685C11.6119 6.96685 7.20352 11.2903 7.20352 16.6242C7.20352 16.9093 7.21684 17.1906 7.24114 17.4696H26.8624H26.8631Z"/><path d="M22.6345 0.000359171C20.752 -0.013968 19.2593 0.417354 18.3534 0.754419V6.13313C19.2585 5.79606 20.7512 5.36474 22.6345 5.37907C24.4248 5.39264 25.849 5.80285 26.7357 6.13313V0.754419C25.849 0.424141 24.4248 0.0139322 22.6345 0.000359171Z"/><rect x="15.8455" y="8.24033" width="8.24032" height="2.61679" transform="rotate(-90 15.8455 8.24033)"/><rect x="4.53448" y="18.9613" width="25.2386" height="2.55132"/><rect x="3.05176e-05" y="23.0044" width="34.3078" height="2.55132"/><rect x="1.55075" y="33.9569" width="6.9094" height="4.95727" transform="rotate(-90 1.55075 33.9569)"/><rect x="10.3004" y="33.9569" width="6.9094" height="4.95727" transform="rotate(-90 10.3004 33.9569)"/><rect x="19.05" y="33.9569" width="6.9094" height="4.95727" transform="rotate(-90 19.05 33.9569)"/><rect x="27.7997" y="33.9569" width="6.9094" height="4.95727" transform="rotate(-90 27.7997 33.9569)"/><rect x="3.05176e-05" y="35.4487" width="34.3078" height="2.55132"/><path d="M55.1961 32.8698C47.3301 32.8698 42.9601 27.7602 42.9601 20.6338V20.3648C42.9601 13.1375 48.1032 8.09523 55.1961 8.09523C60.5409 8.09523 65.3143 10.5492 65.8858 16.4991H60.4737C60.0031 13.6754 58.1542 12.398 55.2633 12.398C51.095 12.398 48.6411 15.5242 48.6411 20.4321V20.701C48.6411 25.3399 50.6244 28.6678 55.3305 28.6678C59.3644 28.6678 61.0115 26.3484 61.1124 23.5919H55.7003V19.6253H66.4908V22.1801C66.4908 28.6006 62.3898 32.8698 55.1961 32.8698ZM78.5343 29.1721C81.2572 29.1721 82.8371 27.1552 82.8371 23.8272V23.5919C82.8371 20.2304 81.2572 18.2135 78.5343 18.2135C75.8451 18.2135 74.2316 20.1632 74.2316 23.5247V23.7936C74.2316 27.1552 75.7779 29.1721 78.5343 29.1721ZM78.5007 32.8698C73.2567 32.8698 69.2565 29.3738 69.2565 23.8945V23.6255C69.2565 18.1126 73.2567 14.5158 78.5343 14.5158C83.8119 14.5158 87.7786 18.0454 87.7786 23.5247V23.7936C87.7786 29.3402 83.7783 32.8698 78.5007 32.8698ZM95.4657 32.5L89.0452 14.9192H94.2556L98.4575 27.4913L102.626 14.9192H107.332L100.945 32.5H95.4657ZM114.366 32.5L108.517 8.465H114.03L117.795 25.071L121.896 8.465H126.535L130.804 25.1718L134.704 8.465H139.746L133.897 32.5H128.35L124.014 15.894L119.61 32.5H114.366ZM149.857 32.8698C144.546 32.8698 140.68 29.5418 140.68 23.9281V23.6592C140.68 18.1126 144.613 14.5158 149.723 14.5158C154.261 14.5158 158.294 17.1714 158.294 23.4575V24.8021H145.621C145.756 27.7266 147.336 29.4074 149.991 29.4074C152.244 29.4074 153.353 28.4325 153.656 26.9535H158.261C157.689 30.752 154.664 32.8698 149.857 32.8698ZM145.689 21.8103H153.555C153.387 19.1547 152.042 17.8773 149.723 17.8773C147.538 17.8773 146.058 19.3228 145.689 21.8103ZM162.292 32.5V6.95231H167.132V32.5H162.292ZM172.386 32.5V6.95231H177.226V32.5H172.386Z"/></svg>`,
-        // Engine — PNG with SVG filter to strip white background
-        `<img src="/engine-logo.png" alt="Engine" style="height:28px;width:auto;filter:url(#engine-remove-white);">`,
+        // Engine — clean SVG wordmark
+        `<svg viewBox="0 0 120 28" style="height:24px;width:auto;" xmlns="http://www.w3.org/2000/svg"><text x="0" y="22" font-family="Inter,system-ui,sans-serif" font-size="24" font-weight="700" fill="rgba(255,255,255,0.85)" letter-spacing="-0.5">engine</text></svg>`,
         // Headway — optical height 26px (circle icon + bold wordmark)
         `<svg viewBox="0 0 505.51 96.08" style="height:26px;width:auto;" xmlns="http://www.w3.org/2000/svg"><path d="M137.93 111.3a51.35 51.35 0 10-95.8 25.7H131a51 51 0 006.93-25.7z" fill="#12c97a" transform="translate(-35.24 -59.96)"/><path fill="rgba(255,255,255,0.85)" transform="translate(-35.24 -59.96)" d="M184.33 79.93h11.33V103h24.94V79.93h11.32v57H220.6v-23.18h-24.94V137h-11.33zM277.59 120.68h-28.44c.89 5.62 6 7.41 10.43 7.41a13.4 13.4 0 0011.24-5.46l6.77 6.68a22.69 22.69 0 01-18.09 8.56c-10.92 0-21.68-6.93-21.68-21.35 0-14.26 10.51-21.68 21-21.68 10 0 19.08 6.85 19.08 20.62a45.49 45.49 0 01-.31 5.22zm-19.15-16.47a8.91 8.91 0 00-9.29 8.07h18.25c-.49-5.22-4.07-8.07-8.96-8.07zM365 101.44V79.93h11v57h-11v-5.05a15.9 15.9 0 01-13 6c-10.43 0-20.78-7.25-20.78-21.6s10.1-21.43 20.29-21.43c6.03-.01 10.84 2.35 13.49 6.59zm-.09 14.92c0-9-5.94-12.23-11.4-12.23-6.36 0-11.17 4.32-11.17 12.14 0 7.58 4.65 12.31 11.33 12.31 6.07 0 11.2-3.99 11.2-12.22zM428.6 121l8.06-25.1H449L433.73 137h-10.51l-9-24-8.88 24h-10.48l-15.08-41.1H392l8.06 25 8.81-25h10.75zM540.76 135.43c0 13.44-10.6 20.61-21.52 20.61-9.29 0-17.85-5.13-20.54-14.91l9.95-3.59c1.38 6.28 6 9.05 11 9.05 5.78 0 10.18-3.42 10.18-10.35v-6a13.8 13.8 0 01-11.56 6.27c-8.56 0-16.71-5.53-16.71-16.7v-24h11.08v22.49c0 5.22 2.69 8.81 8 8.81 5.62 0 9-4.32 9-11.17V95.9h11.09zM314.94 95.9v5c-2.53-4.15-6.93-6-12.23-6-10.51 0-21.27 7.42-21.27 21.76 0 13.69 9.94 21.27 20.21 21.27a17.05 17.05 0 0013.29-5.93v5h11V95.9zm-11.74 32.43c-5.79 0-10.76-4.56-10.76-12 0-7.58 5.13-12.15 11-12.15s11.17 4.65 11.17 12c0 7.51-5.46 12.15-11.41 12.15zM481.87 95.9v5c-2.53-4.15-6.94-6-12.23-6-10.51 0-21.27 7.42-21.27 21.76 0 13.69 9.94 21.27 20.21 21.27a17.05 17.05 0 0013.29-5.93v5h11V95.9zm-11.74 32.43c-5.79 0-10.76-4.56-10.76-12 0-7.58 5.13-12.15 11-12.15s11.17 4.65 11.17 12c0 7.51-5.46 12.15-11.41 12.15z"/></svg>`,
         // Hearth — icon + wordmark, 24px
@@ -1505,19 +1764,67 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       window.dataLayer.push(Object.assign({ event: event }, props));
     }
 
-    // ── CTA clicks (Book a Demo buttons) ──
-    document.querySelectorAll('a.header-cta, a.btn-primary').forEach(function(el) {
+    // ── Email capture form submission ──
+    var personalDomains = ['gmail.com','yahoo.com','hotmail.com','outlook.com','aol.com','icloud.com','mail.com','protonmail.com','zoho.com','yandex.com','gmx.com','live.com','msn.com','me.com','mac.com','proton.me','tutanota.com','fastmail.com','hey.com'];
+
+    function shakeInput(input) {
+      input.classList.add('headshake');
+      input.addEventListener('animationend', function() { input.classList.remove('headshake'); }, { once: true });
+    }
+
+    function handleEmailSubmit(e) {
+      e.preventDefault();
+      var form = e.target;
+      var input = form.querySelector('input[type="email"]');
+      var email = input.value.trim();
+      if (!email) {
+        shakeInput(input);
+        input.placeholder = 'Enter your work email';
+        input.classList.add('input-error');
+        return;
+      }
+      // Basic email format check
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        shakeInput(input);
+        input.value = '';
+        input.placeholder = 'Enter a valid email';
+        input.classList.add('input-error');
+        return;
+      }
+      input.classList.remove('input-error');
+      var domain = email.split('@')[1];
+      if (domain && personalDomains.indexOf(domain.toLowerCase()) !== -1) {
+        shakeInput(input);
+        input.value = '';
+        input.placeholder = 'Please use your work email';
+        input.classList.add('input-error');
+        return;
+      }
+      var section = form.getAttribute('data-section') || 'unknown';
+      dlPush('email_capture', {
+        event_category: 'cta',
+        event_action: 'email_submit',
+        section: section
+      });
+      window.location.href = 'https://www.attention.com/product/book-a-demo?email=' + encodeURIComponent(email);
+    }
+
+    // Clear error state on input
+    document.querySelectorAll('.email-capture input[type="email"]').forEach(function(input) {
+      input.addEventListener('input', function() {
+        input.classList.remove('input-error');
+        input.placeholder = 'Enter your work email';
+      });
+    });
+
+    // ── CTA clicks (header Book a Demo link) ──
+    document.querySelectorAll('a.header-cta').forEach(function(el) {
       el.addEventListener('click', function() {
-        var section = 'unknown';
-        if (el.closest('header'))          section = 'header';
-        else if (el.closest('#hero'))      section = 'hero';
-        else if (el.closest('#mid-cta'))   section = 'mid_cta';
-        else if (el.closest('#closing-cta')) section = 'closing_cta';
         dlPush('cta_click', {
           event_category: 'cta',
           event_action: 'click',
           event_label: el.textContent.trim().replace(/\s+/g, ' '),
-          section: section,
+          section: 'header',
           destination_url: el.href
         });
       });
