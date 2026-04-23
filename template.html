@@ -1807,7 +1807,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         section: section
       });
       // Log to Google Sheet via hidden iframe form, then redirect
-      var redirectUrl = 'https://www.attention.com/product/book-a-demo?email=' + encodeURIComponent(email);
+      var redirectUrl = 'https://www.attention.com/product/book-a-demo?email=' + encodeURIComponent(email) + '&utm_source=landing_page&utm_medium=cta&utm_campaign=%%SLUG%%_alternative&utm_content=' + encodeURIComponent(section);
       var iframeName = 'sheet_log_' + Date.now();
       var iframe = document.createElement('iframe');
       iframe.name = iframeName;
