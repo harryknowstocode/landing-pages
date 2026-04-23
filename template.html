@@ -1806,6 +1806,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         event_action: 'email_submit',
         section: section
       });
+      // Log to Google Sheet
+      navigator.sendBeacon('https://script.google.com/macros/s/AKfycbw62eyNR13TNMdbPsoNzUztmSTQVO2O60sGzxc-hbUKCg7wlAL-qgNVBvInH0_tZfCALw/exec', JSON.stringify({
+        email: email,
+        section: section,
+        page: window.location.pathname
+      }));
       window.location.href = 'https://www.attention.com/product/book-a-demo?email=' + encodeURIComponent(email);
     }
 
