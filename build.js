@@ -43,7 +43,7 @@ function buildTestimonials(testimonials) {
             <span class="quote-mark">"</span>
             <p class="quote-text">${t.text}</p>
             <div class="quote-author">
-              <div class="quote-avatar"><img src="attention-icon-color.png" style="width:100%;height:100%;border-radius:inherit;object-fit:cover;" alt=""></div>
+              <div class="quote-avatar"><img src="/attention-icon-color.png" style="width:100%;height:100%;border-radius:inherit;object-fit:cover;" alt=""></div>
               <div><div class="quote-name">${t.name}</div><div class="quote-role">${t.role}</div></div>
             </div>
           </div>`).join('\n');
@@ -141,7 +141,7 @@ ${buildPainQuotes(cat.attentionQuotes)}
         <div class="compare-attn">
           <div class="attn-header">
             <div class="header-wordmark" style="gap:8px;font-size:16px;font-weight:700;letter-spacing:-0.3px;">
-              <img src="attention-icon-color.png" style="width:24px;height:24px;border-radius:6px;object-fit:cover;flex-shrink:0;" alt="Attention">
+              <img src="/attention-icon-color.png" style="width:24px;height:24px;border-radius:6px;object-fit:cover;flex-shrink:0;" alt="Attention">
               Attention
             </div>
             ${attnSummaries}
